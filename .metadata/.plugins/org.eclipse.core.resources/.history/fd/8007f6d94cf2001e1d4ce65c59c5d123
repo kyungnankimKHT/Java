@@ -1,0 +1,88 @@
+
+public class Variable {
+
+	public static void main(String[] args) {
+		// 1.정수 2.문자 3.문자열 4.실수 5.논리형
+		//1. 정수 byte short int long
+		// byte = 1byte 
+		byte 바이트 = 1;
+		System.out.println(바이트);
+		System.out.println("바이트");
+		//파일을 저장할 때 키보드에서 ctrl + s 를 눌러주면 저장됨
+		byte bt = 2;
+		System.out.println(bt);
+		
+		short 쇼트 = 3;
+		System.out.println(쇼트);
+		
+		int 인트 = 1;
+		System.out.println(인트);
+		
+	// byte 자료형 선언 선언이름 bte bte 안에 숫자 2 넣고 출력하기
+		byte bte = 2;
+		System.out.println(bte);
+		
+	// short 자료형 선언 선언이름 shrt shrt 안에 숫자 2 넣고 출력하기
+		short shrt = 2;
+		System.out.println(shrt);
+		
+	// int 자료형 선언 선언이름 nt nt 안에 숫자 2 넣고 출력하기
+		int nt = 2;
+		System.out.println(nt);
+		
+	// long 자료형 선언 선언이름 lng lng 안에 숫자 2 넣고 출력하기
+		long lng = 2;
+		System.out.println(lng);
+		
+	// 2. 문자
+	//문자에는 char와 String이 있음
+		// 문자를 나타내는 char은 '' 작은 따옴표를 사용해서 표현
+		// " " 큰 따옴표는 String 문자열을 나타내는 표현
+		
+		char myChar = 'A';
+		System.out.println(myChar);
+		
+		//char myChar2 = "A";
+		//System.out.println(myChar2);
+		//char 에는 하나의 문자만 담을 수 있기 때문에 
+		// A나 B 둘 중 하나만 작성 가능
+		/*
+		 * char myChar3 = 'AB';
+		 * char myChar4 = 'ABC';
+		 * char myChar5 = '가나다';
+		 * 모두 문자가 하나가 아니기 때문에 출력할 수 없음
+		 * */
+		
+		//String
+		String str1 = "와 드디어 문자다~~";
+		System.out.println(str1);
+		// String 을 사용해서 본인의 이름 출력하기
+		
+		//String name = "본인의 이름";
+		//System.out.println(name);
+		String name = "김경난";
+		
+		System.out.print("당신의 이름은 ");
+		System.out.println(name);
+		System.out.print("입니다.");
+		
+		//만약에 여러 글자나 내용을 한줄로 출력하고 싶다면
+		// + 를 사용해서 이어서 출력할 수 있음
+		System.out.println("당신의 이름은"+name+"입니다.");
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
