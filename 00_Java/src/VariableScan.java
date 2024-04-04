@@ -16,7 +16,7 @@ public class VariableScan {
 		
 		System.out.println("사용자의 이름을 입력하세요.");
 		String name = sc.nextLine();
-		System.out.print(name);
+		System.out.println(name);
 		
 		System.out.println("사용자의 사는 곳을 입력하세요.");
 		String live = sc.nextLine();
@@ -30,8 +30,19 @@ public class VariableScan {
 		// 사용자의 키, 사용자의 나이, 사용자의 닉네임을 입력받기
 		
 		// 사용자의 키 String height
+		System.out.print("사용자의 키를 입력하세요 : ");
+		String height = sc.nextLine();
+		System.out.println(height);
+		
 		// 사용자의 나이 String age
+		System.out.print("사용자의 나이를 입력하세요 : ");
+		String age = sc.nextLine();
+		System.out.println(age);
+		
 		// 사용자의 닉네임 String nickName
+		System.out.print("사용자의 닉네임을 입력하세요 : ");
+		String nickName = sc.nextLine();
+		System.out.println(nickName);
 		
 	}
 
