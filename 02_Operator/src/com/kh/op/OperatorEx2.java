@@ -40,8 +40,10 @@ public class OperatorEx2 {
 	// 값을 받을 일이 없으면 () 빈공간으로 유지
 	public static void 메서드3() {
 		Scanner sc = new Scanner(System.in);
+		System.out.print("num5 숫자를 입력하세요 : ");
 		//키보드로 작성한 숫자가 num5로 들어올 수 있게 변수 선언
 		int num5 = sc.nextInt();
+		System.out.print("num6 숫자를 입력하세요 : ");
 		//키보드로 작성한 숫자가 num6로 들어올 수 있게 변수 선언
 		int num6 = sc.nextInt();
 		
@@ -57,6 +59,17 @@ public class OperatorEx2 {
 		System.out.println("div1 : " + div1);
 	}
 	
+	
+	// 메서드 4를 만들어서 스캐너로 double 더하기 빼기 곱하기 나누기 출력
+	// double num7 = sc.nextDouble();
+	// double num8 = sc.nextDouble();
+	// 더하기 double sum2 
+	// 빼기 double sub2
+	// 곱하기 double mul2
+	// 나누기 double div2
+	
+	
+	
 	//최종 제출 메인 메서드
 	public static void main(String[] args) {
 		//앞으로 만든 메서드 중에서
@@ -64,8 +77,12 @@ public class OperatorEx2 {
 		
 		//만약에 메서드1() 안에 작성한 내용을 출력하고 싶다면 
 		//메서드1(); 이라고 작성 후 출력하면 가능
+		
 		메서드1();
+		
 		메서드2();
+		
+		메서드3();
 	}
 
 }
