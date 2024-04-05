@@ -1,7 +1,6 @@
 package com.kh.variable.ex;
 
 public class VariableEx1 {
-
 	public static void main(String[] args) {
 		// 변수 : 메모리에 값을 저장하기 위한 공간
 		//		저장되는 값이 변할 수 있기 때문에 변수
@@ -35,7 +34,7 @@ public class VariableEx1 {
 		 변수 선언 : 메모리에 공간을 할당
 		 값 대입 : 변수에 값을 집어넣는 것
 		 변수를 선언할 때 자료형은 변수명마다 최초 1회만 선언
-		 * */
+		 */
 		
 		//자료형   변수선언    =  값 대입  ;(종료)
 		  int     number    =   1;
