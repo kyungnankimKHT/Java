@@ -1,7 +1,7 @@
 package com.kh.op;
 
-//메서드 : 특정 상태나 기능을 정리해놓은 집합
-
+// class 바깥에는 package와 import 만 작성할 수 있음
+// 이외 개발자가 실행하고자 하는 내용은 class 내부에 작성해줘야함
 public class OperatorEx2 {
 	//1. 메서드 : 스캐너를 사용하지 않는 메서드
 	public static void 메서드1() {
@@ -16,6 +16,41 @@ public class OperatorEx2 {
 		System.out.println("곱하기 : " + 곱하기);
 		System.out.println("나누기 : " + 나누기);
 	}
+	
+	public static void 메서드2() {
+		double num3 = 1.4;
+		double num4 = 2.5;
+		
+		// double 더하기 빼기 곱하기 나누기를 실행하자
+		double sum = num3 + num4;
+		double sub = num3 - num4;
+		double mul = num3 * num4;
+		double div = num3 / num4;
+		
+		System.out.println("sum : " + sum);
+		System.out.println("sub : " + sub);
+		System.out.println("mul : " + mul);
+		System.out.println("div : " + div);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	//최종 제출 메인 메서드
 	public static void main(String[] args) {
 		//앞으로 만든 메서드 중에서
