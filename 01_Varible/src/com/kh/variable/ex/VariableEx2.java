@@ -23,7 +23,16 @@ public class VariableEx2 {
 	long result = num1 + num2;
 	
 	System.out.println("더한 결과 :" + result + "원");
-		
+	
+	// 작은 값으로 큰 값을 형변환 하려고 할 경우
+	//int result1 = num1 + num2;
+	//cannot convert from long to int 발생 
+	//강제로 형태를 변환해서 넣을 수는 있지만 값이 깨지거나
+	//잘못된 값이 들어감
+	// int + long
+	//  -> long + long 으로 자동 형변환
+	//  -> 결과도 long
+	// 그런데 int형 변수에 long을 대입하려고 해서 오류 발생
 		
 	}
 
