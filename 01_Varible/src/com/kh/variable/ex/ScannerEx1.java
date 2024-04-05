@@ -53,13 +53,33 @@ public class ScannerEx1 {
 		// 문제는 없는지 확인 출력을 해주는 습관을 주는 것이 좋음
 		String word2 = sc.next();
 		
-
+		
+		// **********************
+		// - next() / nextInt() / nextDouble() 등을 작성한 이후
+		// nextLine() 을 작성해야되는 상황이 오면
+		// nextLine() 을 미리 한 번 작성하고 사용하기
+		
+		sc.nextLine(); // next() 뒤에 남아있는 버퍼값을 Line안에 넣어줌
+		//그런데 버퍼값은 우리가 눈으로 보거나 저장을 해야할 이유가 없기 때문에
+		//앞에 자료형이나 변수명을 사용해서 버퍼를 넣어 저장해야할 이유가
+		//없어 sc.nextLine() 으로만 사용
+		
+		//nextLine()을 호출해서 남아있던 엔터를 제거
+		
+		System.out.print("문장 입력 : ");
+		String str = sc.nextLine();
+		
+		
 		// 4. System.out 이용해서 키보드에 작성된 내용출력하기
 		System.out.println("정수 1의 값 : " + num1);
 		System.out.println("정수 2의 값 : " + num2);
 		System.out.println("실수    값 : " + num3);
 		System.out.println("단어들 : " + word1 + ", " + word2);
+		System.out.println("추가된 문장 : " + str);
 		// 5. Scanner close 사용해서 닫아주기
+		// Scanner 사용을 다 했다면 공간을 차지하지 않기위해서
+		//Scanner 를 종료하는 close 를 사용해서 닫아주기
+		sc.close(); 
 		
 		
 	}
