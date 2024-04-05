@@ -45,7 +45,6 @@ public class OperatorEx4 {
 		System.out.println(a == c);
 		// a == c 는 값이 다르기 때문에 false
 		
-		
 	}
 
 }
