@@ -1,27 +1,27 @@
 package com.kh.variable.ex;
 
 public class VariableEx4 {
-	// ¸ÞÀÎ ¸Þ¼­µå : ÀÚ¹Ù ÇÁ·Î±×·¥ ½ÇÇàÇÏ´Â ±¸¹®
+	// ë©”ì¸ ë©”ì„œë“œ : ìžë°” í”„ë¡œê·¸ëž¨ ì‹¤í–‰í•˜ëŠ” êµ¬ë¬¸
 	public static void main(String[] args) {
-		// »ó¼ö : ÇÑ ¹ø °ªÀ» ±â·ÏÇÏ¸é °ªÀ» ¹Ù²Ü¼ö ¾ø´Â º¯¼ö
-		// »ó¼ö Å°¿öµå : final
+		// ìƒìˆ˜ : í•œ ë²ˆ ê°’ì„ ê¸°ë¡í•˜ë©´ ê°’ì„ ë°”ê¿€ìˆ˜ ì—†ëŠ” ë³€ìˆ˜
+		// ìƒìˆ˜ í‚¤ì›Œë“œ : final
 		
-		// »ó¼ö¸í ÀÛ¼º : ´ë¹®ÀÚ·Î ÀÛ¼º, ¿¬°áµÇ´Â ´Ü¾î »çÀÌ´Â _ ±¸¹®
-		// »ó¼ö¸¦ ´ë¹®ÀÚ·Î Ç¥±âÇÏ´Â °ÍÀº ÀÚ¹Ù¿¡¼­ °³¹ßÀÚ°£ÀÇ ±ÔÄ¢
+		// ìƒìˆ˜ëª… ìž‘ì„± : ëŒ€ë¬¸ìžë¡œ ìž‘ì„±, ì—°ê²°ë˜ëŠ” ë‹¨ì–´ ì‚¬ì´ëŠ” _ êµ¬ë¬¸
+		// ìƒìˆ˜ë¥¼ ëŒ€ë¬¸ìžë¡œ í‘œê¸°í•˜ëŠ” ê²ƒì€ ìžë°”ì—ì„œ ê°œë°œìžê°„ì˜ ê·œì¹™
 		final double PI = 3.1415926538;
-		System.out.println("»ó¼ö·Î Ç¥±âÇÑ PI : " + PI);
+		System.out.println("ìƒìˆ˜ë¡œ í‘œê¸°í•œ PI : " + PI);
 		
-		// MIN °¡Àå ÃÖ¼Ò°ª
+		// MIN ê°€ìž¥ ìµœì†Œê°’
 		final int MIN = 0;
 		final int MAX = 100;
 		
-		// »ó¼ö·Î ÁöÁ¤µÈ °ªÀ» º¯°æÇÏ·ÁÇÏ¸é ¿¡·¯°¡ ¹ß»ý
-		// MIN = 1; // »ç¿ëÇÒ ¼ö ¾øÀ½
+		// ìƒìˆ˜ë¡œ ì§€ì •ëœ ê°’ì„ ë³€ê²½í•˜ë ¤í•˜ë©´ ì—ëŸ¬ê°€ ë°œìƒ
+		// MIN = 1; // ì‚¬ìš©í•  ìˆ˜ ì—†ìŒ
 		
-		//»ó¼ö finalÀ» »ç¿ëÇØ¼­
-		//String À¸·Î "Hello World" ³Ö¾îº¸±â
-		//¿ì¸® È¸»ç¿¡ µé¾î¿À´Â »ç¶÷µéÇÑÅ×´Â
-		//Hello World ¹®±¸·Î º¸¿©ÁÖ°í º¯°æµÇ°Ô ÇÏ°í ½ÍÁö ¾ÊÀ» ¶§
+		//ìƒìˆ˜ finalì„ ì‚¬ìš©í•´ì„œ
+		//String ìœ¼ë¡œ "Hello World" ë„£ì–´ë³´ê¸°
+		//ìš°ë¦¬ íšŒì‚¬ì— ë“¤ì–´ì˜¤ëŠ” ì‚¬ëžŒë“¤í•œí…ŒëŠ”
+		//Hello World ë¬¸êµ¬ë¡œ ë³´ì—¬ì£¼ê³  ë³€ê²½ë˜ê²Œ í•˜ê³  ì‹¶ì§€ ì•Šì„ ë•Œ
 		final String  GREETING = "Hello World";
 		System.out.println(GREETING);
 		
