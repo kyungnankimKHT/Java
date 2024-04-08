@@ -47,8 +47,6 @@ public class OperatorEx5 {
 		
 		int num1 = 10;
 		int num2 = 20;
-		
-		//num1 num2 값이 1. 같은지 2. 다른지 3. 어떤 값이 더 큰지
 		//1. num1 == num2
 		//true false
 		boolean result1 = num1 == num2; //num1 num2 가 같다면 참
