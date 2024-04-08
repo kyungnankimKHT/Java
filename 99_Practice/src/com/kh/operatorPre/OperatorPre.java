@@ -40,12 +40,53 @@ public class OperatorPre {
 		System.out.println("남은 캔디 개수 : " + reMain);
 	}
 	
+	/*이름  학년(숫자만)  반(숫자만)  번호(숫자만) 성별(M/F) 성적(소수점 아래 둘째 자리까지) */
+	public static void practice2() { //키보드로 정보 입력받기 + 남 여 확인
+		//Scanner 활용해서 키보드 입력받는 창 만들어주기
+		Scanner sc = new Scanner(System.in);
+		System.out.println("학생관리프로그램");
+		// 이름 입력 받기
+		System.out.print("이름 : ");
+		String name = sc.nextLine();
+		// 학년 입력 받기
+		System.out.print("학년(숫자만) : ");
+		int grade = sc.nextInt();
+		// 반 입력 받기
+		System.out.print("반(숫자만) : ");
+		int classNum = sc.nextInt();
+		// 번호 입력 받기
+		System.out.print("번호(숫자만) : ");
+		int num = sc.nextInt();
+		// 성별 입력 받기 String -> char
+		System.out.print("성별(M/F) : ");
+		String gender = sc.next();
+		// 성적 입력 받기 (소수점 둘째 자리 까지만 입력받음)
+		double score = sc.nextDouble(); //전체자리 입력받음
+		// 성별에 따라 출력 문자열 설정
+		// 삼항 연산자 출력 문자열 설정
+		System.out.println("이름 : " + name);
+		System.out.println("학년 : " + grade);
+		System.out.println("  반 : " + classNum);
+		System.out.println("번호 : " + num);
+		System.out.println("성별 : " + gender);
+		System.out.println("성적 : " + score);
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	//메인 메서드 : 최종으로 실행하는 메서드
 	public static void main(String[] args) {
 		//작성해준 메서드 중에서 실행이나 출력하고자 하는 메서드 작성 
-		practice1();
-
+		//practice1();
+		practice2();
 	}
 
 }
