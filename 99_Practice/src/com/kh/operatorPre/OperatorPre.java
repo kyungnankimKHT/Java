@@ -58,9 +58,29 @@ public class OperatorPre {
 		System.out.print("번호(숫자만) : ");
 		int num = sc.nextInt();
 		// 성별 입력 받기 String -> char
+		//스캐너로 char 값을 입력받고자 할 경우에는
+		//charAt 을 사용해서 문자열 위치를 읽어오는 작업을 진행해야함
+		//시스템으로 예를 들면
+		//System  - out  - print()
+		//Scanner - next - charAt(숫자만적음)
+		//                       내가 보고자하는 숫자 위치
+		// T     A     B    L     E  = 5글자
+		// 만약에 맨 앞글자를 보고 싶다면
+		// charAt(0) : 맨  앞 글자를 보기
+		// charAt(1) : 두번째 글자를 보기
+		// charAt(2) : 세번째 글자를 보기
+		// charAt(3) : 네번째 글자를 보기
+		// charAt(4) : 다섯번째 글자를 보기
+		// TABLE의 경우 총 5글자이기 때문에 
+		// chatAt 에서는 4까지만 작성할 수 있음
+		
 		System.out.print("성별(M/F) : ");
-		String gender = sc.next();
+		//String gender = sc.next();
+		char gender = sc.next().charAt(0);
+		// 어떤 글자가 들어오든 관계없이 맨 앞에있는 글자만
+		// 필요하기 때문에 0으로 작성
 		// 성적 입력 받기 (소수점 둘째 자리 까지만 입력받음)
+		System.out.print("점수 : ");
 		double score = sc.nextDouble(); //전체자리 입력받음
 		// 성별에 따라 출력 문자열 설정
 		// 삼항 연산자 출력 문자열 설정
@@ -69,15 +89,57 @@ public class OperatorPre {
 		System.out.println("  반 : " + classNum);
 		System.out.println("번호 : " + num);
 		System.out.println("성별 : " + gender);
-		System.out.println("성적 : " + score);
+		//System.out.println("성적 : " + score);
+		
+		//printf + ,
+		//printf 로 %f 를 출력할 때는 소수점 자리를 지정해줘도 되고
+		// 지정해주지 않아도 된다.
+		//다만 만약에 소수점 자리 위치를 지정해서 출력하길 원한다면 
+		// %  .출력을 원하는 소수점 위치자리 값 f
+		// 예를들어 소수점 4번째 자리까지 출력하길 원함 : %.4f
+		// 예를들어 소수점 5번째 자리까지 출력하길 원함 : %.5f
+		
+		// 소수점 2번째 자리까지 출력하길 원한다면 %.2f
+		System.out.printf("성적 :  %.2f" , score);
+		
 		
 		
 	}
 	
 	
-	
-	
-	
+	/*
+		국어, 영어, 수학에 대한 점수를 키보드를 이용해 정수로 입력 받고, 
+		세 과목에 대한 합계(국어+영어+수학)와 평균(합계/3.0)을 구하세요.
+		(국어 + 영어 + 수학 ) /3.0
+	 */
+	public static void practice3() {
+		Scanner sc = new Scanner(System.in);
+		// 국어 점수 입력
+		System.out.print("국어 점수를 입력하세요 : ");
+		int korean = sc.nextInt();
+		// 영어 점수 입력
+		System.out.print("영어 점수를 입력하세요 : " );
+		int english = sc.nextInt();
+		// 수학 점수 입력
+		System.out.print("수학 점수를 입력하세요 : ");
+		int math = sc.nextInt();
+		
+		// 입력받은 점수로 합계 계산
+		// 점수총합 = 국어점수  + 영어점수 + 수학점수;
+		int total = korean + english + math;
+		
+		//총 점수 나누기 3 을 해서 평균 점수 계산하기
+		// 점수가 무조건 소수점 이외 정수만 나온다는 보장이 없기 때문에
+		// 실수(소수점자리가 있는 수) 가 나온다는 가정에 진행
+		// 64             32
+		double average =  (double)  total / 3.0;
+		System.out.println("국어점수 : " + korean);
+		System.out.println("영어점수 : " + english);
+		System.out.println("수학점수 : " + math);
+		System.out.println("국어 + 영어 + 수학 : " + total);
+		System.out.println("국어 영어 수학 평균점수 : " + average);
+		
+	}
 	
 	
 	
@@ -86,7 +148,7 @@ public class OperatorPre {
 	public static void main(String[] args) {
 		//작성해준 메서드 중에서 실행이나 출력하고자 하는 메서드 작성 
 		//practice1();
-		practice2();
+		practice3();
 	}
 
 }
