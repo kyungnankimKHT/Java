@@ -7,6 +7,9 @@ import java.util.Scanner;
 //조건문 기능용 클래스
 public class ConditionEx {
 	/*
+	 if 와 else class
+	 
+	 
 	 if 주어진 조건이 참일 때 실행되는 코드 블록
 	 else 조건이 거짓일 때 실행되는 코드 블록(필수가 아님)
 	 
@@ -16,6 +19,7 @@ public class ConditionEx {
 	 	만약에 조건문의 조건이 참이 아닐 경우 
 	 	자동으로 실행 종료
 	 }
+	
 	 */
 	public static void method1() {
 		Scanner sc = new Scanner(System.in);
