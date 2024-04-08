@@ -24,7 +24,8 @@ public class ConditionEx2 {
 	
 	public static void main(String[] args) {
 		//method2();
-		method3();
+		//method3();
+		method4();
 	}
 	
 	/*
@@ -46,6 +47,7 @@ public class ConditionEx2 {
 		} else {
 			System.out.println("성인");
 		}
+		//System.out.println(result);
 	}
 	
 	
@@ -63,23 +65,57 @@ public class ConditionEx2 {
 	 겨울 : 12,1,2
 	 * */
 	
+	public static void method4() {
+		//13세 이하 어린이 14 ~ 18세 청소년 19세 성인
+		
+		int age = 22;
+		// 변수의 기능을 활용해서 마지막에 나이에 따른 표기를 출력
+		String result;
+		if(age <= 13) {
+			result = "어린이";
+		} else if (age >= 14 && age <= 18) {
+			result = "청소년";
+		} else {
+			result = "성인";
+		}
+		System.out.println(result + "입니다.");
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	public static void method3() {
 		// 만약에 1,2, 12 겨울
 		Scanner sc = new Scanner(System.in);
 		System.out.print("월을 작성하세요 : ");
 		int month = sc.nextInt();
 		
+		String result;
 		if(month == 1 || month == 2 || month == 12 ) {
-			System.out.println("겨울");
+			result = "겨울";
 		} else if (month >= 3 && month <= 5) {
-			System.out.println("봄");
+			result = "봄";
 		} else if (month >= 6 && month <= 8) {
-			System.out.println("여름");
+			result = "여름";
 		} else if (month >= 9 && month <= 11) {
-			System.out.println("가을");
+			result= "가을";
 		} else {
-			System.out.println("해당하는 계절이 없습니다.");
+			result = "해당하는 계절이 없습니다.";
 		}
+		
+		System.out.println(result);
 	}
 	
 	public static void method1() {
