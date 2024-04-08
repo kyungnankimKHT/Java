@@ -23,7 +23,8 @@ public class ConditionEx2 {
 	 */
 	
 	public static void main(String[] args) {
-		method2();
+		//method2();
+		method3();
 	}
 	
 	/*
@@ -61,6 +62,25 @@ public class ConditionEx2 {
 	 가을 : 9,10,11
 	 겨울 : 12,1,2
 	 * */
+	
+	public static void method3() {
+		// 만약에 1,2, 12 겨울
+		Scanner sc = new Scanner(System.in);
+		System.out.print("월을 작성하세요 : ");
+		int month = sc.nextInt();
+		
+		if(month == 1 || month == 2 || month == 12 ) {
+			System.out.println("겨울");
+		} else if (month >= 3 && month <= 5) {
+			System.out.println("봄");
+		} else if (month >= 6 && month <= 8) {
+			System.out.println("여름");
+		} else if (month >= 9 && month <= 11) {
+			System.out.println("가을");
+		} else {
+			System.out.println("해당하는 계절이 없습니다.");
+		}
+	}
 	
 	public static void method1() {
 		// 만약에 돈이 2000원 이상 있을 경우 택시를탄다.
