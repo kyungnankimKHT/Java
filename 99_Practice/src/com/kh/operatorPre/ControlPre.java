@@ -57,8 +57,51 @@ public class ControlPre {
 	}
 
 	public static void practice3() {
+		/*
+		 * 1 ~ 12 사이의 수를 입력받아 해당 달의 일수를 출력하세요.
+		 * 2월 윤달은 생각하지 않습니다.
+		 * OO월은 잘못 입력한 달입니다. 한/영 대문자 O
+		 */
+		Scanner sc = new Scanner(System.in);
+		System.out.print("1부터 12 중 하나 입력 : ");
+		int month = sc.nextInt();//키보드로 입력한 달
 		
+		int daysMonth; //해당하는 달의 일수 
+		switch (month) {
+			case 1:case 3: case 5: case 7: case 8: case 10: case 12:
+				daysMonth = 31;
+				break;
+			case 4: case 6: case 9: case 11:
+				daysMonth = 30;
+				break;
+			case 2:
+				daysMonth = 28;
+				break;
+			default:
+				System.out.println(month + "월은 존재하지 않는 달입니다.");
+				//daysMonth = 0;
+				return;
+		}
+		System.out.println(month + "월은 " + daysMonth + "일까지 있습니다.");
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	public static void practice4() {
 		Scanner sc = new Scanner(System.in);	
@@ -148,8 +191,9 @@ public class ControlPre {
 	public static void main(String[] args) {
 		//practice1();
 		//practice2();
+		practice3();
 		//practice4();
-		practice5();
+		//practice5();
 	}
 
 }

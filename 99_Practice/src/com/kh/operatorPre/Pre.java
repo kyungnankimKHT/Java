@@ -1,4 +1,4 @@
-package com.kh.conditionEx;
+package com.kh.operatorPre;
 
 public class Pre {
 
