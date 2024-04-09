@@ -53,7 +53,9 @@ public class ControlSwitch2 {
 				
 			default : 
 				System.out.println("해당하는 계절이 없습니다.");
+				return;
 		}
+		System.out.println(state + " 날씨");
 	}
 	
 	
