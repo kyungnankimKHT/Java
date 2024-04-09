@@ -80,21 +80,8 @@ public class ConditionEx2 {
 		}
 		System.out.println(result + "입니다.");
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
 	
 	public static void method3() {
 		// 만약에 1,2, 12 겨울
