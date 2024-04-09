@@ -97,12 +97,13 @@ public class ControlSwitchIf {
 		System.out.print("(월 / 화 / 수 / 목 / 금 / 토 / 일) : ");
 		String day = sc.next();
 		
+		String result = "";
 		switch(day) {
 			case "월":  case "수":  case "금" :
-				System.out.println("헬스를 할 예정입니다.");
+				result = "헬스";
 				break;
 			case "화": case "목":
-				System.out.println("공부를 할 예정입니다.");
+				result = "공부";
 				break;
 				/*만약에 집에서 쉴 예정이면 네 집에서 쉴 예정입니다.
 				 아니오 선택하면 어떤 활동을 할 예정인지 선택해주세요.
@@ -112,26 +113,32 @@ public class ControlSwitchIf {
 				System.out.print("집에서 쉴 예정인가요? (예 / 아니오) : ");
 				String answer = sc.next();
 				if (answer.equals("예")) {
-					System.out.println("집에서 쉴 예정입니다.");
+					result = "집";
 				} else { //집에서 쉴 예정이 아닐 경우
 					System.out.println("어떤 활동을 할 계획인가요 ?");
 					System.out.print("1.등산 / 2.독서 / 3.수영) : ");
 					int activity = sc.nextInt();
 					switch (activity) {
 					case 1:
-						System.out.println("등산");
+						result = "등산";
 						break;
 					case 2:
-						System.out.println("독서");
+						result = "독서";
 						break;
 					case 3:
-						System.out.println("수영");
+						result = "수영";
 						break;
 					default:
 						System.out.println("잘못된 입력");
+						return;
 					}
 				}
+			break;
+		default :
+			return;
 		}
+		
+		System.out.println(day +"요일에 " + result +"할 예정" );
 	}
 	
 	
@@ -147,8 +154,8 @@ public class ControlSwitchIf {
 	
 	
 	public static void main(String[] args) {
-		takeAtaxi();
-
+		//takeAtaxi();
+		whatDay();
 	}
 
 }
