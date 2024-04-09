@@ -61,8 +61,7 @@ public class ControlPre {
 	}
 	
 	public static void practice4() {
-		Scanner sc = new Scanner(System.in);
-		
+		Scanner sc = new Scanner(System.in);	
 		// 키와 몸무게 입력 받기
 		System.out.print("키(m) 를 입력하세요    : ");
 		double height = sc.nextDouble();
@@ -87,6 +86,60 @@ public class ControlPre {
 		}
 	}
 	
+	public static void practice5() {
+		//중간 기말 과제 출석 입력 받기
+		Scanner sc = new Scanner(System.in);
+		System.out.print("중간 점수 : ");
+		double mid = sc.nextDouble();
+		System.out.print("기말 점수 : ");
+		double fin = sc.nextDouble();
+		System.out.print("과제 점수 : ");
+		double assig = sc.nextDouble();
+		System.out.print("출석 횟수 : ");
+		int attend = sc.nextInt();
+		
+		// 출석 비율 계산 20회
+		double attendPer = attend / 20 * 100;
+		// attend / 20 = 출석한 횟수를 전체 강의 횟수로 나눠서 출석 비율을 계산
+		// double 소수점 밑에 있는 수까지 얻어옴
+		// 실수로 된 값을 100을 곱해서 백분율로 변환
+
+		
+		// 평가 비율에 따른 총점 계산
+		// 중간 20 기말 30 과제 30 출석 20 = 100점
+		// 중간 점수 20 
+		double midScore = mid * 0.2;
+		// 기말 점수 30
+		double fiScore = fin * 0.3;    // 100점 만점 30%
+		// 과제 점수 30
+		double asScore = assig * 0.3;
+		/*  20 * 100   이랑 *0.2 한 것은 똑같다.  */
+		double attendScore = attendPer * 0.2; //100점 만점 0.2
+		double totalScore = midScore + fiScore + asScore + attendScore;
+	
+		// 평가에 따른 Pass 또는 Fail 출력
+		if (totalScore >= 70 && attendPer >= 70) {
+			System.out.println("Pass");
+		} else {
+			System.out.println("Fail");
+		}
+		
+		System.out.println("======= 결과 =======");
+		System.out.println("중간고사 점수 (20점 만점) : " + midScore);
+		System.out.println("기말고사 점수 (30점 만점) : " + fiScore);
+		System.out.println("과   제 점수 (20점 만점) : " + asScore);
+		System.out.println("출   석 점수 (30점 만점) : " + attendScore);
+		System.out.println("총                 점) : " + totalScore);
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -95,7 +148,8 @@ public class ControlPre {
 	public static void main(String[] args) {
 		//practice1();
 		//practice2();
-		practice4();
+		//practice4();
+		practice5();
 	}
 
 }
