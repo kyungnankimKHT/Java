@@ -55,9 +55,47 @@ public class ControlPre {
 		
 		
 	}
-	public static void main(String[] args) {
-		practice1();
 
+	public static void practice3() {
+		
+	}
+	
+	public static void practice4() {
+		Scanner sc = new Scanner(System.in);
+		
+		// 키와 몸무게 입력 받기
+		System.out.print("키(m) 를 입력하세요    : ");
+		double height = sc.nextDouble();
+		
+		System.out.print("몸무게(kg)를 입력하세요 : ");
+		double weight = sc.nextDouble();
+		
+		//BMI 계산 BMI = 체질량지수 비만도를 확인하는 것
+		double bmi = weight / (height * height);
+		
+		//BMI 지수에 따라 결과 출력
+		if(bmi < 18.5) {
+			System.out.println("저체중");
+		} else if (bmi < 23) {
+			System.out.println("정상체중");
+		} else if (bmi < 25) {
+			System.out.println("과체중");
+		} else if (bmi < 30) {
+			System.out.println("비만");
+		} else {
+			System.out.println("고도 비만");
+		}
+	}
+	
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		//practice1();
+		//practice2();
+		practice4();
 	}
 
 }
