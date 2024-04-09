@@ -21,14 +21,40 @@ public class ControlPre {
 		} else { 		// 입력받은 숫자가 음수일 경우 출력하기
 			System.out.println("음수입니다. 양수만 입력해주세요.");
 		}
+	}
+	
+	public static void practice2() {
+		//키보드로 국어 영어 수학 점수 입력받기
+		Scanner sc = new Scanner(System.in);
 		
+		System.out.print("국어점수 : ");
+		int korean = sc.nextInt();
 		
+		System.out.print("영어점수 : ");
+		int english = sc.nextInt();
 		
+		System.out.print("수학점수 : ");
+		int math = sc.nextInt();
 		
+		// 합계와 평균 계산
+		int totalScore = korean + english + math; //합계
+		double averageScore = totalScore / 3.0;
+		//합격 여부 판별
+		//세 과목의 점수가 각각 40점 이상이면서 평균이 60점 이상일 경우
+		if(korean >= 40 && english >= 40 && math >= 40 && averageScore >= 60) {
+			System.out.println("국어 점수 : " + korean);
+			System.out.println("영어 점수 : " + english);
+			System.out.println("수학 점수 : " + math);
+			System.out.println("합    계 : " + totalScore);
+			System.out.println("평    균 : " + averageScore);
+			
+			System.out.println("축하합니다. 합격입니다!!!");
+		} else {
+			System.out.println("불합격입니다.");
+		}
 		
 		
 	}
-	
 	public static void main(String[] args) {
 		practice1();
 
