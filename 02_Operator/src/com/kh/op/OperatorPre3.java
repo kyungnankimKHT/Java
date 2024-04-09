@@ -36,8 +36,14 @@ public class OperatorPre3 {
 		int num2 = sc.nextInt();
 		System.out.print("세 번 째 숫 자 : ");
 		int num3 = sc.nextInt();
+		// &&  if while  조건을 체크할 때
+		// 		두 개의 조건이 모두 만족하는 경우 사용
+		//	&	비트 단위 연산으로 특정 비트 패턴을 판단할 때 사용 
 		boolean result = (num1 < num2) && (num2 == num3);
 		System.out.println("(num1 < num2) && (num2 == num3) 결과는!! " + result);
 	
 	}
 }
+
+
+
