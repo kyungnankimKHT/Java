@@ -31,9 +31,10 @@ public class ControlSwitchIf {
 			System.out.println("3000원 이하이므로 잔액이 부족합니다.");
 		}
 	}
-
 	/* public static void whyScore
 	 * 사용자로부터 점수를 입력받아 성적 등급을 판별하는 프로그램 작성
+	 * int score
+	 * String reScore
 	 * if 
 	 *  90 이상일 경우 A 학점
 	 *  80 이상일 경우 B 학점
@@ -46,14 +47,40 @@ public class ControlSwitchIf {
 	 *   case YES : case yes: 
 	 * */
 	
-	
-	
-	
-	
-	
-	
-	
-	
+	public static void whyScore() {
+		
+		// 스캐너 이용해서 점수 입력받기
+		Scanner sc = new Scanner(System.in);
+		System.out.print("점수를 입력하세요 : ");
+		int score = sc.nextInt(); //키보드로 점수 입력받기
+		
+		if(score >= 90) {
+			System.out.println("A학점");
+		} else if (score >= 80) {
+			System.out.println("B학점");
+		} else if (score >= 70) {
+			System.out.println("C학점");
+		} else if (score >= 60) {
+			System.out.println("D학점");
+		} else {
+			System.out.println("F학점");
+			System.out.print("재수강 하시겠습니까? (yes / no) : ");
+			String reScore = sc.next();
+			
+			//재수강의 여부를 확인하기
+			switch(reScore) {
+			case "YES": case "yes" :
+				System.out.println("재수강 신청이 완료되었습니다.");
+				break;
+			case "NO" : case "no" :
+				System.out.println("재수강 신청을 하지 않았습니다.");
+				break;
+			default:
+				System.out.println("올바른 입력이 아닙니다.");
+			}
+		}
+	}
+
 	/* public static void whatDay
 	 * 월 수 금 : 헬스
 	 * 화 목 : 공부
@@ -62,6 +89,62 @@ public class ControlSwitchIf {
 	 * 		아니오 선택하면 어떤 활동을 할 예정인지 선택해주세요.
 	 * 			활동 1. 등산 2. 독서 3. 수영 선택할 수 있게 만들어줌
 	 * */
+	
+	public static void whatDay() {
+		//오늘은 어떤 요일인지 확인한 후에 요일에 따른 출력을 진행할 것
+		Scanner sc = new Scanner(System.in);
+		System.out.println("날짜를 입력해주세요 : ");
+		System.out.print("(월 / 화 / 수 / 목 / 금 / 토 / 일) : ");
+		String day = sc.next();
+		
+		switch(day) {
+			case "월":  case "수":  case "금" :
+				System.out.println("헬스를 할 예정입니다.");
+				break;
+			case "화": case "목":
+				System.out.println("공부를 할 예정입니다.");
+				break;
+				/*만약에 집에서 쉴 예정이면 네 집에서 쉴 예정입니다.
+				 아니오 선택하면 어떤 활동을 할 예정인지 선택해주세요.
+				 활동 1. 등산 2. 독서 3. 수영 선택할 수 있게 만들어줌*/
+			case "토": case "일":
+				System.out.println("주말이네요.");
+				System.out.print("집에서 쉴 예정인가요? (예 / 아니오) : ");
+				String answer = sc.next();
+				if (answer.equals("예")) {
+					System.out.println("집에서 쉴 예정입니다.");
+				} else { //집에서 쉴 예정이 아닐 경우
+					System.out.println("어떤 활동을 할 계획인가요 ?");
+					System.out.print("1.등산 / 2.독서 / 3.수영) : ");
+					int activity = sc.nextInt();
+					switch (activity) {
+					case 1:
+						System.out.println("등산");
+						break;
+					case 2:
+						System.out.println("독서");
+						break;
+					case 3:
+						System.out.println("수영");
+						break;
+					default:
+						System.out.println("잘못된 입력");
+					}
+				}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	public static void main(String[] args) {
 		takeAtaxi();
