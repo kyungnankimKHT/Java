@@ -164,13 +164,65 @@ public class LoopWhileEX {
 	 	}
 	 }
 	
+	 
+	 
+	 //커피가 100원 돈이 없으면 커피를 구매하지 못하는 경우
+	 public static void getCoffee() {
+		 Scanner sc = new Scanner(System.in);
+		 
+		 System.out.println("카페에 오신걸 환영합니다. ");
+		 System.out.print("현재 가진 돈을 입력해주세요 :");
+		 //커피가격 coffeePrice
+		 int coffeePrice = 100;
+		 //현재 가지고 있는 금액 입력
+		 int money = sc.nextInt(); 
+		 
+		 //만약에 가지고 있는 돈이 커피값보다 적음
+		 while(money < coffeePrice) {
+			  System.out.println("잔액이 부족합니다. \n"
+			  					+ "커피를 구매하기 위해 더 많은 돈을 넣어주세요.");
+			  System.out.println("현재 가진 돈을 다시 입력해주세요.");
+			  money = sc.nextInt();
+		 }
+		 //커피를 구매했다면 구매했습니다. 거스름돈 입력하기 
+		 System.out.println("커피를 구매했습니다. 거스름돈은 " 
+				 			+ (money - coffeePrice) + " 입니다.");	
+	 }
+	 
+	 //10000원 이상 돈이 없을 경우 탕수육을 시키지 못하는 예제
+	 public static void iLovePork() {
+		 Scanner sc = new Scanner(System.in);
+		 //1. Scanner를 이용해서 현재 보유하고 있는 금액 입력하기
+		 int tangsuyuk = 10000;
+		 int myMoney = sc.nextInt();
+		 // 보유하고 있는 금액이 tangsuyuk 보다 적으면 잔액이 부족합니다.
+		 // 다시 입금해주세요.
+		 // nextInt 다시 입금할 금액을입력
+		 
+		 //돈이 10000원 이상이면 주문이 완료되었습니다.
+		 // 현재 잔액은 00 입니다.
+		 
+	 }
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
 	public static void main(String[] args) {
 		//method1();
 		//kh카페();
 		//getMoney();
 		//allNumber();
 		//tree();
-		method2();
+		//method2();
+		getCoffee();
 	}
 
 }
