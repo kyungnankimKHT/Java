@@ -87,6 +87,207 @@ public class SwitchIfPre {
 		System.out.println( (char)(ch + iNum1) ); //75 'K'
 	}
 	
+	public static void controlPractice1() {
+		//키보드로 입력받고 입력 수정 조회 삭제 종료 버튼눌러서 실행하기
+		Scanner sc = new Scanner(System.in);
+		
+		//메뉴 출력하기
+		System.out.println("1. 입력");
+		System.out.println("2. 수정");
+		System.out.println("3. 조회");
+		System.out.println("4. 삭제");
+		System.out.println("7. 종료");
+		
+		//메뉴 번호 입력 받기
+		System.out.print("메뉴 번호를 입력하세요 : ");
+		int menuNumber = sc.nextInt();
+		
+		//선택된 메뉴에 따라 동작 수행
+		switch(menuNumber) {
+		case 1:
+			System.out.println("입력 메뉴 입니다.");
+			break;
+		case 2:
+			System.out.println("수정 메뉴 입니다.");
+			break;
+		case 3:
+			System.out.println("조회 메뉴 입니다.");
+			break;
+		case 4:
+			System.out.println("삭제 메뉴 입니다.");
+			break;
+		case 7:
+			System.out.println("프로그램이 종료됩니다.");
+			break;
+		default:
+			System.out.println("잘못된 메뉴 번호입니다.");
+		}
+	}
+	
+	
+	public static void controlPractice10() {
+		Scanner sc = new Scanner(System.in);
+		/* System.out.print에서 출력할 내용이 길어져서
+		 	줄 바꿈으로 글을 작성하고 싶다면 \n  이용해서 줄바꿈해서 출력하겠다는 표시
+			₩ = \ 표기로 출력
+			\n = 세로로 줄바꿈해서 출력
+			\r = 키보드 입력하는 위치를 현재 줄의 처음으로 이동
+			System.out.print();
+			 +는 ); 붙이지 않는 한 줄을 바꿔서 계속 이어서 작성할 수 있음
+		*/
+		
+		System.out.println("1. 메뉴 출력\n"
+				+ "2. 짝수/홀수 \n"
+				+ "3. 합격/불합격 \n"
+				+ "4. 계절\n"
+				+ "5. 로그인\n"
+				+ "6. 권한 확인\n"
+				+ "7. BMI\n"
+				+ "8. 계산기\n"
+				+ "9. P/F");
+		System.out.print("실행할 기능을 선택하세요 : ");
+		int menuNumber = sc.nextInt();
+		
+		//선택된 메뉴에 따라 동작 수행
+		switch (menuNumber) {
+		case 1:
+			System.out.println("메뉴");
+			break;
+		case 2:
+			System.out.println("짝수/홀수");
+			break;
+		case 3:
+			System.out.println("합격/불합격");
+			break;
+		case 4:
+			System.out.println("계절");
+			break;
+		case 5:
+			System.out.println("로그인");
+			break;
+		case 6:
+			System.out.println("권한 확인");
+			break;
+		case 7:
+			System.out.println("BMI");
+			break;
+		case 8:
+			System.out.println("계산기");
+			break;	
+		case 9:
+			System.out.println("P/F");
+			break;
+		default:
+			System.out.println("잘못된 번호 입니다.");
+		}
+	}
+	
+	public static void controlPractice5() {
+		/*아이디 비밀번호 지정 후 아이디 비밀번호가 일치하는지 확인*/
+		// 사용자가 지정한 아이디 비밀번호
+		String userID = "myId";
+		String userPW = "myPassword12";
+		
+		// 사용자한테 입력받을 아이디 비밀번호
+		Scanner sc = new Scanner(System.in);
+		System.out.print(" 아이디 : ");
+		String inputID = sc.next();
+		System.out.print("비밀번호 : " );
+		String inputPW = sc.next();
+
+		// 입력받은 값이 저장된 아이디 비밀번호와 일치하는지 확인
+		if(inputID.equals(userID) && inputPW.equals(userPW)) {
+			System.out.println("로그인 되었습니다.");
+	
+		/*
+			// ! 특정 조건을 부정하는데 사용
+			inputID.equals(userID) : inputID와 userID가 일치하는지 확인 일치하면 참
+			
+			!inputID.equals(userID) : iputID와 userID가 둘이 일치하지 않음
+			 							! 가 붙으면 아이디가 틀렸을 때 참이 된다.	
+		*/
+		} else if (!inputID.equals(userID)) { 
+			System.out.println("아이디가 틀렸습니다.");	
+			
+		} else if (!inputPW.equals(userPW)) {
+			System.out.println("비밀번호가 틀렸습니다.");
+		} else {
+			System.out.println("잘못 입력된 값 입니다.");
+		}
+	}
+	
+	public static void controlPractice6() {
+		// 사용자로부터 회원 등급 입력 받기
+		Scanner sc = new Scanner(System.in);
+		System.out.print("권한을 확인하고자 하는 회원 등급");
+		//권한이나 규칙을 설정할 때 자주 사용하는 변수명 : Role
+		String userRole = sc.next();
+		
+		//권한 출력
+		System.out.println("해당 회원 등급의 권한");
+		
+		switch(userRole) {
+		case "관리자" :
+			System.out.println("-회원관리 \n"
+					+ "-게시글관리 \n"
+					+ "-게시글작성 \n"
+					+ "-게시글 조회 \n"
+					+ "-댓글 작성");
+			break;
+		case "회원" :
+			System.out.println("-게시글 작성 \n"
+					+ "-게시글 조회 \n"
+					+ "-댓글 작성");
+			break;
+		case "비회원" :
+			System.out.println("-게시글 조회");
+			break;
+		default:
+			System.out.println("잘못된 회원 등급입니다.");
+		}
+	}
+	
+	public static void controlPractice8() {
+		/*
+		 키보드로 두 개의 정수와 연산 기호를 입력받아 연산 기호에 맞춰
+		 연산 결과 출력
+		 (두 개의 정수 모두 양수일때만 작동하며 없는 연산 기호를 입력했을 경우
+		 "잘못 입력했습니다." 출력
+		 * */
+		Scanner sc = new Scanner(System.in);
+		System.out.print("숫자 1 : ");
+		int num1 = sc.nextInt();
+		System.out.print("숫자 2 : ");
+		int num2 = sc.nextInt();
+		System.out.print("연산자를 입력(+, -, *, /, %): ");
+		String operator = sc.next(); 
+		
+		double result;
+		switch(operator) {
+		case "+" :
+			result = num1 + num2;
+			break;
+		case "-" :
+			result = num1 - num2;
+			break;
+		case "*" :
+			result = num1 * num2;
+			break;
+		case "/" :
+			result = num1 / num2;
+			break;
+		case "%" : 
+			result = num1 % num2;
+			break;
+		default:
+			System.out.print("잘못 입력했습니다. 프로그램을 종료합니다");
+		}
+		
+	}
+	
+	
+	
+	
 	
 	
 	
@@ -98,7 +299,11 @@ public class SwitchIfPre {
 	
 	public static void main(String[] args) {
 		//practice8();
-		castingPractice1();
+		//castingPractice1();
+		//castingPractice3();
+		//controlPractice1();
+		//controlPractice10();
+		controlPractice6();
 	}
 
 }

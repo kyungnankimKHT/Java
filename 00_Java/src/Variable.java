@@ -2,133 +2,133 @@
 public class Variable {
 
 	public static void main(String[] args) {
-		// 1.Á¤¼ö 2.¹®ÀÚ 3.¹®ÀÚ¿­ 4.½Ç¼ö 5.³í¸®Çü
-		//1. Á¤¼ö byte short int long
+		// 1.ì •ìˆ˜ 2.ë¬¸ì 3.ë¬¸ìì—´ 4.ì‹¤ìˆ˜ 5.ë…¼ë¦¬í˜•
+		//1. ì •ìˆ˜ byte short int long
 		// byte = 1byte 
-		byte ¹ÙÀÌÆ® = 1;
-		System.out.println(¹ÙÀÌÆ®);
-		System.out.println("¹ÙÀÌÆ®");
-		//ÆÄÀÏÀ» ÀúÀåÇÒ ¶§ Å°º¸µå¿¡¼­ ctrl + s ¸¦ ´­·¯ÁÖ¸é ÀúÀåµÊ
+		byte ë°”ì´íŠ¸ = 1;
+		System.out.println(ë°”ì´íŠ¸);
+		System.out.println("ë°”ì´íŠ¸");
+		//íŒŒì¼ì„ ì €ì¥í•  ë•Œ í‚¤ë³´ë“œì—ì„œ ctrl + s ë¥¼ ëˆŒëŸ¬ì£¼ë©´ ì €ì¥ë¨
 		byte bt = 2;
 		System.out.println(bt);
 		
-		short ¼îÆ® = 3;
-		System.out.println(¼îÆ®);
+		short ì‡¼íŠ¸ = 3;
+		System.out.println(ì‡¼íŠ¸);
 		
-		int ÀÎÆ® = 1;
-		System.out.println(ÀÎÆ®);
+		int ì¸íŠ¸ = 1;
+		System.out.println(ì¸íŠ¸);
 		
-	// byte ÀÚ·áÇü ¼±¾ğ ¼±¾ğÀÌ¸§ bte bte ¾È¿¡ ¼ıÀÚ 2 ³Ö°í Ãâ·ÂÇÏ±â
+	// byte ìë£Œí˜• ì„ ì–¸ ì„ ì–¸ì´ë¦„ bte bte ì•ˆì— ìˆ«ì 2 ë„£ê³  ì¶œë ¥í•˜ê¸°
 		byte bte = 2;
 		System.out.println(bte);
 		
-	// short ÀÚ·áÇü ¼±¾ğ ¼±¾ğÀÌ¸§ shrt shrt ¾È¿¡ ¼ıÀÚ 2 ³Ö°í Ãâ·ÂÇÏ±â
+	// short ìë£Œí˜• ì„ ì–¸ ì„ ì–¸ì´ë¦„ shrt shrt ì•ˆì— ìˆ«ì 2 ë„£ê³  ì¶œë ¥í•˜ê¸°
 		short shrt = 2;
 		System.out.println(shrt);
 		
-	// int ÀÚ·áÇü ¼±¾ğ ¼±¾ğÀÌ¸§ nt nt ¾È¿¡ ¼ıÀÚ 2 ³Ö°í Ãâ·ÂÇÏ±â
+	// int ìë£Œí˜• ì„ ì–¸ ì„ ì–¸ì´ë¦„ nt nt ì•ˆì— ìˆ«ì 2 ë„£ê³  ì¶œë ¥í•˜ê¸°
 		int nt = 2;
 		System.out.println(nt);
 		
-	// long ÀÚ·áÇü ¼±¾ğ ¼±¾ğÀÌ¸§ lng lng ¾È¿¡ ¼ıÀÚ 2 ³Ö°í Ãâ·ÂÇÏ±â
+	// long ìë£Œí˜• ì„ ì–¸ ì„ ì–¸ì´ë¦„ lng lng ì•ˆì— ìˆ«ì 2 ë„£ê³  ì¶œë ¥í•˜ê¸°
 		long lng = 2;
 		System.out.println(lng);
 		
-	// 2. ¹®ÀÚ
-	//¹®ÀÚ¿¡´Â char¿Í StringÀÌ ÀÖÀ½
-		// ¹®ÀÚ¸¦ ³ªÅ¸³»´Â charÀº '' ÀÛÀº µû¿ÈÇ¥¸¦ »ç¿ëÇØ¼­ Ç¥Çö
-		// " " Å« µû¿ÈÇ¥´Â String ¹®ÀÚ¿­À» ³ªÅ¸³»´Â Ç¥Çö
+	// 2. ë¬¸ì
+	//ë¬¸ìì—ëŠ” charì™€ Stringì´ ìˆìŒ
+		// ë¬¸ìë¥¼ ë‚˜íƒ€ë‚´ëŠ” charì€ '' ì‘ì€ ë”°ì˜´í‘œë¥¼ ì‚¬ìš©í•´ì„œ í‘œí˜„
+		// " " í° ë”°ì˜´í‘œëŠ” String ë¬¸ìì—´ì„ ë‚˜íƒ€ë‚´ëŠ” í‘œí˜„
 		
 		char myChar = 'A';
 		System.out.println(myChar);
 		
 		//char myChar2 = "A";
 		//System.out.println(myChar2);
-		//char ¿¡´Â ÇÏ³ªÀÇ ¹®ÀÚ¸¸ ´ãÀ» ¼ö ÀÖ±â ¶§¹®¿¡ 
-		// A³ª B µÑ Áß ÇÏ³ª¸¸ ÀÛ¼º °¡´É
+		//char ì—ëŠ” í•˜ë‚˜ì˜ ë¬¸ìë§Œ ë‹´ì„ ìˆ˜ ìˆê¸° ë•Œë¬¸ì— 
+		// Aë‚˜ B ë‘˜ ì¤‘ í•˜ë‚˜ë§Œ ì‘ì„± ê°€ëŠ¥
 		/*
 		 * char myChar3 = 'AB';
 		 * char myChar4 = 'ABC';
-		 * char myChar5 = '°¡³ª´Ù';
-		 * ¸ğµÎ ¹®ÀÚ°¡ ÇÏ³ª°¡ ¾Æ´Ï±â ¶§¹®¿¡ Ãâ·ÂÇÒ ¼ö ¾øÀ½
+		 * char myChar5 = 'ê°€ë‚˜ë‹¤';
+		 * ëª¨ë‘ ë¬¸ìê°€ í•˜ë‚˜ê°€ ì•„ë‹ˆê¸° ë•Œë¬¸ì— ì¶œë ¥í•  ìˆ˜ ì—†ìŒ
 		 * */
 		
 		//String
-		String str1 = "¿Í µåµğ¾î ¹®ÀÚ´Ù~~";
+		String str1 = "ì™€ ë“œë””ì–´ ë¬¸ìë‹¤~~";
 		System.out.println(str1);
-		// String À» »ç¿ëÇØ¼­ º»ÀÎÀÇ ÀÌ¸§ Ãâ·ÂÇÏ±â
+		// String ì„ ì‚¬ìš©í•´ì„œ ë³¸ì¸ì˜ ì´ë¦„ ì¶œë ¥í•˜ê¸°
 		
-		//String name = "º»ÀÎÀÇ ÀÌ¸§";
+		//String name = "ë³¸ì¸ì˜ ì´ë¦„";
 		//System.out.println(name);
-		String name = "±è°æ³­";
+		String name = "ê¹€ê²½ë‚œ";
 		
-		System.out.print("´ç½ÅÀÇ ÀÌ¸§Àº ");
+		System.out.print("ë‹¹ì‹ ì˜ ì´ë¦„ì€ ");
 		System.out.println(name);
-		System.out.println("ÀÔ´Ï´Ù.");
+		System.out.println("ì…ë‹ˆë‹¤.");
 		
-		//¸¸¾à¿¡ ¿©·¯ ±ÛÀÚ³ª ³»¿ëÀ» ÇÑÁÙ·Î Ãâ·ÂÇÏ°í ½Í´Ù¸é
-		// + ¸¦ »ç¿ëÇØ¼­ ÀÌ¾î¼­ Ãâ·ÂÇÒ ¼ö ÀÖÀ½
-		System.out.println("´ç½ÅÀÇ ÀÌ¸§Àº"+name+"ÀÔ´Ï´Ù.");
+		//ë§Œì•½ì— ì—¬ëŸ¬ ê¸€ìë‚˜ ë‚´ìš©ì„ í•œì¤„ë¡œ ì¶œë ¥í•˜ê³  ì‹¶ë‹¤ë©´
+		// + ë¥¼ ì‚¬ìš©í•´ì„œ ì´ì–´ì„œ ì¶œë ¥í•  ìˆ˜ ìˆìŒ
+		System.out.println("ë‹¹ì‹ ì˜ ì´ë¦„ì€"+name+"ì…ë‹ˆë‹¤.");
 		
-		// ¿øÇÏ´Â °Ç ´ç½ÅÀÇ ÀÌ¸§Àº ¤·¤·¤· ÀÔ´Ï´Ù.
-		System.out.println("´ç½ÅÀÇ ÀÌ¸§Àº" + name +    "ÀÔ´Ï´Ù.");
-		System.out.println("´ç½ÅÀÇ ÀÌ¸§Àº   " + name + "   ÀÔ´Ï´Ù");
-		System.out.println("´ç ½Å ÀÇ ÀÌ ¸§ Àº "+name+" ÀÔ ´Ï ´Ù.");
-		// ¶ç¾î¾²±â¸¦ ³Ö°í ½ÍÀ» °æ¿ì "" Å« µû¿ÈÇ¥ ³»ºÎ¿¡ ¶ç¾î¾²±â¸¦ ³Ö¾î¾ß ÇÔ
+		// ì›í•˜ëŠ” ê±´ ë‹¹ì‹ ì˜ ì´ë¦„ì€ ã…‡ã…‡ã…‡ ì…ë‹ˆë‹¤.
+		System.out.println("ë‹¹ì‹ ì˜ ì´ë¦„ì€" + name +    "ì…ë‹ˆë‹¤.");
+		System.out.println("ë‹¹ì‹ ì˜ ì´ë¦„ì€   " + name + "   ì…ë‹ˆë‹¤");
+		System.out.println("ë‹¹ ì‹  ì˜ ì´ ë¦„ ì€ "+name+" ì… ë‹ˆ ë‹¤.");
+		// ë„ì–´ì“°ê¸°ë¥¼ ë„£ê³  ì‹¶ì„ ê²½ìš° "" í° ë”°ì˜´í‘œ ë‚´ë¶€ì— ë„ì–´ì“°ê¸°ë¥¼ ë„£ì–´ì•¼ í•¨
 		
-		// Á¤¼ö + ¹®ÀÚ + ¹®ÀÚ¿­ Ãâ·ÂÇÏ±â
+		// ì •ìˆ˜ + ë¬¸ì + ë¬¸ìì—´ ì¶œë ¥í•˜ê¸°
 		/*
-		 ¾È³çÇÏ¼¼¿ä. Àú´Â¿ä. ¼­¿ï¿¡ »ç´Â ¤·¤·¤· ÀÔ´Ï´Ù.
-		 Á¦ ÀüÈ­¹øÈ£´Â 111-2222-3333 ÀÔ´Ï´Ù.
-		 Á¦ ÁÖ¹Î¹øÈ£´Â ºñ¹ĞÀÔ´Ï´Ù.
-		 Á¦ Ç÷¾×ÇüÀº AÇüÀÔ´Ï´Ù.
+		 ì•ˆë…•í•˜ì„¸ìš”. ì €ëŠ”ìš”. ì„œìš¸ì— ì‚¬ëŠ” ã…‡ã…‡ã…‡ ì…ë‹ˆë‹¤.
+		 ì œ ì „í™”ë²ˆí˜¸ëŠ” 111-2222-3333 ì…ë‹ˆë‹¤.
+		 ì œ ì£¼ë¯¼ë²ˆí˜¸ëŠ” ë¹„ë°€ì…ë‹ˆë‹¤.
+		 ì œ í˜ˆì•¡í˜•ì€ Aí˜•ì…ë‹ˆë‹¤.
 		 * */
-		String geeting = "¾È³çÇÏ¼¼¿ä.";
-		String introduction = "Àú´Â¿ä. ¼­¿ï¿¡ »ç´Â ooo ÀÔ´Ï´Ù.";
+		String geeting = "ì•ˆë…•í•˜ì„¸ìš”.";
+		String introduction = "ì €ëŠ”ìš”. ì„œìš¸ì— ì‚¬ëŠ” ooo ì…ë‹ˆë‹¤.";
 		String number = "111-2222-3333";
-		String secret = "ºñ¹Ğ";
-		String bloodType = "AÇü";
+		String secret = "ë¹„ë°€";
+		String bloodType = "Aí˜•";
 		
-		System.out.print(geeting);//¾È³çÇÏ¼¼¿ä.
+		System.out.print(geeting);//ì•ˆë…•í•˜ì„¸ìš”.
 		System.out.println(introduction);
-		System.out.print("Á¦ ÀüÈ­¹øÈ£´Â ");
+		System.out.print("ì œ ì „í™”ë²ˆí˜¸ëŠ” ");
 		System.out.print(number);
-		System.out.println(" ÀÔ´Ï´Ù.");
-		System.out.println("Á¦ ÁÖ¹Î¹øÈ£´Â "+secret+" ÀÔ´Ï´Ù.");
-		//Á¦ Ç÷¾×ÇüÀº AÇüÀÔ´Ï´Ù.
-		System.out.println("Á¦ Ç÷¾×ÇüÀº "+bloodType+" ÀÔ´Ï´Ù.");
+		System.out.println(" ì…ë‹ˆë‹¤.");
+		System.out.println("ì œ ì£¼ë¯¼ë²ˆí˜¸ëŠ” "+secret+" ì…ë‹ˆë‹¤.");
+		//ì œ í˜ˆì•¡í˜•ì€ Aí˜•ì…ë‹ˆë‹¤.
+		System.out.println("ì œ í˜ˆì•¡í˜•ì€ "+bloodType+" ì…ë‹ˆë‹¤.");
 		
-		//4.½Ç¼ö 5.³í¸®Çü
-		// ½Ç¼ö´Â float °ú double ÀÌ ÀÖÀ½
-		// ½Ç¼ö´Â ±âº»À¸·Î double Çü½ÄÀ¸·Î µÇ¾îÀÖÀ½
+		//4.ì‹¤ìˆ˜ 5.ë…¼ë¦¬í˜•
+		// ì‹¤ìˆ˜ëŠ” float ê³¼ double ì´ ìˆìŒ
+		// ì‹¤ìˆ˜ëŠ” ê¸°ë³¸ìœ¼ë¡œ double í˜•ì‹ìœ¼ë¡œ ë˜ì–´ìˆìŒ
 		// float = 4byte  double = 8byte
-		// float¿¡ ½Ç¼ö¸¦ ´ã±â À§ÇØ¼­´Â f¸¦ ºÙ¿©Áà¾ß ÇÔ
-		// ½Ç¼ö µÚ¿¡ f¸¦ ºÙÀÏ ¶§ ´ë ¼Ò¹®ÀÚ ±¸ºĞ ¾øÀÌ »ç¿ë °¡´É
+		// floatì— ì‹¤ìˆ˜ë¥¼ ë‹´ê¸° ìœ„í•´ì„œëŠ” fë¥¼ ë¶™ì—¬ì¤˜ì•¼ í•¨
+		// ì‹¤ìˆ˜ ë’¤ì— fë¥¼ ë¶™ì¼ ë•Œ ëŒ€ ì†Œë¬¸ì êµ¬ë¶„ ì—†ì´ ì‚¬ìš© ê°€ëŠ¥
 		float ff1 = 3.14f;
 		float ff2 = 3.14F;
-		System.out.println("ff1 Àº : " + ff1 + " ÀÌ´Ù.");
-		System.out.println("ff2 ´Â : " + ff2 + " ÀÌ´Ù.");
-		//doubleÀº Å©±â°¡ float º¸´Ù Å©°í ¾ÖÃÊ¿¡ doubleÀ» ³ÖÀ¸·Á Çß±â ¶§¹®¿¡
-		// µÚ¿¡ ´Ù¸¥ ¼ö½ÄÀ» ºÙÀÌÁö ¾Ê¾Æµµ »ç¿ëÇÒ ¼ö ÀÖÀ½
+		System.out.println("ff1 ì€ : " + ff1 + " ì´ë‹¤.");
+		System.out.println("ff2 ëŠ” : " + ff2 + " ì´ë‹¤.");
+		//doubleì€ í¬ê¸°ê°€ float ë³´ë‹¤ í¬ê³  ì• ì´ˆì— doubleì„ ë„£ìœ¼ë ¤ í–ˆê¸° ë•Œë¬¸ì—
+		// ë’¤ì— ë‹¤ë¥¸ ìˆ˜ì‹ì„ ë¶™ì´ì§€ ì•Šì•„ë„ ì‚¬ìš©í•  ìˆ˜ ìˆìŒ
 		double dd1 = 3.14;
 		System.out.println("double dd1 : " + dd1);
 		
-		//5.³í¸®Çü
-		//booleanÀ» »ç¿ëÇØ¼­ trueÀÎÁö falseÀÎÁö Ç¥ÇöÇÒ ¼ö ÀÖÀ½
-		// ³ªÁß¿¡ ¾Ë°í¸®ÁòÀÌ³ª if for while ¹®À» »ç¿ëÇÒ ¶§ ÀÚÁÖ »ç¿ë
+		//5.ë…¼ë¦¬í˜•
+		//booleanì„ ì‚¬ìš©í•´ì„œ trueì¸ì§€ falseì¸ì§€ í‘œí˜„í•  ìˆ˜ ìˆìŒ
+		// ë‚˜ì¤‘ì— ì•Œê³ ë¦¬ì¦˜ì´ë‚˜ if for while ë¬¸ì„ ì‚¬ìš©í•  ë•Œ ìì£¼ ì‚¬ìš©
 		boolean isTrue = true;
 		boolean isFalse = false;
-		System.out.println("¿À´Ã ³¯¾¾´Â " + isTrue);
-		System.out.println("³»ÀÏ ³¯¾¾´Â " + isFalse + " ?");
+		System.out.println("ì˜¤ëŠ˜ ë‚ ì”¨ëŠ” " + isTrue);
+		System.out.println("ë‚´ì¼ ë‚ ì”¨ëŠ” " + isFalse + " ?");
 		
-		//Á¤¼ö ¹®ÀÚ ¹®ÀÚ¿­ ½Ç¼ö ³í¸®Çü
+		//ì •ìˆ˜ ë¬¸ì ë¬¸ìì—´ ì‹¤ìˆ˜ ë…¼ë¦¬í˜•
 		
 		
 		char ch = 'Z';
-		System.out.println("¹®ÀÚ ch ÀÇ °ª = " + ch);
+		System.out.println("ë¬¸ì ch ì˜ ê°’ = " + ch);
 		
 		String text = "Hello, World!";
-		System.out.println("¹®ÀÚ¿­Àº text = " + text);
+		System.out.println("ë¬¸ìì—´ì€ text = " + text);
 		
 		double dbl = 3.14;
 		System.out.println(dbl);
@@ -139,25 +139,25 @@ public class Variable {
 		
 		//System.out.println(" num  = " + num);
 		
-		// num ¿¡´Ù°¡ 10 ´ë½Å 20À» ³Ö°í ½Í´Ù¸é?
-		int ¼ıÀÚ = 10;
-		System.out.println("¼ıÀÚÀÇ °ª = " + ¼ıÀÚ);
+		// num ì—ë‹¤ê°€ 10 ëŒ€ì‹  20ì„ ë„£ê³  ì‹¶ë‹¤ë©´?
+		int ìˆ«ì = 10;
+		System.out.println("ìˆ«ìì˜ ê°’ = " + ìˆ«ì);
 		
-		//ÁöÁ¤°ªÀº Ã³À½ 1È¸¸¸ »ç¿ëÇÑ ÈÄ 
-		// º¯¼ö¸í¿¡ ´Ù¸¥ ¼ıÀÚ³ª °ªÀ» ³ÖÀ» ¶§´Â
-		// ÁöÁ¤°ªÀ» »ı·«ÇÑ´Ù
-		¼ıÀÚ = 20;
-		System.out.println("20À¸·Î º¯°æÇÑ ¼ıÀÚÀÇ °ª : " + ¼ıÀÚ);
+		//ì§€ì •ê°’ì€ ì²˜ìŒ 1íšŒë§Œ ì‚¬ìš©í•œ í›„ 
+		// ë³€ìˆ˜ëª…ì— ë‹¤ë¥¸ ìˆ«ìë‚˜ ê°’ì„ ë„£ì„ ë•ŒëŠ”
+		// ì§€ì •ê°’ì„ ìƒëµí•œë‹¤
+		ìˆ«ì = 20;
+		System.out.println("20ìœ¼ë¡œ ë³€ê²½í•œ ìˆ«ìì˜ ê°’ : " + ìˆ«ì);
 		
 		/*
-		 Ã¶¼ö´Â 19»ìÀÌ¾ú´Ù.
-		 ±×·±µ¥ 24³âÀÌ µÇ¸é¼­ 20»ìÀÌ µÇ¾ú´Ù.
+		 ì² ìˆ˜ëŠ” 19ì‚´ì´ì—ˆë‹¤.
+		 ê·¸ëŸ°ë° 24ë…„ì´ ë˜ë©´ì„œ 20ì‚´ì´ ë˜ì—ˆë‹¤.
 		 * */
-		String name1 = "Ã¶¼ö";
+		String name1 = "ì² ìˆ˜";
 		String age = "19";
-		System.out.println(name1 + "´Â " + age + "»ìÀÌ¾ú´Ù.");
-		age = "20"; //age °ªÀ» 20À¸·Î º¯°æ
-		System.out.println("±×·±µ¥ 24³âÀÌ µÇ¸é¼­ " + age + "»ìÀÌ µÇ¾ú´Ù.");
+		System.out.println(name1 + "ëŠ” " + age + "ì‚´ì´ì—ˆë‹¤.");
+		age = "20"; //age ê°’ì„ 20ìœ¼ë¡œ ë³€ê²½
+		System.out.println("ê·¸ëŸ°ë° 24ë…„ì´ ë˜ë©´ì„œ " + age + "ì‚´ì´ ë˜ì—ˆë‹¤.");
 		
 		
 		

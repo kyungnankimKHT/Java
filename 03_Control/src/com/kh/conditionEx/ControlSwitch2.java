@@ -4,58 +4,58 @@ import java.util.Scanner;
 
 public class ControlSwitch2 {
 	
-	/*if¹®À» È°¿ëÇÑ ¿¹Á¦¿Í switch¸¦ È°¿ëÇÑ ¿¹Á¦*/
+	/*ifë¬¸ì„ í™œìš©í•œ ì˜ˆì œì™€ switchë¥¼ í™œìš©í•œ ì˜ˆì œ*/
 	public static void ifExam() {
 		Scanner sc = new Scanner(System.in);
-		//»ç¿ëÀÚ·ÎºÎÅÍ ÀÔ·Â ¹Ş±â
-		System.out.println("1ºÎÅÍ 3±îÁöÀÇ ¼ıÀÚ Áß ÇÏ³ª¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		//ì‚¬ìš©ìë¡œë¶€í„° ì…ë ¥ ë°›ê¸°
+		System.out.println("1ë¶€í„° 3ê¹Œì§€ì˜ ìˆ«ì ì¤‘ í•˜ë‚˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		int num = sc.nextInt();
 		
 		String result ;
 		
 		if (num == 1) {
-			result = "¿ø";
+			result = "ì›";
 		} else if (num == 2) {
-			result = "Åõ";
+			result = "íˆ¬";
 		} else {
-			System.out.println("Àß¸øµÈ ÀÔ·ÂÀÔ´Ï´Ù.");
+			System.out.println("ì˜ëª»ëœ ì…ë ¥ì…ë‹ˆë‹¤.");
 			return;
 		}
 		
-		System.out.println(num + " Àº ÇÑ±¹¾î·Î " + result + " ÀÔ´Ï´Ù.");
+		System.out.println(num + " ì€ í•œêµ­ì–´ë¡œ " + result + " ì…ë‹ˆë‹¤.");
 	}
 	
 	
 	public static void switchExam() {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("°èÀıÀ» ÇÑ±¹¾î·Î ÀÔ·ÂÇØÁÖ¼¼¿ä.");
-		System.out.print("ÀÔ·Â¹æ¹ı(º½, ¿©¸§, °¡À», °Ü¿ï) : ");
+		System.out.println("ê³„ì ˆì„ í•œêµ­ì–´ë¡œ ì…ë ¥í•´ì£¼ì„¸ìš”.");
+		System.out.print("ì…ë ¥ë°©ë²•(ë´„, ì—¬ë¦„, ê°€ì„, ê²¨ìš¸) : ");
 		String season = sc.nextLine();
 		
 		String state;
-		// Switch ¹®À» È°¿ëÇØ¼­ ¹®ÀÚ¿­ ºñ±³ ÇÏ°í Ãâ·ÂÇÏ±â!
+		// Switch ë¬¸ì„ í™œìš©í•´ì„œ ë¬¸ìì—´ ë¹„êµ í•˜ê³  ì¶œë ¥í•˜ê¸°!
 		switch(season) {
-			case "º½" :
-				state = "µû¶æÇÑ";
+			case "ë´„" :
+				state = "ë”°ëœ»í•œ";
 				break;
 				
-			case "¿©¸§" : 
-				state = "¶ß°Å¿î";
+			case "ì—¬ë¦„" : 
+				state = "ëœ¨ê±°ìš´";
 				break;
 				
-			case "°¡À»" : 
-				state = "´ÜÇ³ÀÇ";
+			case "ê°€ì„" : 
+				state = "ë‹¨í’ì˜";
 				break;
 				
-			case "°Ü¿ï" : 
-				state = "»õÇÏ¾á";
+			case "ê²¨ìš¸" : 
+				state = "ìƒˆí•˜ì–€";
 				break;
 				
 			default : 
-				System.out.println("ÇØ´çÇÏ´Â °èÀıÀÌ ¾ø½À´Ï´Ù.");
+				System.out.println("í•´ë‹¹í•˜ëŠ” ê³„ì ˆì´ ì—†ìŠµë‹ˆë‹¤.");
 				return;
 		}
-		System.out.println(state + " ³¯¾¾");
+		System.out.println(state + " ë‚ ì”¨");
 	}
 	
 	
@@ -69,9 +69,9 @@ public class ControlSwitch2 {
 	
 	
 	public static void main(String[] args) {
-	// if¸¦ È°¿ëÇÑ ¸Ş¼­µå Ãâ·Â
+	// ifë¥¼ í™œìš©í•œ ë©”ì„œë“œ ì¶œë ¥
 		//ifExam();
-	//switch ¸¦ È°¿ëÇÑ ¸Ş¼­µå Ãâ·Â
+	//switch ë¥¼ í™œìš©í•œ ë©”ì„œë“œ ì¶œë ¥
 		switchExam();
 	}
 

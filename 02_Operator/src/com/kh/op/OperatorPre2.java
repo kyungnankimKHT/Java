@@ -5,77 +5,77 @@ import java.util.Scanner;
 public class OperatorPre2 {
 	
 	public static void method1() {
-		//½ºÄ³³Ê·Î ÀÔ·ÂÇÑ °ªÀÌ trueÀÎÁö false ÀÎÁö ÇØº¼ °Í
+		//ìŠ¤ìºë„ˆë¡œ ì…ë ¥í•œ ê°’ì´ trueì¸ì§€ false ì¸ì§€ í•´ë³¼ ê²ƒ
 		Scanner sc = new Scanner(System.in);
-		System.out.print("aÀÇ °ªÀ» ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("aì˜ ê°’ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 		int a = sc.nextInt();
 		
-		System.out.print("bÀÇ °ªÀ» ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("bì˜ ê°’ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 		int b = sc.nextInt();
 		
 		System.out.println("a : " + a + ", b : " + b);
-		System.out.println("a ¿Í b°¡ °°À¸¸é == true°¡ ³ª¿Ã °Í");
+		System.out.println("a ì™€ bê°€ ê°™ìœ¼ë©´ == trueê°€ ë‚˜ì˜¬ ê²ƒ");
 		System.out.println("a == b : " + (a == b));
-		System.out.println("a ¿Í b°¡ ´Ù¸£¸é != false°¡ ³ª¿Ã °Í");
+		System.out.println("a ì™€ bê°€ ë‹¤ë¥´ë©´ != falseê°€ ë‚˜ì˜¬ ê²ƒ");
 		System.out.println("a != b : " + (a != b));
 	}
 	
-	//method2 ¸¦ ¸¸µé¾î¼­ Áõ°¨ ¿¬»êÀÚ ¸¦ »ç¿ëÇÑ ´ÙÀ½ 
-	// ºñ±³¿¬»êÀÚ¸¦ »ç¿ëÇØ¼­ °ªÀÌ °°ÀºÁö Æ²¸°Áö È®ÀÎÇØº¼ °Í
+	//method2 ë¥¼ ë§Œë“¤ì–´ì„œ ì¦ê° ì—°ì‚°ì ë¥¼ ì‚¬ìš©í•œ ë‹¤ìŒ 
+	// ë¹„êµì—°ì‚°ìë¥¼ ì‚¬ìš©í•´ì„œ ê°’ì´ ê°™ì€ì§€ í‹€ë¦°ì§€ í™•ì¸í•´ë³¼ ê²ƒ
 	
 	public static void method2() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("cÀÇ °ªÀ» ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("cì˜ ê°’ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 		int c = sc.nextInt();
-		System.out.println("ÀÔ·ÂÇÑ cÀÇ °ª"); 
-		//¸¸¾à¿¡ 11À» ÀÔ·ÂÇß´Ù¸é c = 11
-		System.out.print("dÀÇ °ªÀ» ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.println("ì…ë ¥í•œ cì˜ ê°’"); 
+		//ë§Œì•½ì— 11ì„ ì…ë ¥í–ˆë‹¤ë©´ c = 11
+		System.out.print("dì˜ ê°’ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 		int d = sc.nextInt();
 		
-		int e = ++c; // c + 1 = c ³Ö°Ú´Ù ÇØÁá±â ¶§¹®¿¡ c = 12
-		// int f = ++c; ¸¦ ÇÑ´Ù¸é fÀÇ °ªÀº ¾î¶»°Ô ³ª¿À´ÂÁö 
-		//System.out.println("f : "+ f); f °ª Ãâ·ÂÇØº¸±â
+		int e = ++c; // c + 1 = c ë„£ê² ë‹¤ í•´ì¤¬ê¸° ë•Œë¬¸ì— c = 12
+		// int f = ++c; ë¥¼ í•œë‹¤ë©´ fì˜ ê°’ì€ ì–´ë–»ê²Œ ë‚˜ì˜¤ëŠ”ì§€ 
+		//System.out.println("f : "+ f); f ê°’ ì¶œë ¥í•´ë³´ê¸°
 		System.out.println("c :" + c + ", d : " + d + ", e : " + e);
 		System.out.println("c == d : " + (c == d));
 		System.out.println("c == e : " + (c == e));
 		
 		int f = ++c ; 
-		// c + 1 = c ³Ö°Ú´Ù ÇØÁá±â ¶§¹®¿¡ c =12 + 1 = 13
+		// c + 1 = c ë„£ê² ë‹¤ í•´ì¤¬ê¸° ë•Œë¬¸ì— c =12 + 1 = 13
 		System.out.println("f : " + f);
 		
 	}
 	
 	public static void method3() {
-// ÃÖÁ¾ ¸ñÇ¥ : ¸ğµç »ç¶÷ÀÌ »çÅÁÀ» °ñ°í·ç ³ª´²°¡Áö·Á°í ÇÑ´Ù.
-		//ÀÎ¿ø¼ö¿Í »çÅÁ °³¼ö¸¦ Å°º¸µå·Î ÀÔ·Â¹Ş±â
+// ìµœì¢… ëª©í‘œ : ëª¨ë“  ì‚¬ëŒì´ ì‚¬íƒ•ì„ ê³¨ê³ ë£¨ ë‚˜ëˆ ê°€ì§€ë ¤ê³  í•œë‹¤.
+		//ì¸ì›ìˆ˜ì™€ ì‚¬íƒ• ê°œìˆ˜ë¥¼ í‚¤ë³´ë“œë¡œ ì…ë ¥ë°›ê¸°
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.print("ÀÎ¿ø¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
-		int people = sc.nextInt(); //ÀÎ¿ø¼ö ±¸ÇÏ±â
+		System.out.print("ì¸ì›ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
+		int people = sc.nextInt(); //ì¸ì›ìˆ˜ êµ¬í•˜ê¸°
 		
-		System.out.println("»çÅÁ ÆÄÆ¼¿¡ " + people + " ¸íÀÌ Âü¼®Çß½À´Ï´Ù.");
-		System.out.println("ÇöÀç º¸À¯ÇÏ°í ÀÖ´Â ÃÑ »çÅÁÀÇ °³¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.println("ì‚¬íƒ• íŒŒí‹°ì— " + people + " ëª…ì´ ì°¸ì„í–ˆìŠµë‹ˆë‹¤.");
+		System.out.println("í˜„ì¬ ë³´ìœ í•˜ê³  ìˆëŠ” ì´ ì‚¬íƒ•ì˜ ê°œìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		int candies = sc.nextInt();
-		System.out.println("ÇöÀç °¡Áö°í ÀÖ´Â »çÅÁÀº " + candies + " °³ ÀÔ´Ï´Ù.");
+		System.out.println("í˜„ì¬ ê°€ì§€ê³  ìˆëŠ” ì‚¬íƒ•ì€ " + candies + " ê°œ ì…ë‹ˆë‹¤.");
 		
-		System.out.println("±×·¸±º¿ä, ±×·¸´Ù¸é µ¿ÀÏÇÏ°Ô ³ª´²°¡Áú »çÅÁÀÇ °¹¼ö´Â ¸î °³ÀÔ´Ï±î?");
+		System.out.println("ê·¸ë ‡êµ°ìš”, ê·¸ë ‡ë‹¤ë©´ ë™ì¼í•˜ê²Œ ë‚˜ëˆ ê°€ì§ˆ ì‚¬íƒ•ì˜ ê°¯ìˆ˜ëŠ” ëª‡ ê°œì…ë‹ˆê¹Œ?");
 		
-		// ÇÑ »ç¶÷´ç µ¿ÀÏÇÏ°Ô ³ª´²°¡Áú »çÅÁÀÇ °³¼ö = ÃÑ »çÅÁÀÇ °³¼ö / ÃÑ ÀÎ¿ø ¼ö 
+		// í•œ ì‚¬ëŒë‹¹ ë™ì¼í•˜ê²Œ ë‚˜ëˆ ê°€ì§ˆ ì‚¬íƒ•ì˜ ê°œìˆ˜ = ì´ ì‚¬íƒ•ì˜ ê°œìˆ˜ / ì´ ì¸ì› ìˆ˜ 
 		     int                perPerson =  candies   / people;
 		
-		// 1ÀÎ´ç µ¿ÀÏÇÏ°Ô ³ª´²°¡Áø »çÅÁÀÇ °³¼ö Ãâ·ÂÇÏ±â
-		System.out.println("1ÀÎ´ç µ¿ÀÏÇÏ°Ô ³ª´²°¡Áø »çÅÁ °³¼ö : " + perPerson);
+		// 1ì¸ë‹¹ ë™ì¼í•˜ê²Œ ë‚˜ëˆ ê°€ì§„ ì‚¬íƒ•ì˜ ê°œìˆ˜ ì¶œë ¥í•˜ê¸°
+		System.out.println("1ì¸ë‹¹ ë™ì¼í•˜ê²Œ ë‚˜ëˆ ê°€ì§„ ì‚¬íƒ• ê°œìˆ˜ : " + perPerson);
 		
-		//³ª´²ÁÖ°í ³²Àº »çÅÁÀÇ °³¼ö¸¦ Ãâ·ÂÇÏ±â
-		// ³²Àº »çÅÁÀÇ °³¼ö = ÃÑ »çÅÁÀÇ °³¼ö % »ç¶÷;
+		//ë‚˜ëˆ ì£¼ê³  ë‚¨ì€ ì‚¬íƒ•ì˜ ê°œìˆ˜ë¥¼ ì¶œë ¥í•˜ê¸°
+		// ë‚¨ì€ ì‚¬íƒ•ì˜ ê°œìˆ˜ = ì´ ì‚¬íƒ•ì˜ ê°œìˆ˜ % ì‚¬ëŒ;
 		     int  remain =  candies % people;
-		     System.out.println("³ª´²°®°í ³²Àº »çÅÁÀÇ °³¼ö : " + remain);
+		     System.out.println("ë‚˜ëˆ ê°–ê³  ë‚¨ì€ ì‚¬íƒ•ì˜ ê°œìˆ˜ : " + remain);
 		
 	}
 	
 
 	public static void main(String[] args) {
-		// ÃÖÁ¾À¸·Î Ãâ·ÂÇÒ ¸Ş¼­µå¸¸ ÀÛ¼º
+		// ìµœì¢…ìœ¼ë¡œ ì¶œë ¥í•  ë©”ì„œë“œë§Œ ì‘ì„±
 		//method1();
 		//method2();
 		method3();

@@ -2,28 +2,28 @@ package com.kh.op;
 
 import java.util.Scanner;
 
-// class ¹Ù±ù¿¡´Â package¿Í import ¸¸ ÀÛ¼ºÇÒ ¼ö ÀÖÀ½
-// ÀÌ¿Ü °³¹ßÀÚ°¡ ½ÇÇàÇÏ°íÀÚ ÇÏ´Â ³»¿ëÀº class ³»ºÎ¿¡ ÀÛ¼ºÇØÁà¾ßÇÔ
+// class ë°”ê¹¥ì—ëŠ” packageì™€ import ë§Œ ì‘ì„±í•  ìˆ˜ ìˆìŒ
+// ì´ì™¸ ê°œë°œìê°€ ì‹¤í–‰í•˜ê³ ì í•˜ëŠ” ë‚´ìš©ì€ class ë‚´ë¶€ì— ì‘ì„±í•´ì¤˜ì•¼í•¨
 public class OperatorEx2 {
-	//1. ¸Ş¼­µå : ½ºÄ³³Ê¸¦ »ç¿ëÇÏÁö ¾Ê´Â ¸Ş¼­µå
-	public static void ¸Ş¼­µå1() {
+	//1. ë©”ì„œë“œ : ìŠ¤ìºë„ˆë¥¼ ì‚¬ìš©í•˜ì§€ ì•ŠëŠ” ë©”ì„œë“œ
+	public static void ë©”ì„œë“œ1() {
 		int num1 = 20;
 		int num2 = 5;
-		int ´õÇÏ±â = num1 + num2;
-		int »©±â = num1 - num2;
-		int °öÇÏ±â = num1 * num2;
-		int ³ª´©±â = num1 / num2;
-		System.out.println("´õÇÏ±â : " + ´õÇÏ±â);
-		System.out.println("»©±â : " + »©±â);
-		System.out.println("°öÇÏ±â : " + °öÇÏ±â);
-		System.out.println("³ª´©±â : " + ³ª´©±â);
+		int ë”í•˜ê¸° = num1 + num2;
+		int ë¹¼ê¸° = num1 - num2;
+		int ê³±í•˜ê¸° = num1 * num2;
+		int ë‚˜ëˆ„ê¸° = num1 / num2;
+		System.out.println("ë”í•˜ê¸° : " + ë”í•˜ê¸°);
+		System.out.println("ë¹¼ê¸° : " + ë¹¼ê¸°);
+		System.out.println("ê³±í•˜ê¸° : " + ê³±í•˜ê¸°);
+		System.out.println("ë‚˜ëˆ„ê¸° : " + ë‚˜ëˆ„ê¸°);
 	}
 	
-	public static void ¸Ş¼­µå2() {
+	public static void ë©”ì„œë“œ2() {
 		double num3 = 1.4;
 		double num4 = 2.5;
 		
-		// double ´õÇÏ±â »©±â °öÇÏ±â ³ª´©±â¸¦ ½ÇÇàÇÏÀÚ
+		// double ë”í•˜ê¸° ë¹¼ê¸° ê³±í•˜ê¸° ë‚˜ëˆ„ê¸°ë¥¼ ì‹¤í–‰í•˜ì
 		double sum = num3 + num4;
 		double sub = num3 - num4;
 		double mul = num3 * num4;
@@ -35,19 +35,19 @@ public class OperatorEx2 {
 		System.out.println("div : " + div);
 	}
 
-	// ¸Ş¼­µå 3 () -> Scanner 
-	// ¸Ş¼­µå ¿·¿¡ ÀÖ´Â () ³ªÁß¿¡ ¾î¶² °ªÀ» ¹ŞÀ» ¶§ »ç¿ë
-	// °ªÀ» ¹ŞÀ» ÀÏÀÌ ¾øÀ¸¸é () ºó°ø°£À¸·Î À¯Áö
-	public static void ¸Ş¼­µå3() {
+	// ë©”ì„œë“œ 3 () -> Scanner 
+	// ë©”ì„œë“œ ì˜†ì— ìˆëŠ” () ë‚˜ì¤‘ì— ì–´ë–¤ ê°’ì„ ë°›ì„ ë•Œ ì‚¬ìš©
+	// ê°’ì„ ë°›ì„ ì¼ì´ ì—†ìœ¼ë©´ () ë¹ˆê³µê°„ìœ¼ë¡œ ìœ ì§€
+	public static void ë©”ì„œë“œ3() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("num5 ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
-		//Å°º¸µå·Î ÀÛ¼ºÇÑ ¼ıÀÚ°¡ num5·Î µé¾î¿Ã ¼ö ÀÖ°Ô º¯¼ö ¼±¾ğ
+		System.out.print("num5 ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
+		//í‚¤ë³´ë“œë¡œ ì‘ì„±í•œ ìˆ«ìê°€ num5ë¡œ ë“¤ì–´ì˜¬ ìˆ˜ ìˆê²Œ ë³€ìˆ˜ ì„ ì–¸
 		int num5 = sc.nextInt();
-		System.out.print("num6 ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
-		//Å°º¸µå·Î ÀÛ¼ºÇÑ ¼ıÀÚ°¡ num6·Î µé¾î¿Ã ¼ö ÀÖ°Ô º¯¼ö ¼±¾ğ
+		System.out.print("num6 ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
+		//í‚¤ë³´ë“œë¡œ ì‘ì„±í•œ ìˆ«ìê°€ num6ë¡œ ë“¤ì–´ì˜¬ ìˆ˜ ìˆê²Œ ë³€ìˆ˜ ì„ ì–¸
 		int num6 = sc.nextInt();
 		
-		//Å°º¸µå·Î Àü´Ş¹ŞÀº ¼ıÀÚ¸¦ ´õÇÏ±â »©±â °öÇÏ±â ³ª´©±â ÇÒ ¼ö ÀÖÀ½
+		//í‚¤ë³´ë“œë¡œ ì „ë‹¬ë°›ì€ ìˆ«ìë¥¼ ë”í•˜ê¸° ë¹¼ê¸° ê³±í•˜ê¸° ë‚˜ëˆ„ê¸° í•  ìˆ˜ ìˆìŒ
 		int sum1 = num5 + num6;
 		int sub1 = num5 - num6;
 		int mul1 = num5 - num6;
@@ -60,16 +60,16 @@ public class OperatorEx2 {
 	}
 	
 	
-	public static void ¸Ş¼­µå4() {
+	public static void ë©”ì„œë“œ4() {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("¼ıÀÚ¸¦ ÀÔ·ÂÇØº¸±â ¡é");
-		System.out.print("num7¿¡ ÇØ´çÇÏ´Â ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•´ë³´ê¸° â†“");
+		System.out.print("num7ì— í•´ë‹¹í•˜ëŠ” ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		double num7 = sc.nextDouble();
 		
-		System.out.print("num8¿¡ ÇØ´çÇÏ´Â ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("num8ì— í•´ë‹¹í•˜ëŠ” ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		double num8 = sc.nextDouble();
 		
-		//´õÇÏ±â »©±â ³ª´©±â °öÇÏ±â
+		//ë”í•˜ê¸° ë¹¼ê¸° ë‚˜ëˆ„ê¸° ê³±í•˜ê¸°
 		double sum2 = num7 + num8;
 		double sub2 = num7 - num8;
 		double mul2 = num7 * num8;
@@ -81,21 +81,21 @@ public class OperatorEx2 {
 	}
 	
 	
-	//ÃÖÁ¾ Á¦Ãâ ¸ŞÀÎ ¸Ş¼­µå
+	//ìµœì¢… ì œì¶œ ë©”ì¸ ë©”ì„œë“œ
 	public static void main(String[] args) {
-		//¾ÕÀ¸·Î ¸¸µç ¸Ş¼­µå Áß¿¡¼­
-		//Ãâ·ÂÇÏ°í ½ÍÀº ¸Ş¼­µå¸¸ ÀÛ¼ºÇÒ °Í
+		//ì•ìœ¼ë¡œ ë§Œë“  ë©”ì„œë“œ ì¤‘ì—ì„œ
+		//ì¶œë ¥í•˜ê³  ì‹¶ì€ ë©”ì„œë“œë§Œ ì‘ì„±í•  ê²ƒ
 		
-		//¸¸¾à¿¡ ¸Ş¼­µå1() ¾È¿¡ ÀÛ¼ºÇÑ ³»¿ëÀ» Ãâ·ÂÇÏ°í ½Í´Ù¸é 
-		//¸Ş¼­µå1(); ÀÌ¶ó°í ÀÛ¼º ÈÄ Ãâ·ÂÇÏ¸é °¡´É
+		//ë§Œì•½ì— ë©”ì„œë“œ1() ì•ˆì— ì‘ì„±í•œ ë‚´ìš©ì„ ì¶œë ¥í•˜ê³  ì‹¶ë‹¤ë©´ 
+		//ë©”ì„œë“œ1(); ì´ë¼ê³  ì‘ì„± í›„ ì¶œë ¥í•˜ë©´ ê°€ëŠ¥
 		
-		//¸Ş¼­µå1();
+		//ë©”ì„œë“œ1();
 		
-		//¸Ş¼­µå2();
+		//ë©”ì„œë“œ2();
 		
-		//¸Ş¼­µå3();
+		//ë©”ì„œë“œ3();
 		
-		¸Ş¼­µå4();
+		ë©”ì„œë“œ4();
 	}
 
 }

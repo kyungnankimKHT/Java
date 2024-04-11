@@ -4,43 +4,43 @@ import java.util.Scanner;
 public class VariableScan {
 
 	public static void main(String[] args) {
-		//»ç¿ëÀÚ¿¡°Ô ÀÔ·Â¹ŞÀ» °ø°£À» »ı¼º
-		//Scanner¸¦ ÀÌ¿ëÇØ¼­ ÀÔ·Â¹ŞÀº ³»¿ëÀ» ÄÄÇ»ÅÍ¿¡ Ç¥½ÃÇØÁÜ
-		//System.in »ç¿ëÇØ¼­ Å°º¸µå ÀÔ·ÂÀ» ÀĞ¾î¿Ã ¶§ »ç¿ë
-		// Scanner ÀÚ·áÇü ÀÚ¸®¿¡ int³ª StringÀÌ³ª ½Ç¼ö boolean°ªÀ»
-		// È®Á¤Áö¾î¼­ ³ªÅ¸³¾ ¼ö ¾ø±â ¶§¹®¿¡ ÃÊ±â¿¡´Â Scanner¶ó°í »ç¿ë
-		// nextLine() : ¹®ÀÚ ¶Ç´Â ¿£ÅÍ¸¦ Ä¡±â Àü±îÁö´Â ¹®Àå ÀüÃ¼¸¦ ÀÔ·Â ¹Ş´Â´Ù.
-		// ÀÔ·ÂµÈ ¹®ÀÚ¸¦ ¸ğµÎ ´Ù °¡Á®¿Â´Ù. (¶ç¾î¾²±â, Æ¯¼ö¹®ÀÚ µî ¸ğµÎ °¡Á®¿È)
+		//ì‚¬ìš©ìì—ê²Œ ì…ë ¥ë°›ì„ ê³µê°„ì„ ìƒì„±
+		//Scannerë¥¼ ì´ìš©í•´ì„œ ì…ë ¥ë°›ì€ ë‚´ìš©ì„ ì»´í“¨í„°ì— í‘œì‹œí•´ì¤Œ
+		//System.in ì‚¬ìš©í•´ì„œ í‚¤ë³´ë“œ ì…ë ¥ì„ ì½ì–´ì˜¬ ë•Œ ì‚¬ìš©
+		// Scanner ìë£Œí˜• ìë¦¬ì— intë‚˜ Stringì´ë‚˜ ì‹¤ìˆ˜ booleanê°’ì„
+		// í™•ì •ì§€ì–´ì„œ ë‚˜íƒ€ë‚¼ ìˆ˜ ì—†ê¸° ë•Œë¬¸ì— ì´ˆê¸°ì—ëŠ” Scannerë¼ê³  ì‚¬ìš©
+		// nextLine() : ë¬¸ì ë˜ëŠ” ì—”í„°ë¥¼ ì¹˜ê¸° ì „ê¹Œì§€ëŠ” ë¬¸ì¥ ì „ì²´ë¥¼ ì…ë ¥ ë°›ëŠ”ë‹¤.
+		// ì…ë ¥ëœ ë¬¸ìë¥¼ ëª¨ë‘ ë‹¤ ê°€ì ¸ì˜¨ë‹¤. (ë„ì–´ì“°ê¸°, íŠ¹ìˆ˜ë¬¸ì ë“± ëª¨ë‘ ê°€ì ¸ì˜´)
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("»ç¿ëÀÚÀÇ ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("ì‚¬ìš©ìì˜ ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš”.");
 		String name = sc.nextLine();
 		System.out.println(name);
 		
-		System.out.println("»ç¿ëÀÚÀÇ »ç´Â °÷À» ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("ì‚¬ìš©ìì˜ ì‚¬ëŠ” ê³³ì„ ì…ë ¥í•˜ì„¸ìš”.");
 		String live = sc.nextLine();
 		System.out.println(live);
 		
-		System.out.println("»ç¿ëÀÚÀÇ ÇÚµåÆù¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("ì‚¬ìš©ìì˜ í•¸ë“œí°ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 		String phoneNumber = sc.nextLine();
 		System.out.println(phoneNumber);
 		
-		//Scanner StringÀ» »ç¿ëÇØ¼­
-		// »ç¿ëÀÚÀÇ Å°, »ç¿ëÀÚÀÇ ³ªÀÌ, »ç¿ëÀÚÀÇ ´Ğ³×ÀÓÀ» ÀÔ·Â¹Ş±â
+		//Scanner Stringì„ ì‚¬ìš©í•´ì„œ
+		// ì‚¬ìš©ìì˜ í‚¤, ì‚¬ìš©ìì˜ ë‚˜ì´, ì‚¬ìš©ìì˜ ë‹‰ë„¤ì„ì„ ì…ë ¥ë°›ê¸°
 		
-		// »ç¿ëÀÚÀÇ Å° String height
-		System.out.print("»ç¿ëÀÚÀÇ Å°¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		// ì‚¬ìš©ìì˜ í‚¤ String height
+		System.out.print("ì‚¬ìš©ìì˜ í‚¤ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		String height = sc.nextLine();
 		System.out.println(height);
 		
-		// »ç¿ëÀÚÀÇ ³ªÀÌ String age
-		System.out.print("»ç¿ëÀÚÀÇ ³ªÀÌ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		// ì‚¬ìš©ìì˜ ë‚˜ì´ String age
+		System.out.print("ì‚¬ìš©ìì˜ ë‚˜ì´ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		String age = sc.nextLine();
 		System.out.println(age);
 		
-		// »ç¿ëÀÚÀÇ ´Ğ³×ÀÓ String nickName
-		System.out.print("»ç¿ëÀÚÀÇ ´Ğ³×ÀÓÀ» ÀÔ·ÂÇÏ¼¼¿ä : ");
+		// ì‚¬ìš©ìì˜ ë‹‰ë„¤ì„ String nickName
+		System.out.print("ì‚¬ìš©ìì˜ ë‹‰ë„¤ì„ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 		String nickName = sc.nextLine();
 		System.out.println(nickName);
 		

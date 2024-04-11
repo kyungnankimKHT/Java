@@ -6,20 +6,20 @@ public class SwitchPre {
 
 	public static void method1() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
-		int day = sc.nextInt(); //Å°º¸µå·Î ¹ŞÀº ¼ıÀÚ ÀÔ·Â
+		System.out.print("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
+		int day = sc.nextInt(); //í‚¤ë³´ë“œë¡œ ë°›ì€ ìˆ«ì ì…ë ¥
 		
 		switch (day) {
 		case 1 :
-			System.out.println("¿ù¿äÀÏÀÔ´Ï´Ù.");
+			System.out.println("ì›”ìš”ì¼ì…ë‹ˆë‹¤.");
 			break;
 			
 		case 2 :
-			System.out.println("È­¿äÀÏÀÔ´Ï´Ù.");
+			System.out.println("í™”ìš”ì¼ì…ë‹ˆë‹¤.");
 			break;
 			
 		default :
-			System.out.println("¾Æ¹« ¿äÀÏµµ ¾Æ´Õ´Ï´Ù.");
+			System.out.println("ì•„ë¬´ ìš”ì¼ë„ ì•„ë‹™ë‹ˆë‹¤.");
 		}
 	}
 	
@@ -29,65 +29,65 @@ public class SwitchPre {
 
 	 	switch (menuNumber) {
 	 		case 1 :
-	 			System.out.println("¾Æ¸Ş¸®Ä«³ë ³ª¿Ô½À´Ï´Ù.");
+	 			System.out.println("ì•„ë©”ë¦¬ì¹´ë…¸ ë‚˜ì™”ìŠµë‹ˆë‹¤.");
 	 		case 2  :
-	 			System.out.println("Ä«Æä¶ó¶¼ ³ª¿Ô½À´Ï´Ù.");
+	 			System.out.println("ì¹´í˜ë¼ë–¼ ë‚˜ì™”ìŠµë‹ˆë‹¤.");
 	 		case 3  :
-	 			System.out.println("Èæ´ç¹öºíÆ¼ ³ª¿Ô½À´Ï´Ù.");
+	 			System.out.println("í‘ë‹¹ë²„ë¸”í‹° ë‚˜ì™”ìŠµë‹ˆë‹¤.");
 	 		default :
-	 			System.out.println("Àß¸ø ÀÔ·ÂÇß½À´Ï´Ù. ´Ù½Ã ÀÌ¿ëÇØÁÖ¼¼¿ä.");
+	 			System.out.println("ì˜ëª» ì…ë ¥í–ˆìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì´ìš©í•´ì£¼ì„¸ìš”.");
 	 	}
 	}
 	
 	public static void method3() {
 		 Scanner sc = new Scanner(System.in);
-		 System.out.println("µµ½Ã¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		 System.out.println("ë„ì‹œë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		 String city = sc.nextLine();
 	 
 		 switch (city) {
-		 	case "¼­¿ï" :
-		 		System.out.println("´ëÇÑ¹Î±¹");
-		 	case "µµÄì" :
-		 		System.out.println("ÀÏº»");
-		 	case "º£ÀÌÂ¡" :
-		 		System.out.println("Áß±¹");
+		 	case "ì„œìš¸" :
+		 		System.out.println("ëŒ€í•œë¯¼êµ­");
+		 	case "ë„ì¿„" :
+		 		System.out.println("ì¼ë³¸");
+		 	case "ë² ì´ì§•" :
+		 		System.out.println("ì¤‘êµ­");
 		 	default : 
-		 		System.out.println("ÇØ´çÇÏ´Â µµ½Ã°¡ ¾ø½À´Ï´Ù.");
-		 		System.out.println("´ÙÀ½¿¡ ÀÌ¿ëÇØÁÖ½Ã±æ ¹Ù¶ø´Ï´Ù.");
+		 		System.out.println("í•´ë‹¹í•˜ëŠ” ë„ì‹œê°€ ì—†ìŠµë‹ˆë‹¤.");
+		 		System.out.println("ë‹¤ìŒì— ì´ìš©í•´ì£¼ì‹œê¸¸ ë°”ëë‹ˆë‹¤.");
 		 }
 	 }
 	 
 	public static void method4() {
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("1ºÎÅÍ 12±îÁö ¼ıÀÚ Áß ÇÏ³ª¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("1ë¶€í„° 12ê¹Œì§€ ìˆ«ì ì¤‘ í•˜ë‚˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		int month = sc.nextInt();
 		
 		switch(month) {
 			case 12: case 1: case 2:
-				System.out.println("°Ü¿ï");
+				System.out.println("ê²¨ìš¸");
 				break;
 			case 3: case 4: case 5: 
-				System.out.println("º½");
+				System.out.println("ë´„");
 				break;
 			case 6: case 7: case 8:
-				System.out.println("¿©¸§");
+				System.out.println("ì—¬ë¦„");
 				break;
 				
 			case 9: case 10: case 11:
-				System.out.println("°¡À»");
+				System.out.println("ê°€ì„");
 				break;
 				
 			default : 
-				System.out.println("ÇØ´çÇÏ´Â °èÀıÀÌ ¾ø½À´Ï´Ù.");
+				System.out.println("í•´ë‹¹í•˜ëŠ” ê³„ì ˆì´ ì—†ìŠµë‹ˆë‹¤.");
 		}
 	}
 	 
-	//µî±Ş¿¡ µû¶ó¼­ ÇĞÁ¡À» Ãâ·ÂÇÏ´Â ÄÚµå
+	//ë“±ê¸‰ì— ë”°ë¼ì„œ í•™ì ì„ ì¶œë ¥í•˜ëŠ” ì½”ë“œ
 	public static void method5() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("A, B, C, D Áß ÇÏ³ªÀÇ µî±ŞÀ» ÀÔ·ÂÇÏ¼¼¿ä.");
-		// charAt À» È£ÃâÇØ¼­ ÀÛ¼ºÇÑ ¹®ÀÚ¿­ Áß¿¡ 0¹øÂ° ¹®ÀÚ¸¦ Ãâ·ÂÇÏ°Ú´Ù´Â ÀÇ¹Ì
+		System.out.print("A, B, C, D ì¤‘ í•˜ë‚˜ì˜ ë“±ê¸‰ì„ ì…ë ¥í•˜ì„¸ìš”.");
+		// charAt ì„ í˜¸ì¶œí•´ì„œ ì‘ì„±í•œ ë¬¸ìì—´ ì¤‘ì— 0ë²ˆì§¸ ë¬¸ìë¥¼ ì¶œë ¥í•˜ê² ë‹¤ëŠ” ì˜ë¯¸
 		char grade = sc.next().charAt(0);
 		switch (grade) {
 		case 'A' : case 'a' : 
@@ -103,7 +103,7 @@ public class SwitchPre {
 			System.out.println("1.0");
 			break;
 		default :
-			System.out.println("ÀÔ·ÂÇÑ Á¤º¸°¡ ¾ø½À´Ï´Ù.");
+			System.out.println("ì…ë ¥í•œ ì •ë³´ê°€ ì—†ìŠµë‹ˆë‹¤.");
 		}
 	}
 	

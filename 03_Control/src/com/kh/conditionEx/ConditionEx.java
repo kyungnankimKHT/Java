@@ -2,36 +2,36 @@ package com.kh.conditionEx;
 
 import java.util.Scanner;
 
-// ÆĞÅ°Áö : ÀÛ¼ºÇÑ ÆÄÀÏÀÇ Æú´õ À§Ä¡
+// íŒ¨í‚¤ì§€ : ì‘ì„±í•œ íŒŒì¼ì˜ í´ë” ìœ„ì¹˜
 
-//Á¶°Ç¹® ±â´É¿ë Å¬·¡½º
+//ì¡°ê±´ë¬¸ ê¸°ëŠ¥ìš© í´ë˜ìŠ¤
 public class ConditionEx {
 	/*
-	 if ¿Í else class
+	 if ì™€ else class
 	 
 	 
-	 if ÁÖ¾îÁø Á¶°ÇÀÌ ÂüÀÏ ¶§ ½ÇÇàµÇ´Â ÄÚµå ºí·Ï
-	 else Á¶°ÇÀÌ °ÅÁşÀÏ ¶§ ½ÇÇàµÇ´Â ÄÚµå ºí·Ï(ÇÊ¼ö°¡ ¾Æ´Ô)
+	 if ì£¼ì–´ì§„ ì¡°ê±´ì´ ì°¸ì¼ ë•Œ ì‹¤í–‰ë˜ëŠ” ì½”ë“œ ë¸”ë¡
+	 else ì¡°ê±´ì´ ê±°ì§“ì¼ ë•Œ ì‹¤í–‰ë˜ëŠ” ì½”ë“œ ë¸”ë¡(í•„ìˆ˜ê°€ ì•„ë‹˜)
 	 
-	 »ç¿ë¹æ¹ı
-	 if (Á¶°Ç¹®) {
-	 	Á¶°ÇÀÌ ÂüÀÏ °æ¿ì ½ÇÇàÇÒ ÄÚµå ÀÛ¼º
-	 	¸¸¾à¿¡ Á¶°Ç¹®ÀÇ Á¶°ÇÀÌ ÂüÀÌ ¾Æ´Ò °æ¿ì 
-	 	ÀÚµ¿À¸·Î ½ÇÇà Á¾·á
+	 ì‚¬ìš©ë°©ë²•
+	 if (ì¡°ê±´ë¬¸) {
+	 	ì¡°ê±´ì´ ì°¸ì¼ ê²½ìš° ì‹¤í–‰í•  ì½”ë“œ ì‘ì„±
+	 	ë§Œì•½ì— ì¡°ê±´ë¬¸ì˜ ì¡°ê±´ì´ ì°¸ì´ ì•„ë‹ ê²½ìš° 
+	 	ìë™ìœ¼ë¡œ ì‹¤í–‰ ì¢…ë£Œ
 	 }
 	
 	 */
 	public static void method1() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("°í°´´ÔÀÇ ³ªÀÌ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : " );
+		System.out.print("ê³ ê°ë‹˜ì˜ ë‚˜ì´ë¥¼ ì…ë ¥í•˜ì„¸ìš” : " );
 		int age = sc.nextInt();
-		// ¸¸¾à¿¡ °í°´ÀÇ ³ªÀÌ°¡ 19¼¼ ÀÌ»óÀÌ¶ó¸é
+		// ë§Œì•½ì— ê³ ê°ì˜ ë‚˜ì´ê°€ 19ì„¸ ì´ìƒì´ë¼ë©´
 		if (age >= 19) {
-		// ageÀÇ °ªÀÌ 19 ÀÌ»óÀÌ¸é ¼ºÀÎÀÔ´Ï´Ù Ãâ·ÂµÇ°Ô ÇÏ±â
-			System.out.println("¼ºÀÎÀÔ´Ï´Ù.");
+		// ageì˜ ê°’ì´ 19 ì´ìƒì´ë©´ ì„±ì¸ì…ë‹ˆë‹¤ ì¶œë ¥ë˜ê²Œ í•˜ê¸°
+			System.out.println("ì„±ì¸ì…ë‹ˆë‹¤.");
 		} else {
-		// ¸¸¾à¿¡ age °ªÀÌ ¼ºÀÎÀÌ ¾Æ´Ï¶ó¸é ¼ºÀÎÀÌ ¾Æ´Õ´Ï´Ù. Ãâ·ÂÇÏ°Ô ÇÏ±â
-			System.out.println("¼ºÀÎÀÌ ¾Æ´Õ´Ï´Ù.");
+		// ë§Œì•½ì— age ê°’ì´ ì„±ì¸ì´ ì•„ë‹ˆë¼ë©´ ì„±ì¸ì´ ì•„ë‹™ë‹ˆë‹¤. ì¶œë ¥í•˜ê²Œ í•˜ê¸°
+			System.out.println("ì„±ì¸ì´ ì•„ë‹™ë‹ˆë‹¤.");
 		}
 		
 	}
@@ -39,14 +39,14 @@ public class ConditionEx {
 	public static void method2() {
 		int num = 3;
 		
-		// ¸¸¾à¿¡ num ÀÌ Â¦¼öÀÏ °æ¿ì  Â¦¼öÀÔ´Ï´Ù. Ãâ·ÂÇÏ±â
-		// Â¦¼ö 2 % 0
+		// ë§Œì•½ì— num ì´ ì§ìˆ˜ì¼ ê²½ìš°  ì§ìˆ˜ì…ë‹ˆë‹¤. ì¶œë ¥í•˜ê¸°
+		// ì§ìˆ˜ 2 % 0
 		if (num % 2 == 0) {
-			System.out.println("Â¦¼öÀÔ´Ï´Ù!!!");
+			System.out.println("ì§ìˆ˜ì…ë‹ˆë‹¤!!!");
 		} else {
-			System.out.println("È¦¼öÀÔ´Ï´Ù.");
+			System.out.println("í™€ìˆ˜ì…ë‹ˆë‹¤.");
 		}
-		// num ÀÌ È¦¼öÀÏ °æ¿ì È¦¼öÀÔ´Ï´Ù Ãâ·ÂÇÏ±â
+		// num ì´ í™€ìˆ˜ì¼ ê²½ìš° í™€ìˆ˜ì…ë‹ˆë‹¤ ì¶œë ¥í•˜ê¸°
 		
 		
 	}
@@ -55,37 +55,37 @@ public class ConditionEx {
 		int age = 20;
 			//    true        true
 		if (age > 0   && age < 14) {
-			//¾î¸°ÀÌ¶ó°í Ç¥±âÇÏ±â
-			System.out.println("¾î¸°ÀÔ´Ï´Ù.");
+			//ì–´ë¦°ì´ë¼ê³  í‘œê¸°í•˜ê¸°
+			System.out.println("ì–´ë¦°ì…ë‹ˆë‹¤.");
 		} else {
-			System.out.println("¾î¸°ÀÌ°¡ ¾Æ´Õ´Ï´Ù.");
+			System.out.println("ì–´ë¦°ì´ê°€ ì•„ë‹™ë‹ˆë‹¤.");
 		}		
 	}
 	
-	// Scanner È°¿ëÇØ¼­ ÁøÇàÇÏ±â
+	// Scanner í™œìš©í•´ì„œ ì§„í–‰í•˜ê¸°
 	public static void practice1() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("³ªÀÌ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ë‚˜ì´ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		
 		int age = sc.nextInt();
 		
 		if (age >= 10 && age < 20) {
-			System.out.println("10´ëÀÔ´Ï´Ù.");
+			System.out.println("10ëŒ€ì…ë‹ˆë‹¤.");
 		} else {
-			System.out.println("10´ë°¡ ¾Æ´Õ´Ï´Ù.");
+			System.out.println("10ëŒ€ê°€ ì•„ë‹™ë‹ˆë‹¤.");
 		}
 	}
 	public static void practice2() {
 		int age = 88;
 		if ( age >= 80) {
-			System.out.println("80¼¼ ÀÌ»óÀÔ´Ï´Ù.");
+			System.out.println("80ì„¸ ì´ìƒì…ë‹ˆë‹¤.");
 		}
 	}
 
 	
 	
 	
-	// ÃÖÁ¾ ¸Ş¼­µå
+	// ìµœì¢… ë©”ì„œë“œ
 	public static void main(String[] args) {
 		//method1();
 		//method2();

@@ -2,27 +2,27 @@
 public class Hello {
 
 	public static void main(String[] args) {
-		// System.outÀº Ãâ·ÂÀ» ³ªÅ¸³¿
-		// print() °ıÈ£ ¾È¿¡ Àü´ŞµÈ °ªÀ» Ãâ·Â
-		// ; Àº ÄÚµå¿¡¼­ ÇÏ³ªÀÇ ¸í·ÉÀÌ ³¡³¯ ¶§¸¶´Ù ÀÛ¼º
-		System.out.print("¾È³çÇÏ¼¼¿ä.");
-		System.out.print("¹İ°©½À´Ï´Ù.");
-		// println Àº ¹®ÀåÀÌ ³¡³­ ´ÙÀ½¿¡ enter°¡ ÁøÇàµÊ
-		System.out.println("È¯¿µÇÕ´Ï´Ù.");
-		//ÁÙ ¸ÂÃß°í ½ÍÀ» ¶§´Â Å°º¸µå¿¡¼­ tabÀ» ÀÌ¿ëÇØ¼­ ÁÙ ¸ÂÃß±â 
-		System.out.println("¾î¼­¿À¼¼¿ä. Á¡½É½Ã°£");
+		// System.outì€ ì¶œë ¥ì„ ë‚˜íƒ€ëƒ„
+		// print() ê´„í˜¸ ì•ˆì— ì „ë‹¬ëœ ê°’ì„ ì¶œë ¥
+		// ; ì€ ì½”ë“œì—ì„œ í•˜ë‚˜ì˜ ëª…ë ¹ì´ ëë‚  ë•Œë§ˆë‹¤ ì‘ì„±
+		System.out.print("ì•ˆë…•í•˜ì„¸ìš”.");
+		System.out.print("ë°˜ê°‘ìŠµë‹ˆë‹¤.");
+		// println ì€ ë¬¸ì¥ì´ ëë‚œ ë‹¤ìŒì— enterê°€ ì§„í–‰ë¨
+		System.out.println("í™˜ì˜í•©ë‹ˆë‹¤.");
+		//ì¤„ ë§ì¶”ê³  ì‹¶ì„ ë•ŒëŠ” í‚¤ë³´ë“œì—ì„œ tabì„ ì´ìš©í•´ì„œ ì¤„ ë§ì¶”ê¸° 
+		System.out.println("ì–´ì„œì˜¤ì„¸ìš”. ì ì‹¬ì‹œê°„");
 		
-		System.out.println("1"); //1·Î Ãâ·ÂµÊ
+		System.out.println("1"); //1ë¡œ ì¶œë ¥ë¨
 		System.out.println("23456789");
 		System.out.println("01234");
 		System.out.println(1);
-		// 0À» ¾Õ¿¡ ³ÖÀ¸¸é ´Ü¼øÈ÷ 1·Î Ãâ·ÂÀÌ µÊ
-		// 0À» ¾Õ¿¡¼­ Ãâ·ÂÇÏ°í ½ÍÀ¸¸é "" Å« µû¿ÈÇ¥¸¦ ÀÌ¿ëÇØ¼­ Ãâ·Â
+		// 0ì„ ì•ì— ë„£ìœ¼ë©´ ë‹¨ìˆœíˆ 1ë¡œ ì¶œë ¥ì´ ë¨
+		// 0ì„ ì•ì—ì„œ ì¶œë ¥í•˜ê³  ì‹¶ìœ¼ë©´ "" í° ë”°ì˜´í‘œë¥¼ ì´ìš©í•´ì„œ ì¶œë ¥
 		System.out.println(01);
-		System.out.println(true); //true = »ç½Ç ¸Â´Ù
-		//´ÜÃàÅ° !
+		System.out.println(true); //true = ì‚¬ì‹¤ ë§ë‹¤
+		//ë‹¨ì¶•í‚¤ !
 		// sysout ctrl + space 
-		//ÀÚµ¿À¸·Î System.out.println()
+		//ìë™ìœ¼ë¡œ System.out.println()
 		System.out.println();
 	}
 

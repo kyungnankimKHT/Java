@@ -2,37 +2,37 @@ package com.kh.op;
 
 public class OperatorEx6 {
 	/*
-	 * Áõ°¨ ¿¬»êÀÚ
+	 * ì¦ê° ì—°ì‚°ì
 	 * +=
-	 * µ¡¼À ¿¬»êÀ» ¼öÇàÇÏ°í °á°ú¸¦ º¯¼öÀÇ °ªÀ¸·Î ³Ö¾îÁÖ´Â ¿ªÇÒÀ» ÇÔ
+	 * ë§ì…ˆ ì—°ì‚°ì„ ìˆ˜í–‰í•˜ê³  ê²°ê³¼ë¥¼ ë³€ìˆ˜ì˜ ê°’ìœ¼ë¡œ ë„£ì–´ì£¼ëŠ” ì—­í• ì„ í•¨
 	 * 
 	 * -=
-	 * »¬¼À ¿¬»êÀ» ¼öÇàÇÏ°í °á°ú¸¦ º¯¼öÀÇ °ªÀ¸·Î ³Ö¾îÁÖ´Â ¿ªÇÒÀ» ÇÔ
+	 * ëº„ì…ˆ ì—°ì‚°ì„ ìˆ˜í–‰í•˜ê³  ê²°ê³¼ë¥¼ ë³€ìˆ˜ì˜ ê°’ìœ¼ë¡œ ë„£ì–´ì£¼ëŠ” ì—­í• ì„ í•¨
 	 * 
-	 * ÀÌ¿Ü¿¡µµ *= /= %= **== //==
+	 * ì´ì™¸ì—ë„ *= /= %= **== //==
 	 * */
 	public static void main(String[] args) {
 		int num1 = 10;
 		int num2 = 5;
 		
-		// += ¿¬»êÀÚ¸¦ È°¿ëÇÑ ¿¹Á¦
+		// += ì—°ì‚°ìë¥¼ í™œìš©í•œ ì˜ˆì œ
 		System.out.println("======== [+=] =======");
 		System.out.println("num1 : " + num1 + ", num2 : " + num2);
 		
 		num1 += 3;
 		// num1 = num1 + 3;
-		System.out.println("num1 += 3 À» ÇØÁØ num1 ÀÇ °ª :" + num1);
+		System.out.println("num1 += 3 ì„ í•´ì¤€ num1 ì˜ ê°’ :" + num1);
 		
 		num2 += num1; // num2 = num2 + num1; 
-		System.out.println("num1 :"+ num1 + "°ú num2ÀÇ °ª : " + num2);
+		System.out.println("num1 :"+ num1 + "ê³¼ num2ì˜ ê°’ : " + num2);
 		System.out.println("======== [-=] =======");
 		int num4 = 10;
 		int num5 = 5;
 		
 		num4 -= 2; //num4 = num4 - 2 ;
 		num5 -= num4; //num5 = num5 - num4;
-		System.out.println("num 4 ÀÇ °ª : " + num4);
-		System.out.println("num 5 ÀÇ °ª : " + num5);
+		System.out.println("num 4 ì˜ ê°’ : " + num4);
+		System.out.println("num 5 ì˜ ê°’ : " + num5);
 	}
 
 }

@@ -3,18 +3,18 @@ package com.kh.op;
 import java.util.Scanner;
 
 public class OperatorPre3 {
-	//ÃÖÁ¾ Ãâ·ÂÇØÁÙ ¸Ş¼­µå
+	//ìµœì¢… ì¶œë ¥í•´ì¤„ ë©”ì„œë“œ
 	public static void main(String[] args) {
 		//method1();
 		method2();
 	}
 	public static void method1() {
-		//Scanner ¸¦ ÀÌ¿ëÇØ num1 num2 ÀÇ °ªÀ» ÀÔ·Â¹Ş°í
+		//Scanner ë¥¼ ì´ìš©í•´ num1 num2 ì˜ ê°’ì„ ì…ë ¥ë°›ê³ 
 		Scanner sc = new Scanner(System.in);
-		System.out.print("num1 ÀÇ °ªÀ» ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("num1 ì˜ ê°’ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 		int num1 = sc.nextInt();
 		
-		System.out.print("num2 ÀÇ °ªÀ» ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("num2 ì˜ ê°’ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 		int num2 = sc.nextInt();
 		
 		boolean result1 = num1 > num2;
@@ -28,19 +28,19 @@ public class OperatorPre3 {
 	}
 	
 	public static void method2() {
-		// num1 num2 num3  ½ºÄ³³Ê¸¦ ÀÌ¿ëÇØ¼­ ¼ıÀÚ¹Ş±â
+		// num1 num2 num3  ìŠ¤ìºë„ˆë¥¼ ì´ìš©í•´ì„œ ìˆ«ìë°›ê¸°
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Ã¹ ¹ø Â° ¼ı ÀÚ : ");
+		System.out.print("ì²« ë²ˆ ì§¸ ìˆ« ì : ");
 		int num1 = sc.nextInt();
-		System.out.print("µÎ ¹ø Â° ¼ı ÀÚ : ");
+		System.out.print("ë‘ ë²ˆ ì§¸ ìˆ« ì : ");
 		int num2 = sc.nextInt();
-		System.out.print("¼¼ ¹ø Â° ¼ı ÀÚ : ");
+		System.out.print("ì„¸ ë²ˆ ì§¸ ìˆ« ì : ");
 		int num3 = sc.nextInt();
-		// &&  if while  Á¶°ÇÀ» Ã¼Å©ÇÒ ¶§
-		// 		µÎ °³ÀÇ Á¶°ÇÀÌ ¸ğµÎ ¸¸Á·ÇÏ´Â °æ¿ì »ç¿ë
-		//	&	ºñÆ® ´ÜÀ§ ¿¬»êÀ¸·Î Æ¯Á¤ ºñÆ® ÆĞÅÏÀ» ÆÇ´ÜÇÒ ¶§ »ç¿ë 
+		// &&  if while  ì¡°ê±´ì„ ì²´í¬í•  ë•Œ
+		// 		ë‘ ê°œì˜ ì¡°ê±´ì´ ëª¨ë‘ ë§Œì¡±í•˜ëŠ” ê²½ìš° ì‚¬ìš©
+		//	&	ë¹„íŠ¸ ë‹¨ìœ„ ì—°ì‚°ìœ¼ë¡œ íŠ¹ì • ë¹„íŠ¸ íŒ¨í„´ì„ íŒë‹¨í•  ë•Œ ì‚¬ìš© 
 		boolean result = (num1 < num2) && (num2 == num3);
-		System.out.println("(num1 < num2) && (num2 == num3) °á°ú´Â!! " + result);
+		System.out.println("(num1 < num2) && (num2 == num3) ê²°ê³¼ëŠ”!! " + result);
 	
 	}
 }

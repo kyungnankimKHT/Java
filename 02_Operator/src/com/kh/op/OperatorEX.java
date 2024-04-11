@@ -3,31 +3,31 @@ package com.kh.op;
 import java.util.Scanner;
 
 public class OperatorEX {
-	//¸ŞÀÎ ¸Ş¼­µå È£Ãâ
+	//ë©”ì¸ ë©”ì„œë“œ í˜¸ì¶œ
 	public static void main(String[] args) {
 		//int a = 1;
 		//int b = 3;
-		//³»°¡ ½ºÄ³³Ê·Î ÀÔ·Â¹ŞÀº °ªÀÌ Ãâ·ÂµÇ°Ô ÇØº¾½Ã´Ù.
+		//ë‚´ê°€ ìŠ¤ìºë„ˆë¡œ ì…ë ¥ë°›ì€ ê°’ì´ ì¶œë ¥ë˜ê²Œ í•´ë´…ì‹œë‹¤.
 		Scanner sc = new Scanner(System.in);
-		System.out.println("¾È³çÇÏ¼¼¿ä. °è»ê±âÀÔ´Ï´Ù.");
-		System.out.print("a°ªÀ» ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.println("ì•ˆë…•í•˜ì„¸ìš”. ê³„ì‚°ê¸°ì…ë‹ˆë‹¤.");
+		System.out.print("aê°’ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 		int a = sc.nextInt();
 		
-		System.out.print("b°ªÀ» ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("bê°’ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 		int b = sc.nextInt();
 		
-		//µ¡¼À
+		//ë§ì…ˆ
 		int sum = a+b;
-		System.out.println("µ¡¼À °á°ú sum : " + sum);
-		//»¬¼À
+		System.out.println("ë§ì…ˆ ê²°ê³¼ sum : " + sum);
+		//ëº„ì…ˆ
 		int dif = a-b;
-		System.out.println("»¬¼À °á°ú dif : " + dif);
-		//°ö¼À
+		System.out.println("ëº„ì…ˆ ê²°ê³¼ dif : " + dif);
+		//ê³±ì…ˆ
 		int mul = a*b;
-		System.out.println("°ö¼À °á°ú mul : " + mul);
-		//³ª´°¼À
+		System.out.println("ê³±ì…ˆ ê²°ê³¼ mul : " + mul);
+		//ë‚˜ëˆ—ì…ˆ
 		int div = b/a;
-		System.out.println("³ª´°¼À °á°ú div : " + div);
+		System.out.println("ë‚˜ëˆ—ì…ˆ ê²°ê³¼ div : " + div);
 		
 	}
 

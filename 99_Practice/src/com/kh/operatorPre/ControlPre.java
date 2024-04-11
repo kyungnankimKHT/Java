@@ -2,55 +2,55 @@ package com.kh.operatorPre;
 
 import java.util.Scanner;
 
-/* Àß¶ó³»±â(ctrl + x)  º¹»ç(ctrl + c) ºÙ¿©³Ö±â(ctrl + v) */
+/* ì˜ë¼ë‚´ê¸°(ctrl + x)  ë³µì‚¬(ctrl + c) ë¶™ì—¬ë„£ê¸°(ctrl + v) */
 public class ControlPre {
-	//½Ç½À¹®Á¦ 1¹ø È¦¼ö Â¦¼ö ³ªÅ¸³»±â
+	//ì‹¤ìŠµë¬¸ì œ 1ë²ˆ í™€ìˆ˜ ì§ìˆ˜ ë‚˜íƒ€ë‚´ê¸°
 	public static void practice1() {
-		// Å°º¸µå·Î ÀÔ·Â¹ŞÀº Á¤¼ö°¡ ¾ç¼öÀÌ¸é¼­ Â¦¼öÀÏ ¶§¸¸ Â¦¼öÀÔ´Ï´Ù Ãâ·Â
+		// í‚¤ë³´ë“œë¡œ ì…ë ¥ë°›ì€ ì •ìˆ˜ê°€ ì–‘ìˆ˜ì´ë©´ì„œ ì§ìˆ˜ì¼ ë•Œë§Œ ì§ìˆ˜ì…ë‹ˆë‹¤ ì¶œë ¥
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
-		int number = sc.nextInt(); //Å°º¸µå·Î ¼ıÀÚ ÀÔ·Â¹Ş±â
+		System.out.print("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
+		int number = sc.nextInt(); //í‚¤ë³´ë“œë¡œ ìˆ«ì ì…ë ¥ë°›ê¸°
 		
-		if(number > 0) { // ÀÔ·Â¹ŞÀº ¼ıÀÚ°¡ ¾ç¼öÀÏ °æ¿ì¿¡¸¸ È¦Â¦ ½ÇÇàÇÏ±â	
-			if (number % 2 == 0) { //¼ıÀÚ°¡ Â¦¼öÀÏ °æ¿ì Ãâ·ÂÇÏ±â
-				System.out.println("Â¦¼öÀÔ´Ï´Ù.");
-			} else {               //¼ıÀÚ°¡ È¦¼öÀÏ °æ¿ì Ãâ·ÂÇÏ±â
-				System.out.println("È¦¼öÀÔ´Ï´Ù.");
+		if(number > 0) { // ì…ë ¥ë°›ì€ ìˆ«ìê°€ ì–‘ìˆ˜ì¼ ê²½ìš°ì—ë§Œ í™€ì§ ì‹¤í–‰í•˜ê¸°	
+			if (number % 2 == 0) { //ìˆ«ìê°€ ì§ìˆ˜ì¼ ê²½ìš° ì¶œë ¥í•˜ê¸°
+				System.out.println("ì§ìˆ˜ì…ë‹ˆë‹¤.");
+			} else {               //ìˆ«ìê°€ í™€ìˆ˜ì¼ ê²½ìš° ì¶œë ¥í•˜ê¸°
+				System.out.println("í™€ìˆ˜ì…ë‹ˆë‹¤.");
 			}
-		} else { 		// ÀÔ·Â¹ŞÀº ¼ıÀÚ°¡ À½¼öÀÏ °æ¿ì Ãâ·ÂÇÏ±â
-			System.out.println("À½¼öÀÔ´Ï´Ù. ¾ç¼ö¸¸ ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+		} else { 		// ì…ë ¥ë°›ì€ ìˆ«ìê°€ ìŒìˆ˜ì¼ ê²½ìš° ì¶œë ¥í•˜ê¸°
+			System.out.println("ìŒìˆ˜ì…ë‹ˆë‹¤. ì–‘ìˆ˜ë§Œ ì…ë ¥í•´ì£¼ì„¸ìš”.");
 		}
 	}
 	
 	public static void practice2() {
-		//Å°º¸µå·Î ±¹¾î ¿µ¾î ¼öÇĞ Á¡¼ö ÀÔ·Â¹Ş±â
+		//í‚¤ë³´ë“œë¡œ êµ­ì–´ ì˜ì–´ ìˆ˜í•™ ì ìˆ˜ ì…ë ¥ë°›ê¸°
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("±¹¾îÁ¡¼ö : ");
+		System.out.print("êµ­ì–´ì ìˆ˜ : ");
 		int korean = sc.nextInt();
 		
-		System.out.print("¿µ¾îÁ¡¼ö : ");
+		System.out.print("ì˜ì–´ì ìˆ˜ : ");
 		int english = sc.nextInt();
 		
-		System.out.print("¼öÇĞÁ¡¼ö : ");
+		System.out.print("ìˆ˜í•™ì ìˆ˜ : ");
 		int math = sc.nextInt();
 		
-		// ÇÕ°è¿Í Æò±Õ °è»ê
-		int totalScore = korean + english + math; //ÇÕ°è
+		// í•©ê³„ì™€ í‰ê·  ê³„ì‚°
+		int totalScore = korean + english + math; //í•©ê³„
 		double averageScore = totalScore / 3.0;
-		//ÇÕ°İ ¿©ºÎ ÆÇº°
-		//¼¼ °ú¸ñÀÇ Á¡¼ö°¡ °¢°¢ 40Á¡ ÀÌ»óÀÌ¸é¼­ Æò±ÕÀÌ 60Á¡ ÀÌ»óÀÏ °æ¿ì
+		//í•©ê²© ì—¬ë¶€ íŒë³„
+		//ì„¸ ê³¼ëª©ì˜ ì ìˆ˜ê°€ ê°ê° 40ì  ì´ìƒì´ë©´ì„œ í‰ê· ì´ 60ì  ì´ìƒì¼ ê²½ìš°
 		if(korean >= 40 && english >= 40 && math >= 40 && averageScore >= 60) {
-			System.out.println("±¹¾î Á¡¼ö : " + korean);
-			System.out.println("¿µ¾î Á¡¼ö : " + english);
-			System.out.println("¼öÇĞ Á¡¼ö : " + math);
-			System.out.println("ÇÕ    °è : " + totalScore);
-			System.out.println("Æò    ±Õ : " + averageScore);
+			System.out.println("êµ­ì–´ ì ìˆ˜ : " + korean);
+			System.out.println("ì˜ì–´ ì ìˆ˜ : " + english);
+			System.out.println("ìˆ˜í•™ ì ìˆ˜ : " + math);
+			System.out.println("í•©    ê³„ : " + totalScore);
+			System.out.println("í‰    ê·  : " + averageScore);
 			
-			System.out.println("ÃàÇÏÇÕ´Ï´Ù. ÇÕ°İÀÔ´Ï´Ù!!!");
+			System.out.println("ì¶•í•˜í•©ë‹ˆë‹¤. í•©ê²©ì…ë‹ˆë‹¤!!!");
 		} else {
-			System.out.println("ºÒÇÕ°İÀÔ´Ï´Ù.");
+			System.out.println("ë¶ˆí•©ê²©ì…ë‹ˆë‹¤.");
 		}
 		
 		
@@ -58,15 +58,15 @@ public class ControlPre {
 
 	public static void practice3() {
 		/*
-		 * 1 ~ 12 »çÀÌÀÇ ¼ö¸¦ ÀÔ·Â¹Ş¾Æ ÇØ´ç ´ŞÀÇ ÀÏ¼ö¸¦ Ãâ·ÂÇÏ¼¼¿ä.
-		 * 2¿ù À±´ŞÀº »ı°¢ÇÏÁö ¾Ê½À´Ï´Ù.
-		 * OO¿ùÀº Àß¸ø ÀÔ·ÂÇÑ ´ŞÀÔ´Ï´Ù. ÇÑ/¿µ ´ë¹®ÀÚ O
+		 * 1 ~ 12 ì‚¬ì´ì˜ ìˆ˜ë¥¼ ì…ë ¥ë°›ì•„ í•´ë‹¹ ë‹¬ì˜ ì¼ìˆ˜ë¥¼ ì¶œë ¥í•˜ì„¸ìš”.
+		 * 2ì›” ìœ¤ë‹¬ì€ ìƒê°í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.
+		 * OOì›”ì€ ì˜ëª» ì…ë ¥í•œ ë‹¬ì…ë‹ˆë‹¤. í•œ/ì˜ ëŒ€ë¬¸ì O
 		 */
 		Scanner sc = new Scanner(System.in);
-		System.out.print("1ºÎÅÍ 12 Áß ÇÏ³ª ÀÔ·Â : ");
-		int month = sc.nextInt();//Å°º¸µå·Î ÀÔ·ÂÇÑ ´Ş
+		System.out.print("1ë¶€í„° 12 ì¤‘ í•˜ë‚˜ ì…ë ¥ : ");
+		int month = sc.nextInt();//í‚¤ë³´ë“œë¡œ ì…ë ¥í•œ ë‹¬
 		
-		int daysMonth; //ÇØ´çÇÏ´Â ´ŞÀÇ ÀÏ¼ö 
+		int daysMonth; //í•´ë‹¹í•˜ëŠ” ë‹¬ì˜ ì¼ìˆ˜ 
 		switch (month) {
 			case 1:case 3: case 5: case 7: case 8: case 10: case 12:
 				daysMonth = 31;
@@ -78,11 +78,11 @@ public class ControlPre {
 				daysMonth = 28;
 				break;
 			default:
-				System.out.println(month + "¿ùÀº Á¸ÀçÇÏÁö ¾Ê´Â ´ŞÀÔ´Ï´Ù.");
+				System.out.println(month + "ì›”ì€ ì¡´ì¬í•˜ì§€ ì•ŠëŠ” ë‹¬ì…ë‹ˆë‹¤.");
 				//daysMonth = 0;
 				return;
 		}
-		System.out.println(month + "¿ùÀº " + daysMonth + "ÀÏ±îÁö ÀÖ½À´Ï´Ù.");
+		System.out.println(month + "ì›”ì€ " + daysMonth + "ì¼ê¹Œì§€ ìˆìŠµë‹ˆë‹¤.");
 	}
 	
 	
@@ -105,74 +105,74 @@ public class ControlPre {
 	
 	public static void practice4() {
 		Scanner sc = new Scanner(System.in);	
-		// Å°¿Í ¸ö¹«°Ô ÀÔ·Â ¹Ş±â
-		System.out.print("Å°(m) ¸¦ ÀÔ·ÂÇÏ¼¼¿ä    : ");
+		// í‚¤ì™€ ëª¸ë¬´ê²Œ ì…ë ¥ ë°›ê¸°
+		System.out.print("í‚¤(m) ë¥¼ ì…ë ¥í•˜ì„¸ìš”    : ");
 		double height = sc.nextDouble();
 		
-		System.out.print("¸ö¹«°Ô(kg)¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ëª¸ë¬´ê²Œ(kg)ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		double weight = sc.nextDouble();
 		
-		//BMI °è»ê BMI = Ã¼Áú·®Áö¼ö ºñ¸¸µµ¸¦ È®ÀÎÇÏ´Â °Í
+		//BMI ê³„ì‚° BMI = ì²´ì§ˆëŸ‰ì§€ìˆ˜ ë¹„ë§Œë„ë¥¼ í™•ì¸í•˜ëŠ” ê²ƒ
 		double bmi = weight / (height * height);
 		
-		//BMI Áö¼ö¿¡ µû¶ó °á°ú Ãâ·Â
+		//BMI ì§€ìˆ˜ì— ë”°ë¼ ê²°ê³¼ ì¶œë ¥
 		if(bmi < 18.5) {
-			System.out.println("ÀúÃ¼Áß");
+			System.out.println("ì €ì²´ì¤‘");
 		} else if (bmi < 23) {
-			System.out.println("Á¤»óÃ¼Áß");
+			System.out.println("ì •ìƒì²´ì¤‘");
 		} else if (bmi < 25) {
-			System.out.println("°úÃ¼Áß");
+			System.out.println("ê³¼ì²´ì¤‘");
 		} else if (bmi < 30) {
-			System.out.println("ºñ¸¸");
+			System.out.println("ë¹„ë§Œ");
 		} else {
-			System.out.println("°íµµ ºñ¸¸");
+			System.out.println("ê³ ë„ ë¹„ë§Œ");
 		}
 	}
 	
 	public static void practice5() {
-		//Áß°£ ±â¸» °úÁ¦ Ãâ¼® ÀÔ·Â ¹Ş±â
+		//ì¤‘ê°„ ê¸°ë§ ê³¼ì œ ì¶œì„ ì…ë ¥ ë°›ê¸°
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Áß°£ Á¡¼ö : ");
+		System.out.print("ì¤‘ê°„ ì ìˆ˜ : ");
 		double mid = sc.nextDouble();
-		System.out.print("±â¸» Á¡¼ö : ");
+		System.out.print("ê¸°ë§ ì ìˆ˜ : ");
 		double fin = sc.nextDouble();
-		System.out.print("°úÁ¦ Á¡¼ö : ");
+		System.out.print("ê³¼ì œ ì ìˆ˜ : ");
 		double assig = sc.nextDouble();
-		System.out.print("Ãâ¼® È½¼ö : ");
+		System.out.print("ì¶œì„ íšŸìˆ˜ : ");
 		int attend = sc.nextInt();
 		
-		// Ãâ¼® ºñÀ² °è»ê 20È¸
+		// ì¶œì„ ë¹„ìœ¨ ê³„ì‚° 20íšŒ
 		double attendPer = attend / 20 * 100;
-		// attend / 20 = Ãâ¼®ÇÑ È½¼ö¸¦ ÀüÃ¼ °­ÀÇ È½¼ö·Î ³ª´²¼­ Ãâ¼® ºñÀ²À» °è»ê
-		// double ¼Ò¼öÁ¡ ¹Ø¿¡ ÀÖ´Â ¼ö±îÁö ¾ò¾î¿È
-		// ½Ç¼ö·Î µÈ °ªÀ» 100À» °öÇØ¼­ ¹éºĞÀ²·Î º¯È¯
+		// attend / 20 = ì¶œì„í•œ íšŸìˆ˜ë¥¼ ì „ì²´ ê°•ì˜ íšŸìˆ˜ë¡œ ë‚˜ëˆ ì„œ ì¶œì„ ë¹„ìœ¨ì„ ê³„ì‚°
+		// double ì†Œìˆ˜ì  ë°‘ì— ìˆëŠ” ìˆ˜ê¹Œì§€ ì–»ì–´ì˜´
+		// ì‹¤ìˆ˜ë¡œ ëœ ê°’ì„ 100ì„ ê³±í•´ì„œ ë°±ë¶„ìœ¨ë¡œ ë³€í™˜
 
 		
-		// Æò°¡ ºñÀ²¿¡ µû¸¥ ÃÑÁ¡ °è»ê
-		// Áß°£ 20 ±â¸» 30 °úÁ¦ 30 Ãâ¼® 20 = 100Á¡
-		// Áß°£ Á¡¼ö 20 
+		// í‰ê°€ ë¹„ìœ¨ì— ë”°ë¥¸ ì´ì  ê³„ì‚°
+		// ì¤‘ê°„ 20 ê¸°ë§ 30 ê³¼ì œ 30 ì¶œì„ 20 = 100ì 
+		// ì¤‘ê°„ ì ìˆ˜ 20 
 		double midScore = mid * 0.2;
-		// ±â¸» Á¡¼ö 30
-		double fiScore = fin * 0.3;    // 100Á¡ ¸¸Á¡ 30%
-		// °úÁ¦ Á¡¼ö 30
+		// ê¸°ë§ ì ìˆ˜ 30
+		double fiScore = fin * 0.3;    // 100ì  ë§Œì  30%
+		// ê³¼ì œ ì ìˆ˜ 30
 		double asScore = assig * 0.3;
-		/*  20 * 100   ÀÌ¶û *0.2 ÇÑ °ÍÀº ¶È°°´Ù.  */
-		double attendScore = attendPer * 0.2; //100Á¡ ¸¸Á¡ 0.2
+		/*  20 * 100   ì´ë‘ *0.2 í•œ ê²ƒì€ ë˜‘ê°™ë‹¤.  */
+		double attendScore = attendPer * 0.2; //100ì  ë§Œì  0.2
 		double totalScore = midScore + fiScore + asScore + attendScore;
 	
-		// Æò°¡¿¡ µû¸¥ Pass ¶Ç´Â Fail Ãâ·Â
+		// í‰ê°€ì— ë”°ë¥¸ Pass ë˜ëŠ” Fail ì¶œë ¥
 		if (totalScore >= 70 && attendPer >= 70) {
 			System.out.println("Pass");
 		} else {
 			System.out.println("Fail");
 		}
 		
-		System.out.println("======= °á°ú =======");
-		System.out.println("Áß°£°í»ç Á¡¼ö (20Á¡ ¸¸Á¡) : " + midScore);
-		System.out.println("±â¸»°í»ç Á¡¼ö (30Á¡ ¸¸Á¡) : " + fiScore);
-		System.out.println("°ú   Á¦ Á¡¼ö (20Á¡ ¸¸Á¡) : " + asScore);
-		System.out.println("Ãâ   ¼® Á¡¼ö (30Á¡ ¸¸Á¡) : " + attendScore);
-		System.out.println("ÃÑ                 Á¡) : " + totalScore);
+		System.out.println("======= ê²°ê³¼ =======");
+		System.out.println("ì¤‘ê°„ê³ ì‚¬ ì ìˆ˜ (20ì  ë§Œì ) : " + midScore);
+		System.out.println("ê¸°ë§ê³ ì‚¬ ì ìˆ˜ (30ì  ë§Œì ) : " + fiScore);
+		System.out.println("ê³¼   ì œ ì ìˆ˜ (20ì  ë§Œì ) : " + asScore);
+		System.out.println("ì¶œ   ì„ ì ìˆ˜ (30ì  ë§Œì ) : " + attendScore);
+		System.out.println("ì´                 ì ) : " + totalScore);
 		
 	}
 	

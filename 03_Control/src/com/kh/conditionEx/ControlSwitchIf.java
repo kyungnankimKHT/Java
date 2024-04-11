@@ -5,131 +5,131 @@ import java.util.Scanner;
 public class ControlSwitchIf {
 	
 	public static void takeAtaxi() {
-		// ÀÔ·Â¹ŞÀº µ·ÀÌ 3000¿ø ÀÌ»óÀÏ °æ¿ì¿¡¸¸ ÅÃ½Ã¸¦ Å» °ÍÀÎÁö ¹°¾îº¼ °Í
+		// ì…ë ¥ë°›ì€ ëˆì´ 3000ì› ì´ìƒì¼ ê²½ìš°ì—ë§Œ íƒì‹œë¥¼ íƒˆ ê²ƒì¸ì§€ ë¬¼ì–´ë³¼ ê²ƒ
 		Scanner sc =  new Scanner(System.in);
-		System.out.print("ÇöÀç º¸À¯ÇÏ°í ÀÖ´Â ±İ¾×À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("í˜„ì¬ ë³´ìœ í•˜ê³  ìˆëŠ” ê¸ˆì•¡ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 		int money = sc.nextInt();
 		
-		// if ¹®À» »ç¿ëÇØ¼­ ±İ¾×ÀÌ 3000¿ø ÀÌ»óÀÏ °æ¿ì¿¡¸¸ ¹°¾îº¸´Â ÄÚµå¸¦ ÀÛ¼º ÇØÁÙ °Í
+		// if ë¬¸ì„ ì‚¬ìš©í•´ì„œ ê¸ˆì•¡ì´ 3000ì› ì´ìƒì¼ ê²½ìš°ì—ë§Œ ë¬¼ì–´ë³´ëŠ” ì½”ë“œë¥¼ ì‘ì„± í•´ì¤„ ê²ƒ
 		if(money >= 3000) {
-			System.out.println("ÅÃ½Ã¸¦ Å»±î¿ä? (¿¹/¾Æ´Ï¿À)");
+			System.out.println("íƒì‹œë¥¼ íƒˆê¹Œìš”? (ì˜ˆ/ì•„ë‹ˆì˜¤)");
 			String answer = sc.next();
 			
-			// answer·Î ¹ŞÀº ´ë´ä¿¡ µû¶ó ÀÀ´äÀ» Ã³¸®ÇÏ±â
+			// answerë¡œ ë°›ì€ ëŒ€ë‹µì— ë”°ë¼ ì‘ë‹µì„ ì²˜ë¦¬í•˜ê¸°
 			switch (answer) {
-				case "¿¹" :
-					System.out.println("ÅÃ½Ã¸¦ ÅÀ½À´Ï´Ù.");
+				case "ì˜ˆ" :
+					System.out.println("íƒì‹œë¥¼ íƒ”ìŠµë‹ˆë‹¤.");
 					break;
-				case "¾Æ´Ï¿À" :
-					System.out.println("ÅÃ½Ã¸¦ Å¸Áö ¾Ê½À´Ï´Ù.");
+				case "ì•„ë‹ˆì˜¤" :
+					System.out.println("íƒì‹œë¥¼ íƒ€ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 					break;
 				default :
-					System.out.println("Àß¸øµÈ ÀÔ·ÂÀÔ´Ï´Ù.");
+					System.out.println("ì˜ëª»ëœ ì…ë ¥ì…ë‹ˆë‹¤.");
 			}
 			
 		}else {
-			System.out.println("3000¿ø ÀÌÇÏÀÌ¹Ç·Î ÀÜ¾×ÀÌ ºÎÁ·ÇÕ´Ï´Ù.");
+			System.out.println("3000ì› ì´í•˜ì´ë¯€ë¡œ ì”ì•¡ì´ ë¶€ì¡±í•©ë‹ˆë‹¤.");
 		}
 	}
 	/* public static void whyScore
-	 * »ç¿ëÀÚ·ÎºÎÅÍ Á¡¼ö¸¦ ÀÔ·Â¹Ş¾Æ ¼ºÀû µî±ŞÀ» ÆÇº°ÇÏ´Â ÇÁ·Î±×·¥ ÀÛ¼º
+	 * ì‚¬ìš©ìë¡œë¶€í„° ì ìˆ˜ë¥¼ ì…ë ¥ë°›ì•„ ì„±ì  ë“±ê¸‰ì„ íŒë³„í•˜ëŠ” í”„ë¡œê·¸ë¨ ì‘ì„±
 	 * int score
 	 * String reScore
 	 * if 
-	 *  90 ÀÌ»óÀÏ °æ¿ì A ÇĞÁ¡
-	 *  80 ÀÌ»óÀÏ °æ¿ì B ÇĞÁ¡
-	 *  70 ÀÌ»óÀÏ °æ¿ì C ÇĞÁ¡
-	 *  60 ÀÌ»óÀÏ °æ¿ì D ÇĞÁ¡
-	 *  60Á¡ ¹Ì¸¸ÀÏ °æ¿ì F ÇĞÁ¡
+	 *  90 ì´ìƒì¼ ê²½ìš° A í•™ì 
+	 *  80 ì´ìƒì¼ ê²½ìš° B í•™ì 
+	 *  70 ì´ìƒì¼ ê²½ìš° C í•™ì 
+	 *  60 ì´ìƒì¼ ê²½ìš° D í•™ì 
+	 *  60ì  ë¯¸ë§Œì¼ ê²½ìš° F í•™ì 
 	 * switch 
-	 *   -> F ÇĞÁ¡ÀÏ ¶§ Àç¼ö°­ ÇÏ½Ã°Ú½À´Ï´Ù (yes / no)
-	 *   ¸¸¾à¿¡ Yes NO ÀÌ¿ÜÀÇ °ªÀÌ ³ª¿Ã ¼ö ÀÖ±â ¶§¹®¿¡ 
+	 *   -> F í•™ì ì¼ ë•Œ ì¬ìˆ˜ê°• í•˜ì‹œê² ìŠµë‹ˆë‹¤ (yes / no)
+	 *   ë§Œì•½ì— Yes NO ì´ì™¸ì˜ ê°’ì´ ë‚˜ì˜¬ ìˆ˜ ìˆê¸° ë•Œë¬¸ì— 
 	 *   case YES : case yes: 
 	 * */
 	
 	public static void whyScore() {
 		
-		// ½ºÄ³³Ê ÀÌ¿ëÇØ¼­ Á¡¼ö ÀÔ·Â¹Ş±â
+		// ìŠ¤ìºë„ˆ ì´ìš©í•´ì„œ ì ìˆ˜ ì…ë ¥ë°›ê¸°
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
-		int score = sc.nextInt(); //Å°º¸µå·Î Á¡¼ö ÀÔ·Â¹Ş±â
+		System.out.print("ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
+		int score = sc.nextInt(); //í‚¤ë³´ë“œë¡œ ì ìˆ˜ ì…ë ¥ë°›ê¸°
 		
 		if(score >= 90) {
-			System.out.println("AÇĞÁ¡");
+			System.out.println("Aí•™ì ");
 		} else if (score >= 80) {
-			System.out.println("BÇĞÁ¡");
+			System.out.println("Bí•™ì ");
 		} else if (score >= 70) {
-			System.out.println("CÇĞÁ¡");
+			System.out.println("Cí•™ì ");
 		} else if (score >= 60) {
-			System.out.println("DÇĞÁ¡");
+			System.out.println("Dí•™ì ");
 		} else {
-			System.out.println("FÇĞÁ¡");
-			System.out.print("Àç¼ö°­ ÇÏ½Ã°Ú½À´Ï±î? (yes / no) : ");
+			System.out.println("Fí•™ì ");
+			System.out.print("ì¬ìˆ˜ê°• í•˜ì‹œê² ìŠµë‹ˆê¹Œ? (yes / no) : ");
 			String reScore = sc.next();
 			
-			//Àç¼ö°­ÀÇ ¿©ºÎ¸¦ È®ÀÎÇÏ±â
+			//ì¬ìˆ˜ê°•ì˜ ì—¬ë¶€ë¥¼ í™•ì¸í•˜ê¸°
 			switch(reScore) {
 			case "YES": case "yes" :
-				System.out.println("Àç¼ö°­ ½ÅÃ»ÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù.");
+				System.out.println("ì¬ìˆ˜ê°• ì‹ ì²­ì´ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.");
 				break;
 			case "NO" : case "no" :
-				System.out.println("Àç¼ö°­ ½ÅÃ»À» ÇÏÁö ¾Ê¾Ò½À´Ï´Ù.");
+				System.out.println("ì¬ìˆ˜ê°• ì‹ ì²­ì„ í•˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤.");
 				break;
 			default:
-				System.out.println("¿Ã¹Ù¸¥ ÀÔ·ÂÀÌ ¾Æ´Õ´Ï´Ù.");
+				System.out.println("ì˜¬ë°”ë¥¸ ì…ë ¥ì´ ì•„ë‹™ë‹ˆë‹¤.");
 			}
 		}
 	}
 
 	/* public static void whatDay
-	 * ¿ù ¼ö ±İ : Çï½º
-	 * È­ ¸ñ : °øºÎ
-	 * Åä ÀÏ : ÁÖ¸»ÀÎµ¥ Áı¿¡¼­ ½¯ ¿¹Á¤ÀÔ´Ï±î? (¿¹ / ¾Æ´Ï¿À)
-	 * 	¸¸¾à¿¡ Áı¿¡¼­ ½¯ ¿¹Á¤ÀÌ¸é ³× Áı¿¡¼­ ½¯ ¿¹Á¤ÀÔ´Ï´Ù.
-	 * 		¾Æ´Ï¿À ¼±ÅÃÇÏ¸é ¾î¶² È°µ¿À» ÇÒ ¿¹Á¤ÀÎÁö ¼±ÅÃÇØÁÖ¼¼¿ä.
-	 * 			È°µ¿ 1. µî»ê 2. µ¶¼­ 3. ¼ö¿µ ¼±ÅÃÇÒ ¼ö ÀÖ°Ô ¸¸µé¾îÁÜ
+	 * ì›” ìˆ˜ ê¸ˆ : í—¬ìŠ¤
+	 * í™” ëª© : ê³µë¶€
+	 * í†  ì¼ : ì£¼ë§ì¸ë° ì§‘ì—ì„œ ì‰´ ì˜ˆì •ì…ë‹ˆê¹Œ? (ì˜ˆ / ì•„ë‹ˆì˜¤)
+	 * 	ë§Œì•½ì— ì§‘ì—ì„œ ì‰´ ì˜ˆì •ì´ë©´ ë„¤ ì§‘ì—ì„œ ì‰´ ì˜ˆì •ì…ë‹ˆë‹¤.
+	 * 		ì•„ë‹ˆì˜¤ ì„ íƒí•˜ë©´ ì–´ë–¤ í™œë™ì„ í•  ì˜ˆì •ì¸ì§€ ì„ íƒí•´ì£¼ì„¸ìš”.
+	 * 			í™œë™ 1. ë“±ì‚° 2. ë…ì„œ 3. ìˆ˜ì˜ ì„ íƒí•  ìˆ˜ ìˆê²Œ ë§Œë“¤ì–´ì¤Œ
 	 * */
 	
 	public static void whatDay() {
-		//¿À´ÃÀº ¾î¶² ¿äÀÏÀÎÁö È®ÀÎÇÑ ÈÄ¿¡ ¿äÀÏ¿¡ µû¸¥ Ãâ·ÂÀ» ÁøÇàÇÒ °Í
+		//ì˜¤ëŠ˜ì€ ì–´ë–¤ ìš”ì¼ì¸ì§€ í™•ì¸í•œ í›„ì— ìš”ì¼ì— ë”°ë¥¸ ì¶œë ¥ì„ ì§„í–‰í•  ê²ƒ
 		Scanner sc = new Scanner(System.in);
-		System.out.println("³¯Â¥¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
-		System.out.print("(¿ù / È­ / ¼ö / ¸ñ / ±İ / Åä / ÀÏ) : ");
+		System.out.println("ë‚ ì§œë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
+		System.out.print("(ì›” / í™” / ìˆ˜ / ëª© / ê¸ˆ / í†  / ì¼) : ");
 		String day = sc.next();
 		
 		String result = "";
 		switch(day) {
-			case "¿ù":  case "¼ö":  case "±İ" :
-				result = "Çï½º";
+			case "ì›”":  case "ìˆ˜":  case "ê¸ˆ" :
+				result = "í—¬ìŠ¤";
 				break;
-			case "È­": case "¸ñ":
-				result = "°øºÎ";
+			case "í™”": case "ëª©":
+				result = "ê³µë¶€";
 				break;
-				/*¸¸¾à¿¡ Áı¿¡¼­ ½¯ ¿¹Á¤ÀÌ¸é ³× Áı¿¡¼­ ½¯ ¿¹Á¤ÀÔ´Ï´Ù.
-				 ¾Æ´Ï¿À ¼±ÅÃÇÏ¸é ¾î¶² È°µ¿À» ÇÒ ¿¹Á¤ÀÎÁö ¼±ÅÃÇØÁÖ¼¼¿ä.
-				 È°µ¿ 1. µî»ê 2. µ¶¼­ 3. ¼ö¿µ ¼±ÅÃÇÒ ¼ö ÀÖ°Ô ¸¸µé¾îÁÜ*/
-			case "Åä": case "ÀÏ":
-				System.out.println("ÁÖ¸»ÀÌ³×¿ä.");
-				System.out.print("Áı¿¡¼­ ½¯ ¿¹Á¤ÀÎ°¡¿ä? (¿¹ / ¾Æ´Ï¿À) : ");
+				/*ë§Œì•½ì— ì§‘ì—ì„œ ì‰´ ì˜ˆì •ì´ë©´ ë„¤ ì§‘ì—ì„œ ì‰´ ì˜ˆì •ì…ë‹ˆë‹¤.
+				 ì•„ë‹ˆì˜¤ ì„ íƒí•˜ë©´ ì–´ë–¤ í™œë™ì„ í•  ì˜ˆì •ì¸ì§€ ì„ íƒí•´ì£¼ì„¸ìš”.
+				 í™œë™ 1. ë“±ì‚° 2. ë…ì„œ 3. ìˆ˜ì˜ ì„ íƒí•  ìˆ˜ ìˆê²Œ ë§Œë“¤ì–´ì¤Œ*/
+			case "í† ": case "ì¼":
+				System.out.println("ì£¼ë§ì´ë„¤ìš”.");
+				System.out.print("ì§‘ì—ì„œ ì‰´ ì˜ˆì •ì¸ê°€ìš”? (ì˜ˆ / ì•„ë‹ˆì˜¤) : ");
 				String answer = sc.next();
-				if (answer.equals("¿¹")) {
-					result = "Áı";
-				} else { //Áı¿¡¼­ ½¯ ¿¹Á¤ÀÌ ¾Æ´Ò °æ¿ì
-					System.out.println("¾î¶² È°µ¿À» ÇÒ °èÈ¹ÀÎ°¡¿ä ?");
-					System.out.print("1.µî»ê / 2.µ¶¼­ / 3.¼ö¿µ) : ");
+				if (answer.equals("ì˜ˆ")) {
+					result = "ì§‘";
+				} else { //ì§‘ì—ì„œ ì‰´ ì˜ˆì •ì´ ì•„ë‹ ê²½ìš°
+					System.out.println("ì–´ë–¤ í™œë™ì„ í•  ê³„íšì¸ê°€ìš” ?");
+					System.out.print("1.ë“±ì‚° / 2.ë…ì„œ / 3.ìˆ˜ì˜) : ");
 					int activity = sc.nextInt();
 					switch (activity) {
 					case 1:
-						result = "µî»ê";
+						result = "ë“±ì‚°";
 						break;
 					case 2:
-						result = "µ¶¼­";
+						result = "ë…ì„œ";
 						break;
 					case 3:
-						result = "¼ö¿µ";
+						result = "ìˆ˜ì˜";
 						break;
 					default:
-						System.out.println("Àß¸øµÈ ÀÔ·Â");
+						System.out.println("ì˜ëª»ëœ ì…ë ¥");
 						return;
 					}
 				}
@@ -138,7 +138,7 @@ public class ControlSwitchIf {
 			return;
 		}
 		
-		System.out.println(day +"¿äÀÏ¿¡ " + result +"ÇÒ ¿¹Á¤" );
+		System.out.println(day +"ìš”ì¼ì— " + result +"í•  ì˜ˆì •" );
 	}
 	
 	

@@ -5,19 +5,19 @@ import java.util.Scanner;
 public class ConditionEx2 {
 	/*
 	 if  -  else if  -  else
-	 »ç¿ë¹æ¹ý
-	 if (Á¶°Ç1) {
+	 ì‚¬ìš©ë°©ë²•
+	 if (ì¡°ê±´1) {
 	 
-	 	Á¶°Ç1ÀÌ ÂüÀÏ °æ¿ì ½ÇÇàÇÒ ÄÚµå ÀÛ¼º
+	 	ì¡°ê±´1ì´ ì°¸ì¼ ê²½ìš° ì‹¤í–‰í•  ì½”ë“œ ìž‘ì„±
 	 	
-	 } else if (Á¶°Ç2) {
+	 } else if (ì¡°ê±´2) {
 	 
-	 	Á¶°Ç1ÀÌ °ÅÁþÀÌ°í 
-	 	Á¶°Ç2°¡ ÂüÀÏ°æ¿ì ½ÇÇàÇÒ ÄÚµå ÀÛ¼º
+	 	ì¡°ê±´1ì´ ê±°ì§“ì´ê³  
+	 	ì¡°ê±´2ê°€ ì°¸ì¼ê²½ìš° ì‹¤í–‰í•  ì½”ë“œ ìž‘ì„±
 	 	
 	 } else {
 	 
-	 	Á¶°Ç1°ú Á¶°Ç2°¡ ¸ðµÎ °ÅÁþÀÏ °æ¿ì ½ÇÇàÇÒ ÄÚµå ÀÛ¼º
+	 	ì¡°ê±´1ê³¼ ì¡°ê±´2ê°€ ëª¨ë‘ ê±°ì§“ì¼ ê²½ìš° ì‹¤í–‰í•  ì½”ë“œ ìž‘ì„±
 	 }
 	 
 	 */
@@ -29,23 +29,23 @@ public class ConditionEx2 {
 	}
 	
 	/*
-	 ³ªÀÌ¸¦ ÀÔ·Â¹Þ¾Æ 
-	 13¼¼ ÀÌÇÏ¸é "¾î¸°ÀÌ"
-	 13¼¼ ÃÊ°ú 18¼¼ ÀÌÇÏ "Ã»¼Ò³â"
-	 18¼¼ ÃÊ°ú "¼ºÀÎ"
+	 ë‚˜ì´ë¥¼ ìž…ë ¥ë°›ì•„ 
+	 13ì„¸ ì´í•˜ë©´ "ì–´ë¦°ì´"
+	 13ì„¸ ì´ˆê³¼ 18ì„¸ ì´í•˜ "ì²­ì†Œë…„"
+	 18ì„¸ ì´ˆê³¼ "ì„±ì¸"
 	 */
 	public static void method2() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("¾È³çÇÏ¼¼¿ä. khÆ¼ÄÏ³ª¶óÀÔ´Ï´Ù. ");
-		System.out.print("³ªÀÌ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä. : ");
+		System.out.print("ì•ˆë…•í•˜ì„¸ìš”. khí‹°ì¼“ë‚˜ë¼ìž…ë‹ˆë‹¤. ");
+		System.out.print("ë‚˜ì´ë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”. : ");
 		int age = sc.nextInt();
 		
 		if (age <= 13) {
-			System.out.println("¾î¸°ÀÌ");
+			System.out.println("ì–´ë¦°ì´");
 		} else if (age <= 18) {
-			System.out.println("Ã»¼Ò³â");
+			System.out.println("ì²­ì†Œë…„");
 		} else {
-			System.out.println("¼ºÀÎ");
+			System.out.println("ì„±ì¸");
 		}
 		//System.out.println(result);
 	}
@@ -58,73 +58,73 @@ public class ConditionEx2 {
 	
 	
 	/*
-	 ´Þ À» ÀÔ·Â¹Þ¾Æ ÇØ´çÇÏ´Â °èÀý Ãâ·ÂÇÏ±â
-	   º½ : 3,4,5
-	 ¿©¸§ : 6,7,8
-	 °¡À» : 9,10,11
-	 °Ü¿ï : 12,1,2
+	 ë‹¬ ì„ ìž…ë ¥ë°›ì•„ í•´ë‹¹í•˜ëŠ” ê³„ì ˆ ì¶œë ¥í•˜ê¸°
+	   ë´„ : 3,4,5
+	 ì—¬ë¦„ : 6,7,8
+	 ê°€ì„ : 9,10,11
+	 ê²¨ìš¸ : 12,1,2
 	 * */
 	
 	public static void method4() {
-		//13¼¼ ÀÌÇÏ ¾î¸°ÀÌ 14 ~ 18¼¼ Ã»¼Ò³â 19¼¼ ¼ºÀÎ
+		//13ì„¸ ì´í•˜ ì–´ë¦°ì´ 14 ~ 18ì„¸ ì²­ì†Œë…„ 19ì„¸ ì„±ì¸
 		
 		int age = 22;
-		// º¯¼öÀÇ ±â´ÉÀ» È°¿ëÇØ¼­ ¸¶Áö¸·¿¡ ³ªÀÌ¿¡ µû¸¥ Ç¥±â¸¦ Ãâ·Â
+		// ë³€ìˆ˜ì˜ ê¸°ëŠ¥ì„ í™œìš©í•´ì„œ ë§ˆì§€ë§‰ì— ë‚˜ì´ì— ë”°ë¥¸ í‘œê¸°ë¥¼ ì¶œë ¥
 		String result;
 		if(age <= 13) {
-			result = "¾î¸°ÀÌ";
+			result = "ì–´ë¦°ì´";
 		} else if (age >= 14 && age <= 18) {
-			result = "Ã»¼Ò³â";
+			result = "ì²­ì†Œë…„";
 		} else {
-			result = "¼ºÀÎ";
+			result = "ì„±ì¸";
 		}
-		System.out.println(result + "ÀÔ´Ï´Ù.");
+		System.out.println(result + "ìž…ë‹ˆë‹¤.");
 	}
 
 
 	
 	public static void method3() {
-		// ¸¸¾à¿¡ 1,2, 12 °Ü¿ï
+		// ë§Œì•½ì— 1,2, 12 ê²¨ìš¸
 		Scanner sc = new Scanner(System.in);
-		System.out.print("¿ùÀ» ÀÛ¼ºÇÏ¼¼¿ä : ");
+		System.out.print("ì›”ì„ ìž‘ì„±í•˜ì„¸ìš” : ");
 		int month = sc.nextInt();
 		
 		String result;
 		if(month == 1 || month == 2 || month == 12 ) {
-			result="°Ü¿ï";
+			result="ê²¨ìš¸";
 		} else if (month >= 3 && month <= 5) {
-			result="º½";
+			result="ë´„";
 		} else if (month >= 6 && month <= 8) {
-			result="¿©¸§";
+			result="ì—¬ë¦„";
 		} else if (month >= 9 && month <= 11) {
-			result="°¡À»";
+			result="ê°€ì„";
 		} else {
-			result="ÇØ´çÇÏ´Â °èÀýÀÌ ¾ø½À´Ï´Ù.";
+			result="í•´ë‹¹í•˜ëŠ” ê³„ì ˆì´ ì—†ìŠµë‹ˆë‹¤.";
 		}
 		
 		System.out.println(result);
 	}
 	
 	public static void method1() {
-		// ¸¸¾à¿¡ µ·ÀÌ 2000¿ø ÀÌ»ó ÀÖÀ» °æ¿ì ÅÃ½Ã¸¦Åº´Ù.
-		// ¸¸¾à¿¡ µ·ÀÌ 1500~1900 ÀÌÇÏ ÀÖÀ» °æ¿ì ´ëÁß±³ÅëÀ» ÀÌ¿ëÇÑ´Ù.
-		// ¸¸¾à¿¡ µ·ÀÌ ¾øÀ»°æ¿ì °É¾î°£´Ù.
+		// ë§Œì•½ì— ëˆì´ 2000ì› ì´ìƒ ìžˆì„ ê²½ìš° íƒì‹œë¥¼íƒ„ë‹¤.
+		// ë§Œì•½ì— ëˆì´ 1500~1900 ì´í•˜ ìžˆì„ ê²½ìš° ëŒ€ì¤‘êµí†µì„ ì´ìš©í•œë‹¤.
+		// ë§Œì•½ì— ëˆì´ ì—†ì„ê²½ìš° ê±¸ì–´ê°„ë‹¤.
 		
-		int money = 1800; // ³»°¡ ÇöÀç °¡Áö°í ÀÖ´Â µ·
-		// 2000¿ø ÀÌ»óÀÏ °æ¿ì
+		int money = 1800; // ë‚´ê°€ í˜„ìž¬ ê°€ì§€ê³  ìžˆëŠ” ëˆ
+		// 2000ì› ì´ìƒì¼ ê²½ìš°
 		if(money >= 2000) {  
 			
-			System.out.print("ÅÃ½Ã¸¦ Åº´Ù");
+			System.out.print("íƒì‹œë¥¼ íƒ„ë‹¤");
 			
-		// 2000¿ø ÀÌ»óÀº ¾øÁö¸¸ 1500¿ø ÀÌ»óÀÌ ÀÖÀ» °æ¿ì 
+		// 2000ì› ì´ìƒì€ ì—†ì§€ë§Œ 1500ì› ì´ìƒì´ ìžˆì„ ê²½ìš° 
 		} else if (money >= 1500 && money <=1900) {
 			
-			System.out.println("´ëÁß±³ÅëÀ» ÀÌ¿ëÇÑ´Ù.");
+			System.out.println("ëŒ€ì¤‘êµí†µì„ ì´ìš©í•œë‹¤.");
 		
-		// 1400¿ø ÀÌÇÏ ÀÖÀ» °æ¿ì °É¾î°£´Ù.
+		// 1400ì› ì´í•˜ ìžˆì„ ê²½ìš° ê±¸ì–´ê°„ë‹¤.
 		} else {
 			
-			System.out.println("°É¾î°£´Ù.");
+			System.out.println("ê±¸ì–´ê°„ë‹¤.");
 		}
 		
 	}

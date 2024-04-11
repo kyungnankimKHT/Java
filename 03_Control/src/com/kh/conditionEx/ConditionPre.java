@@ -5,50 +5,50 @@ import java.util.Scanner;
 public class ConditionPre {
 
 	 public static void method1() {
-		// if ¹® È°¿ë ¼ıÀÚ °ª 2°³¸¦ ¹Ş¾Æ¼­ ¼ıÀÚ µÎ°³°¡ ÀÏÄ¡ÇÏ´ÂÁö È®ÀÎ
+		// if ë¬¸ í™œìš© ìˆ«ì ê°’ 2ê°œë¥¼ ë°›ì•„ì„œ ìˆ«ì ë‘ê°œê°€ ì¼ì¹˜í•˜ëŠ”ì§€ í™•ì¸
 		Scanner sc = new Scanner(System.in);
-		System.out.print("num1 °ªÀ» ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.print("num1 ê°’ì„ ì…ë ¥í•˜ì„¸ìš”.");
 		int num1 = sc.nextInt();
-		System.out.print("num2 °ªÀ» ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.print("num2 ê°’ì„ ì…ë ¥í•˜ì„¸ìš”.");
 		int num2 = sc.nextInt();
 		if (num1 == num2) {
-			System.out.println(num1 + " °ú " + num2 + " ÀÇ °ªÀÌ °°½À´Ï´Ù.");
+			System.out.println(num1 + " ê³¼ " + num2 + " ì˜ ê°’ì´ ê°™ìŠµë‹ˆë‹¤.");
 		} else {
-			System.out.println(num1 + " °ú " + num2 + " ÀÇ °ªÀº °°Áö ¾Ê½À´Ï´Ù.");
+			System.out.println(num1 + " ê³¼ " + num2 + " ì˜ ê°’ì€ ê°™ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 		}
 	 }
 	public static void method2() {
-	// if ¹® È°¿ë ¹®ÀÚ °ª 2°³¸¦ ¹Ş¾Æ¼­ ¹®ÀÚ µÎ°³°¡ ÀÏÄ¡ÇÏ´ÂÁö È®ÀÎ
+	// if ë¬¸ í™œìš© ë¬¸ì ê°’ 2ê°œë¥¼ ë°›ì•„ì„œ ë¬¸ì ë‘ê°œê°€ ì¼ì¹˜í•˜ëŠ”ì§€ í™•ì¸
 		Scanner sc = new Scanner(System.in);
-		System.out.print("str1 °ªÀ» ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.print("str1 ê°’ì„ ì…ë ¥í•˜ì„¸ìš”.");
 		String str1 = sc.nextLine();
-		System.out.print("str2 °ªÀ» ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.print("str2 ê°’ì„ ì…ë ¥í•˜ì„¸ìš”.");
 		String str2 = sc.nextLine();
 		if(str1.equals(str2)) {
-			System.out.println(str1 + " °ú " + str2 + " ´Â °°½À´Ï´Ù.");
+			System.out.println(str1 + " ê³¼ " + str2 + " ëŠ” ê°™ìŠµë‹ˆë‹¤.");
 		} else {
-			System.out.println(str1 + " °ú " + str2 + " ´Â °°Áö ¾Ê½À´Ï´Ù.");
+			System.out.println(str1 + " ê³¼ " + str2 + " ëŠ” ê°™ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 		}
 		
 	}
-	//method3 double ·Î ½Ç¼ö 2°³ °ª ¹Ş¾Æ¼­ ½Ç¼ö µÎ°³°¡ ÀÏÄ¡ÇÏ´ÂÁö È®ÀÎ ==
+	//method3 double ë¡œ ì‹¤ìˆ˜ 2ê°œ ê°’ ë°›ì•„ì„œ ì‹¤ìˆ˜ ë‘ê°œê°€ ì¼ì¹˜í•˜ëŠ”ì§€ í™•ì¸ ==
 	public static void method3() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("double1 °ªÀ» ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.print("double1 ê°’ì„ ì…ë ¥í•˜ì„¸ìš”.");
 		double double1 = sc.nextDouble();
-		System.out.print("double2 °ªÀ» ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.print("double2 ê°’ì„ ì…ë ¥í•˜ì„¸ìš”.");
 		double double2 = sc.nextDouble();
 		
 		if (double1 == double2) { 
-			System.out.println(double1 + " °ú " + double2 + " ´Â ÀÏÄ¡ÇÕ´Ï´Ù.");
+			System.out.println(double1 + " ê³¼ " + double2 + " ëŠ” ì¼ì¹˜í•©ë‹ˆë‹¤.");
 		} else {
-			System.out.println(double1 + " °ú " + double2 + " ´Â ÀÏÄ¡ÇÏÁö ¾Ê½À´Ï´Ù.");
+			System.out.println(double1 + " ê³¼ " + double2 + " ëŠ” ì¼ì¹˜í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 		}
 	}
 	
 	
 	
-	//ÃÖÁ¾À¸·Î ½ÇÇàÇÒ ¸ŞÀÎ ¸Ş¼­µå
+	//ìµœì¢…ìœ¼ë¡œ ì‹¤í–‰í•  ë©”ì¸ ë©”ì„œë“œ
 	public static void main(String[] args) {
 		method1();
 		method2();
