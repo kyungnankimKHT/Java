@@ -139,29 +139,38 @@ public class LoopWhileEX {
 	}
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	/*
+	 사용자로부터 1개의 값을 입력받아 1부터 그 숫자까지의 숫자를 모두 출력
+	 단 입력한 수를 1보다 크거나 같아야 함
+	 만약에 1 미만의 숫자가 입력됐다면 1이상의 숫자를 입력해주세요 출력하기
+	 * */
+	 
+	 
+	 public static void method2(){
+	 	Scanner sc = new Scanner(System.in);
+	 	System.out.println("0보다 큰 숫자를 입력하세요 : ");
+	 	int num = sc.nextInt();
+	 	
+	 	if (num < 1) {
+	 		System.out.println("1이상의 숫자를 입력해주세요");
+	 	} else {
+	 		System.out.println("1부터 " + num + "까지의 숫자들");
+	 		int abc = 1;
+	 		//while문을 사용해서 숫자 abc 부터 num까지 모두 출력하기
+	 		while( abc <= num) {
+	 			System.out.println(abc); //1
+	 			abc++; //abc = abc+1;
+	 		}
+	 	}
+	 }
 	
 	public static void main(String[] args) {
 		//method1();
 		//kh카페();
 		//getMoney();
 		//allNumber();
-		tree();
+		//tree();
+		method2();
 	}
 
 }
