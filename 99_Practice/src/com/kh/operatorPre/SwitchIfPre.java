@@ -273,15 +273,26 @@ public class SwitchIfPre {
 		case "*" :
 			result = num1 * num2;
 			break;
+			/* / % 0으로 나눌 수 없기 때문에 if문으로 값이 0이될 경우 처리를 해줘야함 */
 		case "/" :
-			result = num1 / num2;
+			if(num2 == 0) {
+				System.out.println("0으로 나눌 수 없습니다. 프로그램을 종료합니다.");
+				return;
+			}
+			result = (double) num1 / num2;
 			break;
 		case "%" : 
+			if(num2 == 0) {
+				System.out.println("0으로 나눌 수 없습니다. 프로그램을 종료합니다.");
+				return;
+			}
 			result = num1 % num2;
 			break;
 		default:
 			System.out.print("잘못 입력했습니다. 프로그램을 종료합니다");
+			return;
 		}
+		System.out.println(num1 + " " + operator + " " + num2 + "=" + result);
 		
 	}
 	
@@ -303,7 +314,8 @@ public class SwitchIfPre {
 		//castingPractice3();
 		//controlPractice1();
 		//controlPractice10();
-		controlPractice6();
+		//controlPractice6();
+		controlPractice8();
 	}
 
 }
