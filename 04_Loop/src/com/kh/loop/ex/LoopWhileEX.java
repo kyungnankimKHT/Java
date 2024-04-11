@@ -191,17 +191,22 @@ public class LoopWhileEX {
 	 
 	 //10000원 이상 돈이 없을 경우 탕수육을 시키지 못하는 예제
 	 public static void iLovePork() {
+		//1. Scanner를 이용해서 현재 보유하고 있는 금액 입력하기
+		 System.out.println("안녕하세요. 탕수육점입니다.");
 		 Scanner sc = new Scanner(System.in);
-		 //1. Scanner를 이용해서 현재 보유하고 있는 금액 입력하기
+		 System.out.print("금액을 입금해주세요 : ");
 		 int tangsuyuk = 10000;
 		 int myMoney = sc.nextInt();
-		 // 보유하고 있는 금액이 tangsuyuk 보다 적으면 잔액이 부족합니다.
-		 // 다시 입금해주세요.
-		 // nextInt 다시 입금할 금액을입력
 		 
+		 while(myMoney < tangsuyuk) {
+			 System.out.println("잔액이 부족합니다.");
+			 System.out.println("다시 입금해주세요.");
+			 myMoney = sc.nextInt();
+		 }
+	
 		 //돈이 10000원 이상이면 주문이 완료되었습니다.
 		 // 현재 잔액은 00 입니다.
-		 
+		 System.out.println("탕수육을 구매했습니다. 거스름돈은 " + (myMoney - tangsuyuk) + " 입니다.");
 	 }
 	 
 	 
@@ -222,7 +227,8 @@ public class LoopWhileEX {
 		//allNumber();
 		//tree();
 		//method2();
-		getCoffee();
+		//getCoffee();
+		iLovePork();
 	}
 
 }
