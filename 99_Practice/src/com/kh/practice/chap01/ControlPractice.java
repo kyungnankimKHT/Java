@@ -29,7 +29,7 @@ public class ControlPractice {
 			 digits[2] = (password / 10) % 10; // 십의자리
 			 digits[3] = password % 10;       //일의자리
 			 
-			 // 중복 여부
+			 // 중복 여부 -> 중복을 체크하는 간단한 java
 			 boolean isTrue = true;
 			 //length : 크기
 			 for (int i = 0; i < digits.length; i++) {

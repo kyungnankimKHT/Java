@@ -140,8 +140,21 @@ public class LoopForEX {
 		 
 	 }
 	 
-	
-	
+	// 1부터 10까지의 숫자 중에서 홀수만 출력하기
+	//홀수 =  odd
+	public void  oddNum() {
+		for (int num = 1; num <= 10; num++) {
+			//만약에 숫자가 홀수라면 출력하기
+			if (num % 2 != 0) {
+				System.out.println(num);
+			}
+		}
+	}
+	//짝수만 1 ~ 10까지 출력하기
+	// 짝수 = even
+	public void evenNum() {
+		
+	}
 	
 }
 
