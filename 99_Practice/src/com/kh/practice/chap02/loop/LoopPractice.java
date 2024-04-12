@@ -110,24 +110,13 @@ public class LoopPractice {
 				
 			} else {
 				System.out.println("잘못입력했습니다.");
-				//continue;
+				continue;
 			}
 			System.out.println(정수1 + " " + operator + " "+ 정수2 + " = " +결과);
 		}
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	
 	public void Geeting() {
 		System.out.println("안녕하세요.");
