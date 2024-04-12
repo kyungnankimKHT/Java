@@ -16,8 +16,10 @@ public class Run {
 		//LoopPractice 밑에 있는 Greeting을 소환할 것
 		     Scanner sc = new Scanner(System.in);
 		LoopPractice LP = new LoopPractice();
-		LP.Geeting();
-		LP.Geeting2();
+		//LP.Geeting();
+		//LP.Geeting2();
+		LP.practice2();
+		LP.practice3();
 	}
 
 }
