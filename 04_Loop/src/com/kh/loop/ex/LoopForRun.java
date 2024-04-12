@@ -8,8 +8,11 @@ public class LoopForRun {
 		LoopForEX 구구단 = new LoopForEX();
 		//구구단.guguDan();
 		//구구단.guguDan2();
-		구구단.guguDan3();
-
+		//구구단.guguDan3();
+		//구구단.gugudan4();
+		//구구단.randomNumber();
+		//구구단.randomFor();
+		구구단.randomFor2();
 	}
 
 }

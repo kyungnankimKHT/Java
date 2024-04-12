@@ -1,5 +1,6 @@
 package com.kh.loop.ex;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class LoopForEX {
@@ -83,8 +84,65 @@ public class LoopForEX {
 	
 	// 구구단을 2단부터 9단까지 출력
 	public void gugudan4() {
+		//2단부터 9단까지 출력
+		for (int 단 = 2; 단 <=9; 단++) {
+			System.out.println("====== " + 단 + " ======");
+			
+			//2단부터 9단까지 1부터  9까지 숫자를 출력하기
+			for(int 숫자 = 1; 숫자 <= 9; 숫자++) {
+				System.out.println(단 + " * " + 숫자 + " = " + (단 * 숫자));
+			}
+			
+		}
 		
 	}
+
+	
+	// 10개의 숫자 출력하기 랜덤으로
+	public void randomNumber() {
+		//Random 불러와 내가 지정한 범위에서 숫자를 랜덤으로 출력하기
+		Random 랜덤 = new Random(); //로또 번호 생성
+		 //nextInt() 안에 숫자를 넣어서 어디서부터 어디사이에서 랜덤으로 숫자가 나와야하는지
+		//범위를 지정할 수 있음
+		int 랜덤숫자 = 랜덤.nextInt(5);// 0 ~ 4 사이에 숫자가 나옴
+		// 숫자를 셀 때 코드 안에서는 -1~ 정수 양수 0 부터 시작 
+		// 랜덤으로 지정한 숫자 -1
+		System.out.println("랜덤숫자 : " + 랜덤숫자);
+	}
+	
+	// 랜덤으로 숫자 3개 출력하기  1 ~ 10 사이의 숫자
+	
+	
+	public void randomFor() {
+		// Random 호출하기
+		Random ran = new Random();
+		// 랜덤숫자 3개 출력 1 ~ 10 사이의 숫자
+		for (int num = 1; num <= 3; num++) {
+			//랜덤으로 숫자를 만들어주기
+			//							10을 적어주면 0 ~ 9
+			//							10 + 1      1 ~ 10
+			int randomNumber = ran.nextInt(10) + 1;
+			System.out.println("랜덤숫자 " + num + " : " + randomNumber);
+		}
+	}
+	
+	
+	 public void randomFor2() {
+	 	// 랜덤으로 1 ~ 45 번호  6자리 for 문 출력
+		 Random random = new Random();
+		 
+		 //숫자가 6자리만 출력될 수 있도록 for문을 6ㄱㅐ까지만 허용
+		 for(int num = 1; num <= 6; num++) {
+			 int lottoNumber = random.nextInt(45) + 1;
+			 //if 랜덤 숫자가 같다면 번호를 제외하고 출력하기
+			 System.out.println("랜덤 추첨 번호 : "+lottoNumber);
+		 }
+		 
+	 }
+	 
+	
+	
+	
 }
 
 
