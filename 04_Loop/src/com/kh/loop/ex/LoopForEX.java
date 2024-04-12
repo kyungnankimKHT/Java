@@ -153,9 +153,73 @@ public class LoopForEX {
 	//짝수만 1 ~ 10까지 출력하기
 	// 짝수 = even
 	public void evenNum() {
+		for (int num = 1; num <= 10; num++) {
+			//만약에 숫자가 짝수라면 출력하기
+			if(num % 2 == 0) {
+				System.out.println(num);
+			}
+		}
+	}
+	
+	//정사각형 모양의 별 출력
+	public void squareStar() {
+		int star = 3;
+		for (int i = 0; i < star; i++) { //한줄출력 0 1 2
+			
+			for (int j = 0; j < star; j++) {
+				System.out.print("* ");
+			}
+			
+			System.out.println(); //가로로 별을 출력한다음 줄바꿈
+		}
 		
 	}
 	
+	//정사각형 모양의 별 출력 가로로 5개씩 출력
+	public void fiveStar() {
+		int star = 5;
+	//  for (int i = 0; i <    5; i++ )
+		for (int i = 0; i < star; i++ ) {
+			for(int j = 0; j < star; j++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+		
+	}
+
+	//숫자를 맞출 때까지 계속 문제를 풀도록 하기 while(true)   
+	//for 기회 2번 주기
+	// if 문 수정해서 숫자값이 정답보다 작으면 숫자가 작습니다. 
+	// hint 숫자값이 정답보다 높으면 숫자가 너무 큽니다.
+	public void numberGame() {
+		// 랜덤으로 만들어진 숫자가 무엇인지 키보드로 맞추는 게임
+		Scanner sc = new Scanner(System.in);
+		
+		//랜덤으로 숫자 만들기
+		Random random = new Random();
+		while(true) {
+			int randomNumber = random.nextInt(3) + 1; //1 ~ 3
+			System.out.println("숫자를 맞춰보세요!!!! ");
+			//for 문 안에 공격을 몇 번까지 허용할 것인가? 공격을 2번만 허용하겠다.
+			for(int attack = 1; attack <= 2; attack++) {
+				System.out.print("공격을 " + attack + " 회 시도합니다 (숫자적기) :");
+				int guest = sc.nextInt(); //게스트가 입력한 숫자 가져오기
+			
+				//만약에 숫자를 맞췄다면 숫자를 맞췄습니다. if else if
+				if(guest == randomNumber) {
+					System.out.println("축하합니다.!! 숫자를 맞췄습니다.!");
+					break;
+				//틀렸을 때 정답보다 숫자를 작게 작성했는지 숫자를 정답보다 높게 작성했는지 힌트를 줄 수 있음
+				} else if (guest < randomNumber) {
+					System.out.println("정답보다 입력한 숫자가 작습니다."); //
+					//System.out.println("정답은 " + randomNumber + "입니다.");
+				} else if (guest > randomNumber) {
+					System.out.println("정답보다 입력한 숫자가 큽니다.");
+				}
+			}
+		}
+	}
 }
 
 

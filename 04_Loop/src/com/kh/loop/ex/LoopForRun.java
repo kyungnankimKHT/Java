@@ -5,14 +5,18 @@ public class LoopForRun {
 	public static void main(String[] args) {
 		//LoopForEx에 작성한 코드를 출력만 해줄 것
 		//대문자 소문자를 다른 글자로 구분하기 때문에 똑같이 작성해줘야함 
-		LoopForEX 구구단 = new LoopForEX();
-		//구구단.guguDan();
-		//구구단.guguDan2();
-		//구구단.guguDan3();
-		//구구단.gugudan4();
-		//구구단.randomNumber();
-		//구구단.randomFor();
-		구구단.randomFor2();
+		LoopForEX 숫자들 = new LoopForEX();
+		//숫자들.guguDan();
+		//숫자들.guguDan2();
+		//숫자들.guguDan3();
+		//숫자들.gugudan4();
+		//숫자들.randomNumber();
+		//숫자들.randomFor();
+		//숫자들.randomFor2();
+		//숫자들.evenNum();
+		//숫자들.squareStar();
+		//숫자들.fiveStar();
+		숫자들.numberGame();
 	}
 
 }
