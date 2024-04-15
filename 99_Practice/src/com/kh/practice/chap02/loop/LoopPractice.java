@@ -134,17 +134,43 @@ public class LoopPractice {
 		System.out.print(result);
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	public void practice7() {
+		/*
+		 사용자로부터 두 개의 값을 입력 받아 그 사이의 숫자 출력하기
+		 만일 1 미만의 숫자가 입력됐다면 1 이상의 숫자를 입력해주세요 출력하기
+		 다시 사용자가 값을 입력해서 출력하기
+		 */
+		Scanner sc = new Scanner(System.in);
+		while(true) {
+			System.out.print("첫 번째 숫자 :");
+			int firstNum = sc.nextInt();
+			
+			System.out.print("두 번째 숫자 : ");
+			int secondNum = sc.nextInt();
+			
+			//만약에 첫 번째 숫자와 두 번째 숫자 모두 1보다 크거나 같을 경우
+			if(firstNum >= 1 && secondNum >= 1) {
+				// 두 수를 비교해서 
+				//최소값 최대값 구하기
+				int 최소값 = Math.min(firstNum, secondNum);
+				//Math(수학 파일에서) 가장 작은 값을 찾는 min을 활용해서
+				//알아서 비교하고 작은 값을 구하게 하기
+				int 최대값 = Math.max(secondNum, firstNum);
+				
+					for(int i = 최소값; i <= 최대값; i++) {
+						System.out.print(i + " ");
+					}
+				
+				break;
+			} else {
+				System.out.println("1 이상의 숫자를 입력해주세요.");
+			}
+			
+		}
+		
+		
+		
+	}
 	
 	
 	
