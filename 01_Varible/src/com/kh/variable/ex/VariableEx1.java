@@ -10,7 +10,7 @@ public class VariableEx1 {
 		/*
 		 자바에서 기본으로 제공하는 자료형
 		 [논리형]
-		 boolean (1byte) - true / false
+		 boolean (1byte) - true / false 기본값 false
 		 
 		 [정수형]
 		 byte    (1byte)
