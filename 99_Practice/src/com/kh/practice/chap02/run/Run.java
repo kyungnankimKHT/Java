@@ -20,7 +20,7 @@ public class Run {
 		//LP.Geeting2();
 		//LP.practice2();
 		//LP.practice3();
-		LP.practice5();
+		LP.practice13();
 	}
 
 }

@@ -155,7 +155,13 @@ public class LoopPractice {
 				int 최소값 = Math.min(firstNum, secondNum);
 				//Math(수학 파일에서) 가장 작은 값을 찾는 min을 활용해서
 				//알아서 비교하고 작은 값을 구하게 하기
-				int 최대값 = Math.max(secondNum, firstNum);
+				//(   ,    ) 괄호 안에 숫자를 넣을 때 숫자 순서는 상관 없음
+				// Math에도 random 이 있던데요 ?!
+				//Random파일    Math.random 파일
+				// Math에 있는 random보다 Random에 있는 랜덤 기능이 더
+				//많지만 둘 다 사용하는데 큰 차이는 없음
+				
+				int 최대값 = Math.max(firstNum, secondNum);
 				
 					for(int i = 최소값; i <= 최대값; i++) {
 						System.out.print(i + " ");
@@ -171,13 +177,6 @@ public class LoopPractice {
 		
 		
 	}
-	
-	
-	
-	
-	
-	
-	
 	
 	public void practice12() {
 		Scanner sc = new Scanner(System.in);
@@ -236,7 +235,37 @@ public class LoopPractice {
 		}
 	}
 	
-
+	/* 13과 14번 문제 이중 for문 문제 */
+	public void practice13() {
+		//키보드로 숫자를 입력 받고 별찍기를 진행한다.
+		 Scanner sc = new Scanner(System.in);
+		 System.out.print("정수를 입력하세요 : ");
+		 int num = sc.nextInt();
+		 
+		 // 입력받은 수만큼 세로줄 출력 ex) 2  세로로 이 + 한자 二 칸
+		 for(int 세로줄 = 1; 세로줄 <= num; 세로줄++) {
+			 //한줄씩 별을 만들어주고 싶음
+			 // 한 줄-하나    두 줄-둘    세 줄-삼 ... num줄 = num
+			 for(int 별 = 1; 별 <= 세로줄; 별++) {
+				 System.out.print("*");
+			 }
+			 //줄바꿈을 해줄 enter가 없으면 가로로 모두 출력
+			 System.out.println();
+		 }
+		 
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	public void Geeting() {
 		System.out.println("안녕하세요.");
