@@ -256,6 +256,71 @@ public class LoopPractice {
 	}
 	
 	
+	//practice 14
+	
+	/* 정수 입력을 해서
+	첫번째 줄에서 가장 많은 별을 출력 / 마지막에서 가장 적은 별을 출력
+	ex.
+		정수 입력 : 4
+		****
+		***
+		**
+		*
+	*/
+	
+	public void practice14() {
+		//키보드 입력받을 정수
+		Scanner sc = new Scanner(System.in);
+		System.out.print("정수 입력 : ");
+		int num = sc.nextInt();
+		for (int line = 0; line >= 1 ; line++) { //; ; 은 for문 안에서 2개만 사용 가능
+	  		for(int star = num; star <= line; star--) {
+	  			System.out.print("*");
+	  		}
+	  		System.out.println();
+	  		
+	  	}
+		
+		
+		
+	}
+	/*
+	 ****
+	  ***
+	   **
+	    *
+	 * */
+	public void practice15() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("정수를 입력하세요 : ");
+		//키보드로 입력 받은 수를 size 안에 넣어줌
+		int size = sc.nextInt();
+		// line은 세로로 된 줄의 번호를 나타냄
+		for(int line = 0; line < size; line++ ) {
+			//blank 공백을 출력하기 위한 for문
+			//line 번째 줄에서는 line개의 공백을 출력하겠다
+			 for (int blank = 0; blank < line; blank++) {
+				 System.out.print("  ");
+			 }
+			 //start 별을 출력하기 위한 for문
+			 //line 번째 줄에서는 size - line 개의 별을 출력
+			 //	첫 번째 줄 size
+			 // 두 번째 줄 size - line  
+			 for (int star = size; star > line; star--) {
+				 System.out.print("* ");
+			 }
+			System.out.println();
+			
+			
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
