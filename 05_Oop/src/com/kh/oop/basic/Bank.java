@@ -14,7 +14,12 @@ public class Bank {
 		
 	}
 	// 2. 필수인 생성자 이름 계좌번호 잔액 패스워드
-	
+	public Bank(String name, String a, int b, String password) {
+		this.name = name;
+		this.accountNumber = a;
+		this.balance = b;
+		this.password = password;
+	}
 	// 3. 출력 생성자
 	public void info() {
 		System.out.println("이름 : " + name);
@@ -45,6 +50,14 @@ public class Bank {
 		//수신동의를 해야하는데 수신동의를 안하고 바쁘다고 먼저 가버리심
 		
 		customer2.info();
+		
+		// 3. 필수 생성자를 활용해서 마이클 씨의 은행 통장 
+		//이름 계좌번호 잔액 비밀번호 를 입력하고
+		// 마케팅 수신동의를 true 변경해서 출력하기
+		Bank customer3 = new Bank("마이클", "456-678-234", 4567, "0000");
+		customer3.agree = true;
+		
+		customer3.info();
 	}
 }
 
