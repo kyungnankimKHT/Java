@@ -18,8 +18,9 @@ public class Run {
 		LoopPractice LP = new LoopPractice();
 		//LP.Geeting();
 		//LP.Geeting2();
-		LP.practice2();
-		LP.practice3();
+		//LP.practice2();
+		//LP.practice3();
+		LP.practice5();
 	}
 
 }

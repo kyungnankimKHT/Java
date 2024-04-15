@@ -31,16 +31,6 @@ public class LoopPractice {
 		System.out.println();//줄바꿈 완성!
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	public void practice2() {
 		//입력받기 위해서는 스캐를 통해서 입력 받기
 		Scanner sc = new Scanner(System.in);
@@ -91,6 +81,76 @@ public class LoopPractice {
 		}
 		//System.out.println();	
 	}
+	
+	public void practice4() {
+		//1 미만의 숫자가 입력되면 1이상의 숫자를 입력해주세요 출력되면서 
+		//사용자가 값을 입력하도록 하기
+		// 숫자를 입력받은 숫자부터 1까지 출력하기
+		Scanner sc = new Scanner(System.in);
+		//잘라내기 ctrl + x  붙여넣기 ctrl + v
+		
+		int num; // practice4 안에서 어디에서든 num을 알 수 있도록 바깥으로 호출해줌
+		//do - while : 조건이 참이 아니어도 무조건 최초 1회는 실행
+		do {
+			System.out.print("숫자를 입력해주세요 : ");
+			num = sc.nextInt();
+			//1 미만의 숫자가 들어오면 !
+			if(num < 1) {
+				System.out.println("1 이상의 숫자를 입력해주세요.");
+			//조건에 관계없이 do로인해 무조건 1회 실행되는 것이기 때문에 return이나 break를
+			//작성해주지 않아도 될 경우가 많음
+			}
+		}while(num > 1);
+		
+		//만약에 1보다 커서 밑으로 내려온다면
+		//num 부터 1까지 거꾸로 출력해주는 for문 작성해주기
+		for (int i = num; i >= 1; i--) {
+			System.out.print(i + " ");
+		}
+		
+	}
+	
+	public void practice5() {
+		// 1부터 사용자에게 입력 받은 수까지의 정수들의 합을 출력하기
+		//ex. 정수를 하나 입력하세요 : 8
+		//1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 = 36
+		Scanner sc = new Scanner(System.in);
+		System.out.print("점수를 하나 입력하세요 : ");
+		int num = sc.nextInt();
+		// 입력 받은 수의 총 합이 들어갈 바구니
+		int result = 0; 
+		
+		// 숫자가 들어왔을 때 1부터 입력받은 숫자까지 더해서 총합 구하기
+		for(int i = 1; i <= num; i++) {
+			result += i;
+			
+			//더해지는  숫자  출력하기
+			if(i < num) {
+				System.out.print(i + " + ");
+			} else { // i > num
+				System.out.print(i + " = ");
+			}
+		}
+		System.out.print(result);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	public void practice12() {
