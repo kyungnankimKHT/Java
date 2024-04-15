@@ -7,6 +7,40 @@ public class LoopPractice {
 	//1미만의 숫자가 입력됐다면
 	//1 이상의 숫자를 입력해주세요가 출력되면서
 	//다시 사용자가 값을 입력하도록 하기
+	
+	
+	public void practice1() {
+		//사용자로부터 한 개의 값을 입력받아 1부터 그 숫자까지의 숫자들을 모두 출력
+		//단, 입력한 수는 1보다 크거나 같아야하고 만일 1미만의 숫자를 입력했다면
+		// 1이상의 숫자를 입력해주세요 출력하기
+		Scanner sc = new Scanner(System.in);
+		System.out.print("한 개의 숫자를 입력하세요 : ");
+		int num = sc.nextInt();
+		// 입력받은 숫자가 1 미만일 경우 출력해주기
+		if(num < 1) {
+			System.out.println("1이상의 숫자를 입력해주세요.");
+			return;
+		}
+		
+		//입력받은 숫자가 1 이상이면 1부터 입력받은 숫자까지 모두 출력해주기
+		for(int i = 1; i <= num; i++) {
+			System.out.print(i + " ");
+			//System.out.println(i + " <= " + num);
+		}
+		//마무리로 줄바꿈을 해주길 원한다면
+		System.out.println();//줄바꿈 완성!
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	public void practice2() {
 		//입력받기 위해서는 스캐를 통해서 입력 받기
 		Scanner sc = new Scanner(System.in);

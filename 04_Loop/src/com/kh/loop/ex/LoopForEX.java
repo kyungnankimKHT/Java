@@ -212,12 +212,19 @@ public class LoopForEX {
 					break;
 				//틀렸을 때 정답보다 숫자를 작게 작성했는지 숫자를 정답보다 높게 작성했는지 힌트를 줄 수 있음
 				} else if (guest < randomNumber) {
-					System.out.println("정답보다 입력한 숫자가 작습니다."); //
-					//System.out.println("정답은 " + randomNumber + "입니다.");
+					System.out.println("정답보다 입력한 숫자가 작습니다.");
 				} else if (guest > randomNumber) {
 					System.out.println("정답보다 입력한 숫자가 큽니다.");
 				}
 			}
+			System.out.println("정답은 " + randomNumber +" 입니다.");
+			System.out.print("게임을 다시 시작하겠습니까? (1번 yes / 2번 no)");
+			int playAgain = sc.nextInt();
+			if (playAgain == 2) {
+				System.out.println("게임을 종료합니다.");
+				break;
+			}
+			//만약에 2번을 누르면 break; 걸어주기
 		}
 	}
 }
