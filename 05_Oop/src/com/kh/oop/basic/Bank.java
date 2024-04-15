@@ -13,6 +13,7 @@ public class Bank {
 	public Bank() {
 		
 	}
+	
 	// 2. 필수인 생성자 이름 계좌번호 잔액 패스워드
 	public Bank(String name, String a, int b, String password) {
 		this.name = name;
@@ -20,7 +21,8 @@ public class Bank {
 		this.balance = b;
 		this.password = password;
 	}
-	// 3. 출력 생성자
+
+	// 3. 출력 메서드
 	public void info() {
 		System.out.println("이름 : " + name);
 		System.out.println("계좌번호 :" + accountNumber);
@@ -28,7 +30,7 @@ public class Bank {
 		System.out.println("비밀번호 : " + password);
 		System.out.println("마케팅수신동의 : " + agree);
 	}
-	
+
 	// 4. 최종 메인 출력 메서드
 	public static void main(String[] args) { 
 		// 1. 조 씨 은행 통장 ok
