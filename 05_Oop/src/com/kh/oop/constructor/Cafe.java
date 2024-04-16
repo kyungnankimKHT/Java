@@ -11,6 +11,7 @@ public class Cafe { //맨 위는 () 들어가지 않음
 	public Cafe() { 
 		
 	}
+	
 	public Cafe(String name, String location, int tableNum) {
 		this.name 	  = name;
 		this.location = location;
