@@ -27,25 +27,21 @@ package com.kh.oop.constructor;
 * */
 public class ConstructorEx {
 	//필드 변수명 정의
-	public String name;
-	public String phone;
-	public    int idNo;
-	public    int money;
+	public String name; //비어있음
+	public String phone; //비어있음
+	public    int idNo; //비어있음
+	public    int money; //비어있음
 	
 	//생성자 기본  / 필수 / 값을 지정한 생성자
-	// 기본생성자
-	//public ConstructorEx() {
-		
-	//}
-	// 필수생성자 괄호 안에 매개변수가 필수로 들어가야하는 생성자
-	// 媒 매(중매) 介 개(개입)  變 변(변하다) 數 수(숫자가)
-	//					( 괄호안에 들어가는 변수 매개 변수 )
-	
-	
+	// 기본생성자 : 필수로 아무것도 넣지않은 생성자
 	public ConstructorEx() {
 		
 	}
+	// 필수생성자  : 괄호 안에 매개변수가 필수로 들어가야하는 생성자
+	// 媒 매(중매) 介 개(개입)  變 변(변하다) 數 수(숫자가)
+	//					( 괄호안에 들어가는 변수 매개 변수 )
 	
+
 	//                  필수로 이름
 	public ConstructorEx(String inputName) {
 		this.name = inputName;
@@ -88,6 +84,32 @@ public class ConstructorEx {
 		this.idNo = inputId;
 		this.money = inputMoney;
 	}
+	
+	
+	// 값을 지정한 생성자
+	/*	값을 지정한 생성자는 초기의 값만 지정해주기 때문에
+		매개변수를 필수로 넣어주지 않아도 되지만
+		기본 생성자와 생김새가 똑같아서 빨간줄이 나기 때문에
+		현재는 임의로 매개변수를 넣어줌
+		보통은 public ConstructorEx() { } 사용할 수 있음
+		사용 많이 하지 않음
+	*/
+	public ConstructorEx(int a) {
+		//기본으로 값을 지정해서 전달하는 생성자
+		//생성할 때부터 값을 지정해주고 추후 값을 변경할 수 있도록 해줌
+		
+		name  = "이름을 입력해주세요."; //String 이기 때문에 문자열을 넣어야함
+		phone = "번호를 입력해주세요."; //String 이기 때문에 문자열을 넣어야함
+		idNo  = 				 1; //int 이기 때문에 숫자값을 넣어야함
+		money = 				 0; //int 이기 때문에 숫자값을 넣어야함
+		
+		
+	}
+	
+	
+	
+	
+	
 	
 	
 	
