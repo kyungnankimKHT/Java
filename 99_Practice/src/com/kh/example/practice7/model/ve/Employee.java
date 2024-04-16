@@ -22,10 +22,23 @@ public class Employee {
 		this.empNo = empNo;
 		this.empName = empName;
 	}
-/*
-+ Employee(empNo:int, empName:String, dept:String, job:String, age:int, gender:char, salary:int, bonusPoint:double, phone:String, address:String)
+	public Employee(int empNo,String empName,String dept,String job,
+					int age,char gender,int salary,double bonusPoint,
+					String phone,String address) {
+		this.empNo = empNo;
+		this.empName = empName;
+		this.dept = dept;
+		this.job = job;
+		this.age = age;
+		this.gender = gender;
+		this.salary = salary;
+		this.bonusPoint = bonusPoint;
+		this.phone = phone;
+		this.address = address;
+		
+	}
 
- * */
+
 }
 
 
