@@ -11,6 +11,7 @@ public class SnackMenu {
 	private SnackController scr = new SnackController();
 	
 	public void menu() {
+		System.out.println("스낵류를 입력하세요.");
 		System.out.print("종류 : ");
 		String kind = sc.next();
 		System.out.print("이름 : ");
@@ -22,8 +23,19 @@ public class SnackMenu {
 		System.out.print("가격 : ");
 		int price = sc.nextInt();
 		
-		//저장 변수
-		System.out.println(scr.saveData(kind, name, flavor, numOf, price));
+		System.out.println("저장한 내용을 확인하시겠습니까?(y / n)");
+		String answer = sc.next();
+		//만약에 y를 누르면 저장한 내용 출력
+		//equalsIgnoreCase 대소문자 상관없이 두 문자열을 비교하는데 사용
+		
+		if( answer.equalsIgnoreCase("Y") ) {
+			//저장한 내용 출력
+			System.out.println(scr.saveData(kind, name, flavor, numOf, price));
+			//저장 내용 잘 들어갔는지 확인
+			System.out.println(scr.confirmData());
+		}
+		
+	
 		
 	}
 
