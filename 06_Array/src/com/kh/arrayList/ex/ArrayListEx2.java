@@ -90,6 +90,7 @@ public class ArrayListEx2 {
 		//clear 사용해서 모두 삭제
 		animal.clear();
 		
+		
 		//isEmpty() 모두 삭제가 됐는지 확인
 		System.out.println("모두 이사합니다.");
 		System.out.println("동물들이 모두 비어있나요? " + animal.isEmpty());
@@ -101,8 +102,35 @@ public class ArrayListEx2 {
 		ArrayList<String> pizza = new ArrayList<>();
 		
 		System.out.println("=== 피자메뉴 ===");
-		// add  고구마 포테이토 페페로니
+		pizza.add("고구마");
+		pizza.add("포테이토");
+		pizza.add("페페로니");
 		
+		// 모두보기
+		System.out.println("모든 메뉴 보기 : " + pizza);
+		
+		//get 을 활용해서 출력
+		System.out.println(pizza.get(0));
+		System.out.println(pizza.get(1));
+		System.out.println(pizza.get(2));
+		
+		
+		// set 활용해서 페페로니 -> 파인애플
+		pizza.set(2, "파인애플");
+		
+		// remove 파인애플
+		pizza.remove("파인애플");
+			
+		// for 문 활용해서 출력
+		for(String p : pizza) {
+			System.out.println("피자 : " + p);
+		}
+	
+		System.out.println("피자가게가 사라질 예정입니다.");
+		// 메뉴 모두 삭제 clear()
+		pizza.clear();
+		// 메뉴 모두 삭제됐는지 확인 isEmpty()
+		System.out.println(pizza.isEmpty());
 	}
 	
 	
@@ -119,7 +147,8 @@ public class ArrayListEx2 {
 	public static void main(String[] args) {
 		ArrayListEx2 ae = new ArrayListEx2();
 		//ae.method1();
-		ae.method2();
+		//ae.method2();
+		ae.method3();
 	}
 
 }
