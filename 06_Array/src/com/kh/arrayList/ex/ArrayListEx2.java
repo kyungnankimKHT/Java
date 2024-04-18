@@ -15,23 +15,96 @@ public class ArrayListEx2 {
 		
 		// add를 사용해서 딸기 바나나 사과 추가
 		list.add("딸기");
-		// 바나나 추가하기
+		list.add("바나나");
 		list.add("사과");
 		
 		//get 0 1 2 사용해서 각 index 자리에 값 출력하기
+		System.out.println("list.get(0) : " + list.get(0)); //딸기
+		System.out.println("list.get(1) : " + list.get(1)); //바나나
+		System.out.println("list.get(2) : " + list.get(2)); //사과
 		
 		// set 바나나 -> 키위 수정
+		list.set(1, "키위");
 		
 		// size 를 이용해서 크기 확인
-		
+		//size() 숫자를 넣지 않음 size() 사용
+		System.out.println("바구니 크기 : " +list.size());
 		// remove 키위 삭제
-		
+		list.remove(1);
 		//isEmpty() 비어있는지 확인
+		System.out.println("장바구니 비어 있나요 ? : "+list.isEmpty());
+		
+		//장바구니 뭐뭐 들어가 있는지 확인!
+		for(int i = 0; i < list.size(); i++) {
+			System.out.println(list.get(i));
+		}
+		
+		System.out.println("==============");
+		//앞으로 사용할 for 문
+		for (String 과일 : list ) {
+			
+			System.out.println(과일);
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
+	
+	
+	public void method2() {
+		ArrayList<String> animal = new ArrayList<>();
+		
+		//add 사자 호랑이 고양이 강아지
+		
+		//size() 동물이 몇마리 있는지 확인
+		
+		//get 으로 동물 확인 
+		
+		//set 고양이 -> 토끼로 변경
+		
+		//remove 강아지 삭제
+		
+		//for문을 활용해서 get 출력
+		
+		//clear 사용해서 모두 삭제
+		
+		//isEmpty() 모두 삭제가 됐는지 확인
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	//메인 : 최종으로 실행하고 출력하는 메서드
 	public static void main(String[] args) {
-
+		ArrayListEx2 ae = new ArrayListEx2();
+		ae.method1();
 	}
 
 }
+
+
+
+
+
+
+
+
