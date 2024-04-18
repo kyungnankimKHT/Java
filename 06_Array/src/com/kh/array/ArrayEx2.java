@@ -145,7 +145,40 @@ public class ArrayEx2 {
 	}
 	
 	
-	
+	public void practice17() {
+		//입력한 값이 배열에 있는지 검색
+		//있으면 치킨 배달가능 없으면 없는 치킨 입니다. 출력
+		
+		String[] chickenMenu = {"양념치킨","후라이드치킨","간장치킨"};
+		
+		//사용자로부터 치킨 이름 입력 받기
+		Scanner sc = new Scanner(System.in);
+		System.out.print("치킨 이름을 입력하세요 : ");
+		String inputChic = sc.next();
+		
+		//배열에 사용자가 입력한 치킨이 있는지 검색
+		boolean found = false;
+		
+		//for - each 문을 사용해서 치킨이 있는지 확인하는 작업
+		 for(   String   치킨          :   chickenMenu         ) {
+			 
+			 //System.out.println(치킨);
+			 
+			// 만약에 치킨이 존재한다면  found = true ; break;
+			 if( 치킨.equals(inputChic)    ) {
+				 found = true;
+				 break;
+			 }
+		 }
+		
+		// 만약에 치킨이 존재한다면 배달가능 출력
+		 if(found) {
+			 System.out.println(inputChic + " 배달 가능! 합니다.");
+		 } else {
+			 System.out.println(inputChic + "은(는) 없는 메뉴 입니다.");
+		 }
+		// 존재하지 않는다면 ㅇㅇ 치킨은없는 메뉴입니다. 출력
+	}
 	
 	
 	
