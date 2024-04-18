@@ -62,26 +62,48 @@ public class ArrayListEx2 {
 	
 	public void method2() {
 		ArrayList<String> animal = new ArrayList<>();
-		
+		//한줄 복사해서 밑에 붙여넣기 단축키 ctrl + alt + ↓
 		//add 사자 호랑이 고양이 강아지
+		animal.add("사자"); 
+		animal.add("호랑이");
+		animal.add("고양이"); 
+		animal.add("강아지");
 		
 		//size() 동물이 몇마리 있는지 확인
+		System.out.println(animal.size());
 		
 		//get 으로 동물 확인 
+		System.out.println("동물 0 : " + animal.get(0));
+		System.out.println("동물 1 : " + animal.get(1));
+		System.out.println("동물 2 : " + animal.get(2));
+		System.out.println("동물 3 : " + animal.get(3));
 		
 		//set 고양이 -> 토끼로 변경
-		
+		animal.set(2, "토끼");
 		//remove 강아지 삭제
+		animal.remove("강아지");
 		
 		//for문을 활용해서 get 출력
-		
+		for(String name : animal) {
+			System.out.println("동물! : " + name);
+		}
 		//clear 사용해서 모두 삭제
+		animal.clear();
 		
 		//isEmpty() 모두 삭제가 됐는지 확인
+		System.out.println("모두 이사합니다.");
+		System.out.println("동물들이 모두 비어있나요? " + animal.isEmpty());
 	}
 	
 	
-	
+	public void method3() {
+		// 피자 가게
+		ArrayList<String> pizza = new ArrayList<>();
+		
+		System.out.println("=== 피자메뉴 ===");
+		// add  고구마 포테이토 페페로니
+		
+	}
 	
 	
 	
@@ -96,7 +118,8 @@ public class ArrayListEx2 {
 	//메인 : 최종으로 실행하고 출력하는 메서드
 	public static void main(String[] args) {
 		ArrayListEx2 ae = new ArrayListEx2();
-		ae.method1();
+		//ae.method1();
+		ae.method2();
 	}
 
 }

@@ -13,6 +13,7 @@ ArrayList<자료형> 변수명 = new ArrayList<자료형>();
 int		-> Integer
 String  -> String
 double  -> Double
+char	-> Character
 
 add			추가
 get			반환
