@@ -6,8 +6,17 @@ public class Student {
 	private String name;
 	private String subject;
 	private int score;
+	private boolean passed; //합격 여부  boolean 최초 값이 false
+	
+	public boolean isPassed() {
+		return passed;
+	}
 
-//메서드
+	public void setPassed(boolean passed) {
+		this.passed = passed;
+	}
+
+	//메서드
 	// Setter
 	public void setName(String name) {
 		this.name = name;

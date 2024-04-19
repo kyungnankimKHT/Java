@@ -52,7 +52,21 @@ public class StudentController {
 		return avgArr;
 	}
 
-	
+	//각 학생의 합격 여부를 확인하고 출력하는 메서드
+	public void printPass() {
+		for (Student s  : sArr) {
+			s.setPassed(s.getScore() >= CUT_LINE);
+			System.out.println(s.getName() + " 학생은 " + (s.isPassed() ? "통과" : "불합격")  + "입니다.");
+			
+			/*
+			if(s.getScore() >= CUT_LINE) {
+				System.out.println(s.getName() + " 학생은 합격입니다.");
+			} else {
+				System.out.println(s.getName() + " 학생은 불합격입니다.");
+			}
+			*/
+		}
+	}
 	
 	
 	

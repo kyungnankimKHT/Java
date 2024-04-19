@@ -27,7 +27,7 @@ public class StudentMenu {
 		System.out.printf("평균 : %.2f \n" , ssm.avgScore()[1]);
 		System.out.println("합격여부 : " + (ssm.avgScore()[1] >= StudentController.CUT_LINE));
 		
-		
+		ssm.printPass();
 		/*
 	 * boolean을 써서 true인지 false 인지를 한적이 없는데
 	 *  true와 false 보여집니까?
