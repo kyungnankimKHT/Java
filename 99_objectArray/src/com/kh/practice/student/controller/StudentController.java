@@ -51,7 +51,13 @@ public class StudentController {
 		avgArr[1] = avgArr[0] / sArr.length; //  평균 = 총점 / 총학생수
 		return avgArr;
 	}
-
+	//총점에서 배열을 사용하지 않고 총점 구하기
+	public double avgScore2() {
+		double avgArr = sumScore() / sArr.length; //  평균 = 총점 / 총학생수
+		return avgArr;
+	}
+	
+	
 	//각 학생의 합격 여부를 확인하고 출력하는 메서드
 	public void printPass() {
 		for (Student s  : sArr) {
