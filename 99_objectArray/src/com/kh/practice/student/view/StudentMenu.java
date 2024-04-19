@@ -26,11 +26,22 @@ public class StudentMenu {
 		System.out.println("총점 : " + ssm.sumScore()); //ssm.avgScore()[0] = ssm.sumScore()
 		System.out.printf("평균 : %.2f \n" , ssm.avgScore()[1]);
 		System.out.println("합격여부 : " + (ssm.avgScore()[1] >= StudentController.CUT_LINE));
-	
+		
+		
+		/*
+	 * boolean을 써서 true인지 false 인지를 한적이 없는데
+	 *  true와 false 보여집니까?
+	 *  		학생들의 평균  >=    합격커트라인
+	 *    ssm.avgScore()[1] >= StudentController.CUT_LINE
+	 * 				80          60
+	 * 
+	 * 		값이 같거나 크거나 작다는 것을 표현하는 부등호 true false 구분만 하기 위한 존재
+	 * 			
+	 * */
 	
 	}
 	
-	
+
 	
 }
 
