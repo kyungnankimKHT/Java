@@ -44,7 +44,7 @@ public class PersonMenu {
 			
 			switch(choice) {
 			case 1:
-				//학생추가하기;
+				insertStudent();
 				break;
 			case 2:
 				//학생출력하기;
