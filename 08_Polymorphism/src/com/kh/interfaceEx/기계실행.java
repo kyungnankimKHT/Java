@@ -1,5 +1,5 @@
 package com.kh.interfaceEx;
-
+//ctrl + z 돌아가기
 public class 기계실행 {
 	public static void main(String[] args) {
 		컴퓨터 윈도우 = new 컴퓨터();
@@ -24,6 +24,23 @@ public class 기계실행 {
 		System.out.println( a + " * " + b + " = " + c1.곱(a, b));
 		System.out.println( a + " / " + b + " = " + c1.몫(a, b));
 		System.out.println( a + " % " + b + " = " + c1.나머지(a, b));
+		
+		
+		//중학생용 계산기 실행
+		중학생계산기 m1 = new 중학생계산기();
+		m1.전원켜기();
+		
+		a = 5;
+		b = 3;
+		
+		System.out.println( a + " + " + b + " = " + m1.합(a, b));
+		System.out.println( a + " - " + b + " = " + m1.차(a, b));
+		System.out.println( a + " * " + b + " = " + m1.곱(a, b));
+		System.out.println( a + " / " + b + " = " + m1.몫(a, b));
+		System.out.println( a + " % " + b + " = " + m1.나머지(a, b));
+		
+		m1.전원끄기();
+		
 	}
 }
 
