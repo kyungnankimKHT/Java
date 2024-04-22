@@ -32,6 +32,11 @@ public class PersonMenu {
 	}
 	
 	//학생을 추가하거나 조회할 것
+	public void studentMenu() {
+		while(true) {
+			
+		}
+	}
 	
 }
 
