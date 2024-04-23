@@ -1,5 +1,7 @@
 package com.kh.javaAPI.Date.Ex;
 
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -27,12 +29,42 @@ public class DateEx {
 		int 일 = 캘린더.get(Calendar.DAY_OF_MONTH);
 		System.out.println("현재 날짜 : " + 년 + "/" + (월 + 1) + "/" +일 );
 	
+		/*
+		 3. GregorianCalendar
+		 그레고리안 달력은 1년 1월 1일 무조건 월요일로 정의돼있음
+		 2024, 4, 23 을 하면 자동으로 2024년 5월 23일로 변경됨
+		 2024년 5월 23일은 목요일
+		 * */
+		
 		GregorianCalendar 그레고리안1 = new GregorianCalendar();
-		GregorianCalendar 그레고리안2 = new GregorianCalendar(2024, 4, 23);
-		int 날짜 = 그레고리안2.get(Calendar.DAY_OF_WEEK);
-		System.out.println("날짜 : " + 날짜);
+		GregorianCalendar 그레고리안2 = new GregorianCalendar(2024, 4, 23); // 2024 5월 23일 로 될 것
+		int 날짜 = 그레고리안2.get(Calendar.DAY_OF_WEEK); //일(1) 월(2) 화(3) 수(4) 목(5) 금(6) 토(7)
+		System.out.println("날짜 : " + 날짜);//5월 23일이 목요일이기 때문에 5라고 나오는 것
+		
+		/* 
+		 4. SimpleDateFormat  년 월 일
+		 년 : y  year
+		 월 : M  Month (분이랑 첫 글자가 m인 것이 같기 때문에 월은 대문자 M 임)
+		 일 : d  day
+		 시 : H  Hour  (H : 0 ~ 23 시     h : 오전(am)과 오후(pm)로 나눠서 표기)
+		 분 : m  minute
+		 초 : s  second
+		 */
+		SimpleDateFormat 날짜형식 = new SimpleDateFormat("yyyy-MM-dd");
+				  String 날짜표시 = 날짜형식.format(new Date());
+				  
+				  
+		System.out.println("날짜형식 지정해서 표시하기 : " + 날짜표시);
+		
+		//5. LocalDate 현재 날짜가져오기
+		LocalDate 현재날짜는 = LocalDate.now();
+		System.out.println("현재날짜는 : " + 현재날짜는);
+		
 	}
 }
+
+
+
 
 
 
