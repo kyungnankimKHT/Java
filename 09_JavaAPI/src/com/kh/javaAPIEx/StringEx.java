@@ -54,10 +54,16 @@ public class StringEx {
 		// 2. toUpperCase()
 		String 대문자 = 문자열.toUpperCase();
 		System.out.println("대문자 맞나요 ? " + 대문자);
+		
 		// 3. toLowerCase()
+		String 소문자 = 문자열.toLowerCase();
+		System.out.println("소문자 맞나요 ? " + 소문자);
 		
 		// 4. trim()
-
+		String 공백가득 = "     Hello   World!     ";
+		String 공백제거 = 공백가득.trim();
+		System.out.println("공백제거 됐나요 ? " + 공백제거);
+		
 	}
 
 }
