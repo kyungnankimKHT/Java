@@ -15,6 +15,9 @@ String : 문자열을 나타내는 클래스
  toUpperCase() = 원하는 문자열을 모두 대문자로 변환
  toLowerCase() = 원하는 문자열을 모두 소문자로 변환
  		trim() = 원하는 문자열의 앞 뒤 공백을 모두 제거해서 리턴
+ 	   split() = 문자열을 특정 구분자를 기준으로 분할하여 문자열 배열로 반환
+ 	 replace() = 문자열에서 특정 문자열을 새로운 문자열로 대체
+ 	  charAt() = 문자열에서 주어진 인덱스에 해당하는 문자를 반환
   
 */
 
@@ -59,14 +62,37 @@ public class StringEx {
 		String 소문자 = 문자열.toLowerCase();
 		System.out.println("소문자 맞나요 ? " + 소문자);
 		
-		// 4. trim()
+		// 4. trim() = 무조건 양쪽 제거
 		String 공백가득 = "     Hello   World!     ";
 		String 공백제거 = 공백가득.trim();
 		System.out.println("공백제거 됐나요 ? " + 공백제거);
 		
+		
+		// 5. split 문자열을 특정 구분자를 기준으로 분할해서 문자열 배열로 반환
+		String 과일들 = "apple,banana,grape";
+		String[] 과일배열 = 과일들.split(",");
+		for(String 과일 : 과일배열) {
+			System.out.println(과일);
+		}
+		
+		// 6. replace 특정문자열을 새로운 문자열로 대체
+		String 헬로우월드 = "Hello, World!";
+		String 변경 = 헬로우월드.replace("Hello", "Hi");
+		System.out.println(변경);
+		
+		// 7. charAt 문자열에서 주어진 인덱스에 해당하는 문자 하나를 반환
+		String 하이월드 = "Hi, World!";
+		char ch = 하이월드.charAt(8);
+		System.out.println(ch);
 	}
 
 }
+
+
+
+
+
+
 
 
 
