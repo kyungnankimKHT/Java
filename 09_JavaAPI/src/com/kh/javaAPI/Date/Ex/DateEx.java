@@ -43,12 +43,15 @@ public class DateEx {
 		
 		/* 
 		 4. SimpleDateFormat  년 월 일
-		 년 : y  year
-		 월 : M  Month (분이랑 첫 글자가 m인 것이 같기 때문에 월은 대문자 M 임)
-		 일 : d  day
-		 시 : H  Hour  (H : 0 ~ 23 시     h : 오전(am)과 오후(pm)로 나눠서 표기)
-		 분 : m  minute
-		 초 : s  second
+		 년   : y  year
+		 월   : M  Month (분이랑 첫 글자가 m인 것이 같기 때문에 월은 대문자 M 임)
+		 일   : d  day
+		 시   : H  Hour  (H : 0 ~ 23 시     h : 오전(am)과 오후(pm)로 나눠서 표기)
+		 분   : m  minute
+		 초   : s  second
+		 
+		 요일 : E E라는 글자로 표기하자 국제 표준화 기구에서 약속
+		 
 		 */
 		SimpleDateFormat 날짜형식 = new SimpleDateFormat("yyyy-MM-dd");
 				  String 날짜표시 = 날짜형식.format(new Date());
