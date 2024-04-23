@@ -1,6 +1,7 @@
 package com.kh.practice.list.library.controller;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import com.kh.practice.list.library.model.vo.Book;
 
@@ -24,14 +25,32 @@ public class BookController {
 		} else {//책이 있다면 책 목록을 보여주자
 			//for - each 활용해서 전체보기
 			for(Book b : list) {
-				//b.
-				System.out.println(b);
-				//com.kh.practice.list.library.model.vo.Book@96532d6
+				System.out.println(b.toString());
 			}
 			
 		}
 		
 	}
+	
+	//키워드로 책 검색하기
+	public void searchBook(String keyword) {
+		List<Book> 검색결과 = new ArrayList<>();
+		for(Book  b  :  list) {
+			if(b.getTitle().contains(keyword)) {
+				검색결과.add(b);
+			}
+		}
+		
+		if(검색결과.isEmpty()) {
+			System.out.println("검색 결과가 없습니다.");
+		} else {
+			for(Book bb : 검색결과) {
+				System.out.println(bb);
+			}
+		}
+		
+	}
+	
 }
 
 

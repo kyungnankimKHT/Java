@@ -71,6 +71,12 @@ public class BookMenu {
 	}
 	
 	
+	public void searchBook() {
+		System.out.print("검색할 키워드 입력 : ");
+		String keyword = sc.nextLine();
+		bc.searchBook(keyword);
+	}
+	
 }
 
 

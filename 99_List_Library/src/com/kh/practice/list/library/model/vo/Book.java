@@ -47,8 +47,10 @@ public class Book {
 	}
 
 	
-	//@Override 
-	//toString 
+	@Override 
+	public String toString() {
+		return "제목 : " + title + ", 저자 : " + author + ", 카테고리 : " + category + ", 가격 : " + price;
+	}
 	
 }
 
