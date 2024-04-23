@@ -51,6 +51,7 @@ public class DateEx {
 		 초   : s  second
 		 
 		 요일 : E E라는 글자로 표기하자 국제 표준화 기구에서 약속
+		 	만약에 O요일 쓰고 싶다면 EEEE를 사용
 		 
 		 */
 		SimpleDateFormat 날짜형식 = new SimpleDateFormat("yyyy-MM-dd");
