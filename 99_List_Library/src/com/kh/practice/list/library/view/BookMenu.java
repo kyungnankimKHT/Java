@@ -17,6 +17,7 @@ public class BookMenu {
 			System.out.println(" === 도서관리 프로그램 === ");
 			System.out.println("1. 도서추가");
 			System.out.println("2. 도서 전체 목록 조회");
+			System.out.println("2. 도서 검색");
 			System.out.println("6. 종료");
 			System.out.print("메뉴선택: ");
 			int menu = sc.nextInt();
@@ -30,7 +31,9 @@ public class BookMenu {
 			 case 2 :
 				 selectList();
 				 break;
-				 
+			 case 3 :
+				 searchBook();
+				 break;	 
 				 
 			case 6:
 				System.out.println("프로그램을 종료합니다.");
