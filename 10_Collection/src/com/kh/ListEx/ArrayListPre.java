@@ -29,8 +29,10 @@ public class ArrayListPre {
 		
 		// remove(2) 지정된 자리 제거
 		a.remove(2);
+		
 		// remove("사과") 사과 제거
 		a.remove("사과");
+		
 		// clear 모두제거
 		a.clear();
 
