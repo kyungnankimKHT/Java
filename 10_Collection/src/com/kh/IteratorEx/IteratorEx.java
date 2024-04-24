@@ -1,4 +1,9 @@
 package com.kh.IteratorEx;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+
 /*
 Collecton(List, Set, Map) 반복하는데 사용
 Enumeration : 더이상 권장 x Vector와 같은 오래된 버전 클래스에서만 사용됨
@@ -23,7 +28,27 @@ Iterator 밑에있는 메서드
 public class IteratorEx {
 
 	public static void main(String[] args) {
+		ArrayList<String> 과일들 = new ArrayList<>();
+		과일들.add("사과");
+		과일들.add("블루베리");
+		과일들.add("패션후르츠"); // 염증
+		과일들.add("망고");
 		
+		//Iterator 생성
+		/*
+		 import javax.swing.text.html.HTMLDocument.Iterator; XXXXXXXXX
+		 
+		 import java.util.Iterator; OK!
+		*/
+		 Iterator<String> 반복 = 과일들.iterator();
+		 
+		 //hasNext() 다음 값이 있는지 확인 = true false
+		 while(반복.hasNext()) {
+			//next()로 다음 값 가지고오기
+			 String 과일 = 반복.next();
+			 System.out.println(과일);
+		 }
+		 
 	}
 	
 	
