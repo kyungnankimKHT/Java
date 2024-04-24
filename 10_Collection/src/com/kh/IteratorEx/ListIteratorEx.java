@@ -45,7 +45,7 @@ public class ListIteratorEx {
 		System.out.println(색상들);
 		
 		//next() 나 previous() 사용해서 현재 위치를 파랑의 위치로 이동
-		반복하기.previous();
+		//반복하기.previous();
 		반복하기.remove();
 		
 		System.out.println("삭제됐는지 확인 : " + 색상들);
