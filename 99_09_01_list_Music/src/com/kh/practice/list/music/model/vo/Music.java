@@ -21,6 +21,7 @@ public class Music {
 	}
 	//생성자 : 기본
 	public Music() {
+		
 	}
 	//생성자 : 필수
 	public Music(String title, String singer) {
