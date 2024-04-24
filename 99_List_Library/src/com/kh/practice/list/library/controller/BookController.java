@@ -1,6 +1,8 @@
 package com.kh.practice.list.library.controller;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import com.kh.practice.list.library.model.vo.Book;
@@ -76,6 +78,17 @@ public class BookController {
 		}
 		
 	}
+	
+	//오름차순 정렬
+	public void ascBook() {
+		//for while sort 오름차순 정렬을 해주면 됨
+			// sort 목록을 오름차순 정렬하다
+								// 정렬하는 기준       책에서 책제목
+									// :: =  Book 파일의 getTitle 참조해서 사용하겠다.
+										//comparing 비교하다
+		Collections.sort(list, Comparator.comparing(Book::getTitle));
+	}
+	
 }
 
 
