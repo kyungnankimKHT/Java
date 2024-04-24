@@ -17,7 +17,9 @@ public class BookMenu {
 			System.out.println(" === 도서관리 프로그램 === ");
 			System.out.println("1. 도서추가");
 			System.out.println("2. 도서 전체 목록 조회");
-			System.out.println("2. 도서 검색");
+			System.out.println("3. 도서 검색");
+			System.out.println("4. 도서 삭제");
+			System.out.println("5. 도서 명 오름차순 정렬");
 			System.out.println("6. 종료");
 			System.out.print("메뉴선택: ");
 			int menu = sc.nextInt();
@@ -34,7 +36,9 @@ public class BookMenu {
 			 case 3 :
 				 searchBook();
 				 break;	 
-				 
+			 case 4 :
+				//도서삭제
+				 break;	  
 			case 6:
 				System.out.println("프로그램을 종료합니다.");
 				return;
@@ -73,14 +77,36 @@ public class BookMenu {
 		System.out.println("도서 추가가 완료 되었습니다.");
 	}
 	
-	
+	//도서 검색
 	public void searchBook() {
 		System.out.print("검색할 키워드 입력 : ");
 		String keyword = sc.nextLine();
 		bc.searchBook(keyword);
 	}
 	
+	//도서 삭제
+	public void deleteBook() {
+		System.out.print("삭제할 도서 목록 : ");
+		String title = sc.nextLine();
+		System.out.print("삭제할 도서 저자 : ");
+		String author = sc.nextLine();
+		
+		//BookController 도서 삭제하는 기능 추가
+		bc.deleteBook(title, author);
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
