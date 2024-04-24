@@ -50,12 +50,11 @@ public class ExceptionEx {
 			
 		try { //시도하다
 			
-			
 			System.out.println(배열[i]);
 		
-		} catch(ArrayIndexOutOfBoundsException e) {	
+		} catch(RuntimeException e) {	
 			
-			
+			System.out.println("1번 예외상황");
 			
 		} catch (Exception e) {
 			
