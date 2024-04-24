@@ -2,6 +2,7 @@ package com.kh.practice.list.music.controller;
 
 import java.util.*;
 
+import com.kh.practice.list.music.model.compare.AscTitle;
 import com.kh.practice.list.music.model.vo.Music;
 
 public class MusicController {
@@ -69,6 +70,9 @@ public class MusicController {
 	}
 	
 	//내림차순
+	public void descSinger() {
+		Collections.sort(list, new AscTitle());
+	}
 }
 
 

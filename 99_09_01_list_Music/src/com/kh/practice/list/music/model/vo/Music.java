@@ -1,6 +1,6 @@
 package com.kh.practice.list.music.model.vo;
 
-public class Music {
+public class Music implements Comparable<Music>{
 //필드
 	private String title;
 	private String singer;
@@ -34,6 +34,12 @@ public class Music {
 	@Override
 	public String toString() {
 		return "곡명:" + title + ", 가수명 : " + singer;
+	}
+	
+	//sort compareTo 비교의 기준을 만들어주자!
+	@Override
+	public int compareTo(Music o) {
+		return this.title.compareTo(o.title);
 	}
 }
 
