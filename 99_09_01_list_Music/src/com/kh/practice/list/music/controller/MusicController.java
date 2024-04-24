@@ -70,9 +70,9 @@ public class MusicController {
 		Collections.sort(list);
 	}
 	
-	//내림차순
-	public void descSinger() {
-		Collections.sort(list, new AscSinger());
+	//내림차순 제목 내림차순
+	public void descTitle() {
+		Collections.sort(list, new AscTitle());
 	}
 }
 

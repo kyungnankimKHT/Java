@@ -19,7 +19,7 @@ public class MusicView {
 			System.out.println("5. 음악 삭제");
 			System.out.println("6. 음악 수정");
 			System.out.println("7. 곡명 오름차순 정렬");
-			System.out.println("8. 가수 내림차순 정렬");
+			System.out.println("8. 곡명 내림차순 정렬");
 			System.out.println("9. 프로그램 종료");
 			System.out.print("메뉴선택 : ");
 			//번호 입력할수 있는 번호 입력 공간 만들어주기
@@ -113,8 +113,8 @@ public class MusicView {
 		System.out.println("곡명을 오름차순으로 정렬하였습니다.");
 	}
 	//내림차순 정렬
-	public void descSinger() {
-		mc.descSinger();
+	public void descTitle() {
+		mc.descTitle();
 		System.out.println("가수명을 내림차순으로 정렬하였습니다.");
 	}
 }
