@@ -12,6 +12,14 @@ import java.util.Arrays;
  equals() : 두 배열이 똑같은지 비교
  fill() : 배열을 모두 지정된 값으로 채우기
  toString() : 배열을 문자열로 변경해서 보여줌	
+ 
+ asList() : 배열을 리스트로 변환해서 추가 배열을 수정하지 않고 배열의 내용을 감싸서 보여줌
+ 
+ String[] 배열 = {"사과", "바나나"};
+ 
+ //List 계열에 추가할 때
+  ArrayList<String> 리스트 = Arrays.asList(배열);
+  ArrayList<String> 리스트 = Arrays.asList("사과", "바나나");
  * */
 public class ArraysEx {
 	
