@@ -92,6 +92,7 @@ public class MapPre {
 		}
 		
 		// clear() 최종삭제
+		map.clear();
 	}
 	
 	
