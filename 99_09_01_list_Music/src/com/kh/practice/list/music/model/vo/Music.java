@@ -27,7 +27,13 @@ public class Music {
 		this.title = title;
 		this.singer = singer;
 	}
-
+	
+	//목록이나 값이 나오지 않을 경우
+	//String 으로 전달해주는 값이 없기 때문
+	@Override
+	public String toString() {
+		return "곡명:" + title + ", 가수명 : " + singer;
+	}
 }
 
 

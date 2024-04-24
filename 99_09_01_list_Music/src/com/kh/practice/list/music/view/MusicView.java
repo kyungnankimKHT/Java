@@ -32,7 +32,7 @@ public class MusicView {
 				addAtZero();
 				break;
 			case 3:
-				//전체 목록 출력;
+				printAll();
 				break;
 			case 4:
 				//음악 검색;
@@ -78,7 +78,15 @@ public class MusicView {
 		System.out.println(mc.printAll());
 	}
 	
+	//음악검색
+	public void searchMusic(){
+		System.out.print("검색할 곡명 입력 : ");
+		String title = sc.nextLine();
+		System.out.println(mc.searchMusic(title));
+	}
+	
 	//음악 삭제
+	//public void removeMusic(){}
 }
 
 

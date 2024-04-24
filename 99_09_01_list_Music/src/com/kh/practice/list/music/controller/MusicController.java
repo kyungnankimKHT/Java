@@ -32,8 +32,20 @@ public class MusicController {
 		return 1;
 	}
 	//모든 음악 목록 출력
-	//public printAll(){
-	//
+	public List<Music> printAll(){
+		return list;
+	}
+	public Music searchMusic(String title) {
+		//for-each 문 사용해서
+		for(Music   music   :   list) {
+			//만약에 내가 원하는 제목이 들어오면
+			if(music.getTitle().equals(title) ) {
+				return music;
+			}
+			
+		}
+		return null;
+	}
 	
 }
 
