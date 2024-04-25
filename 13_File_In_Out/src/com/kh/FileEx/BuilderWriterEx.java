@@ -14,6 +14,8 @@ public class BuilderWriterEx {
 		
 		//StringBuilder 를 사용해서 파일에 쓸 내용 작성
 		StringBuilder 빌더 = new StringBuilder();
+		// add    : 추가하다
+		// append : 추가하다
 		빌더.append("첫 번째 줄이어라. \n");
 		빌더.append("두 번째 줄이어라. \n");
 		빌더.append("세 번째 줄이어라. \n");

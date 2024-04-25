@@ -3,6 +3,8 @@ package com.kh.FileEx;
 import java.io.File;
 
 /*
+ write close exists mkdir
+ 
 File
 	파일이나 / 폴더(디렉토리) 를 관리하는 클래스
 	파일 생성, 제거, 이름, 크기, 마지막 수정일, 존재여부 등의 기능을 제공
