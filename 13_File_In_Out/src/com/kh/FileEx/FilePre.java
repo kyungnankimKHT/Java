@@ -66,13 +66,49 @@ public class FilePre {
 	}
 
 	
+	public void 메서드3() {
+		String 바탕화면경로 = System.getProperty("user.home") + "/Desktop";
+		
+		//모든 폴더 생성
+		File 폴더들 = new File(바탕화면경로 + "/뉴1/뉴2/뉴3");
+		폴더들.mkdirs();
+		
+		//파일 생성
+		File 파일 = new File(폴더들 + "/새로운파일.txt");
+		
+		try {
+			
+			boolean 파일생성확인 = 파일.createNewFile();
+			System.out.println("파일이 생성 되었나요? " + 파일생성확인);
+			
+			//파일 크기 확인
+			System.out.println(파일.length());
+			
+			//파일 마지막 수정일 확인
+			System.out.println(파일.lastModified());
+			//파일 삭제
+			파일.delete();
+			
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	// main 메서드 하나 만들기
 	public static void main(String[] args) {
 		FilePre 파일 = new FilePre();
 		//파일.메서드1();
-		파일.메서드2();
+		파일.메서드3();
 	}
 }
 

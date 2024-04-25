@@ -27,8 +27,8 @@ public class ImageResizePre {
 			//이미지 크기 조정해서 새로운 이미지에 그릴 것!
 			Image 이미지그리기 = 원본이미지데이터.getScaledInstance(가로, 세로,Image.SCALE_SMOOTH );
 			
-			//모든 준비 완료 이미지 그리기 시작!
-			이미지버퍼.createGraphics().drawImage(이미지그리기,0,0,null);
+			//모든 준비 완료 이미지 그리기 시작!				   x  y  효과추가여부 	
+			이미지버퍼.createGraphics().drawImage(이미지그리기, 0, 0, null);
 			
 			//새로운 이미지를 파일로 저장
 			ImageIO.write(이미지버퍼, "jpg",new File(크기조정이미지));
