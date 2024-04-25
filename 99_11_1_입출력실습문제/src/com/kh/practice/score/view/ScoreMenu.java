@@ -1,5 +1,6 @@
 package com.kh.practice.score.view;
 
+import java.io.DataInputStream;
 import java.util.Scanner;
 
 import com.kh.practice.score.controller.ScoreController;
@@ -54,12 +55,24 @@ public class ScoreMenu {
 		scr.saveScore(name, kor, eng, math, sum, avg);
 		
 		//readScore 
-		//System.out.printf("이름: %s, 국어: %d, 영어: %d, 수학: %d, 합계: %d, 평균: %.2f%n",name,kor,eng,math,sum,avg);
-		
+		//
 		
 	}
 	
-	
+	//점수 읽기
+	public void readScore() throws Exception {
+		DataInputStream dis = scr.readScore();
+		while(dis.available() > 0 ) {
+		String name = dis.readUTF();
+		int     kor = dis.readInt();
+		int     eng = dis.readInt();
+		int    math = dis.readInt();
+		int     sum = dis.readInt();
+		double  avg = dis.readDouble();
+		System.out.printf("이름: %s, 국어: %d, 영어: %d, 수학: %d, 합계: %d, 평균: %.2f%n",name,kor,eng,math,sum,avg);
+		
+		}
+	}
 	
 	
 }

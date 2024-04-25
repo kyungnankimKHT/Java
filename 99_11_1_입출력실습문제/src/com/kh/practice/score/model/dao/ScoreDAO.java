@@ -1,6 +1,8 @@
 package com.kh.practice.score.model.dao;
 
+import java.io.DataInputStream;
 import java.io.DataOutputStream;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 
@@ -25,6 +27,12 @@ public class ScoreDAO {
 			e.printStackTrace();
 		}
 	}
+	
+	public DataInputStream readScore() throws FileNotFoundException {
+		return new DataInputStream(new FileInputStream(FILE_PATH));
+	}
+	
+	
 }
 
 
