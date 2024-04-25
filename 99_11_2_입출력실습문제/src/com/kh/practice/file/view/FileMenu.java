@@ -27,11 +27,12 @@ public class FileMenu {
 			fileOpen();
 			break;
 		case 3:
-			//파일 수정
+			fileEdit();
 			break;
 		case 4:
 			System.out.println("프로그램종료");
-			return;
+			System.exit(0);
+			//return;
 		default:
 			System.out.println("잘못된 입력입니다.");
 		}
