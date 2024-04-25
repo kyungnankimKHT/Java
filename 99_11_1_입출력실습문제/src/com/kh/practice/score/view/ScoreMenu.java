@@ -70,6 +70,7 @@ public class ScoreMenu {
 		int     sum = dis.readInt();
 		double  avg = dis.readDouble();
 		System.out.printf("이름: %s, 국어: %d, 영어: %d, 수학: %d, 합계: %d, 평균: %.2f%n",name,kor,eng,math,sum,avg);
+		System.out.println("이름: "+name);
 		
 		}
 	}
