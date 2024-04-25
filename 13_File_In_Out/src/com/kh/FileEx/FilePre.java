@@ -96,6 +96,42 @@ public class FilePre {
 	}
 	
 	
+	public void 메서드4() {
+		//파일 이름 변경하기
+		String 바탕화면경로 = System.getProperty("user.home") + "/Desktop"; 
+		File 텍스트파일 =  new File(바탕화면경로 + "/newFFF/파일생성이름바꾸기.txt");
+		try {
+			텍스트파일.createNewFile();
+			System.out.println("파일이 생성되었습니다.");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	
+	public void 메서드5() {
+		//파일 이름 변경하기
+		String 바탕화면경로 = System.getProperty("user.home") + "/Desktop"; 
+		File 텍스트파일 = new File(바탕화면경로 + "/newFFF/파일생성.txt");
+		File 새로운이름 = new File(바탕화면경로 + "/newFFF/변경된이름.txt");
+		
+		// 파일 이름 변경하기
+		//만약에 파일이 존재할 경우 -> 파일 이름 변경 존재하지 않으면 변경 x
+		if(텍스트파일.exists()) {
+			//만약에 파일 이름을 성공적으로 변경했다면
+			if(텍스트파일.renameTo(새로운이름)) {
+				System.out.println("파일 이름이 성공적으로 변경되었습니다.");
+			} else {
+				System.out.println("파일 이름 변경에 실패했습니다.");
+			}
+		} else {
+			System.out.println("파일 이름이 존재하지 않습니다. 만들어주세요^^.");
+		}
+	}
+	
+	
+	
 	
 	
 	
@@ -108,7 +144,7 @@ public class FilePre {
 	public static void main(String[] args) {
 		FilePre 파일 = new FilePre();
 		//파일.메서드1();
-		파일.메서드3();
+		파일.메서드5();
 	}
 }
 
