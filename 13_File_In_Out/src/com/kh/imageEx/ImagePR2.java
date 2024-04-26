@@ -21,11 +21,9 @@ public class ImagePR2 {
 			System.out.println("동물이름 파일에 이름이 작성되었습니다.");
 			글쓰기.close();//작업하고 난 후에 항상 작업하던 파일을 닫아줄 것
 			// 글쓰기 작업이 완료되었습니다.
-			
 			//좋아하는 동물이름으로 폴더 이름 변경한 다음
 			//동물이름.txt -> 좋아하는동물이름.txt 파일명 변경하기
 			//FileWriter는 글쓰는건 편리하지만 파일의 이름을 비교하거나 다른작업은 하기 어려움
-			
 			File 원본파일 = new File(이미지폴더+"/동물이름.txt");
 			File 새로운이름 = new File(이미지폴더+"/좋아하는동물이름.txt");
 			//삭제하기
@@ -34,24 +32,17 @@ public class ImagePR2 {
 		    } else {
 		    	System.out.println("파일 이름 변경에 실패했습니다.");
 		    }
-			
 		    //삭제하기
 			//폴더 삭제 파일 삭제
 			//폴더 삭제를 할 때 폴더 안에 파일이 존재한다면 폴더 삭제가 되지 않습니다.
-			
 		    //폴더 안에 파일이 존재하는지 확인하고 폴더 안에 파일이 하나도 존재하지 않는다면 삭제
 			//배열을 이용해서 파일목록을 받고 파일목록이 없다면 삭제
-			
 			File[] 파일목록 = 이미지폴더.listFiles();
 			System.out.println("폴더안에 파일 목록 보기 : " + 파일목록);
-			
 			//for-each
-			
 			for(File   f    :    파일목록) { 
 				System.out.println(f.getName());
-				
 			}
-			
 			원본파일.delete();
 			새로운이름.delete();
 			if(이미지폴더.delete()) {
