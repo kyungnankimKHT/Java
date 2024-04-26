@@ -1,5 +1,5 @@
 package com.kh.variable.ex;
-
+//			VariableEx1 → 자료형Ex
 public class 자료형Ex {
 	public static void main(String[] args) {
 		// 변수 : 메모리에 값을 저장하기 위한 공간

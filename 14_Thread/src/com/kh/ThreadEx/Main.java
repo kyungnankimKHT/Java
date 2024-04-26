@@ -9,6 +9,18 @@ public class Main {
 		for(int i = 0; i <3; i++) {
 		//ThreadEx2의 부모이기 때문에 Thread 왼쪽에서 작성하는 것이 가능
 			Thread t = new ThreadEx2(i);
+			
+			if(i == 2) {
+				t.setPriority(Thread.MIN_PRIORITY); // MIN = 1
+			} else if (i == 1) {
+				t.setPriority(Thread.MAX_PRIORITY); // MAX = 10
+			} else { //0
+				t.setPriority(Thread.NORM_PRIORITY); // NORM = 5 (기본)
+			}
+			
+			
+			
+			
 			t.start();
 		}
 		System.out.println("메인 끝~~~!");

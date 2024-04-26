@@ -18,7 +18,7 @@ Enum(열거형)
 
 */
 
-//			  EnumEx → 열거형Ex
+//			 EnumEx → 열거형Ex
 public class 열거형Ex {
 
 	public enum 날짜들 {
