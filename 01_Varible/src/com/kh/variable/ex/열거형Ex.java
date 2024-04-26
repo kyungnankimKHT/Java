@@ -18,8 +18,8 @@ Enum(열거형)
 
 */
 
-
-public class EnumEx {
+//			  EnumEx → 열거형Ex
+public class 열거형Ex {
 
 	public enum 날짜들 {
 		월요일,

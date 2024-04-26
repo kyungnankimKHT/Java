@@ -1,6 +1,6 @@
 package com.kh.variable.ex;
-
-public class VariableEx2 {
+		//VariableEx2 → 자동형변환Ex
+public class 자동형변환Ex {
 	//메인 메서드 (프로그램 실행)
 	public static void main(String[] args) {
 	/*

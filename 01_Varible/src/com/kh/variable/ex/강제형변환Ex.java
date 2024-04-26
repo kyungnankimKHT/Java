@@ -1,6 +1,6 @@
 package com.kh.variable.ex;
-
-public class VariableEx3 {
+//	VariableEx3 → 강제형변환Ex
+public class 강제형변환Ex {
 	//메인메서드(프로그램 실행하는 공간)
 	public static void main(String[] args) {
 		/*

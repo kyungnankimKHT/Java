@@ -1,6 +1,6 @@
 package com.kh.variable.ex;
-
-public class VariableEx4 {
+//			VariableEx4 → 상수형Ex
+public class 상수형Ex {
 	// 메인 메서드 : 자바 프로그램 실행하는 구문
 	public static void main(String[] args) {
 		// 상수 : 한 번 값을 기록하면 값을 바꿀수 없는 변수
