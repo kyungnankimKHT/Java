@@ -12,7 +12,7 @@ public class SynchronizedEX {
 	public static void main(String[] args) {
 		for (int i = 0; i < 5; i++) {
 			//람다식
-			Thread t = new Thread(() -> {
+			Thread t = new Thread(  () -> {
 				//잠겨진 블록에 접근해서 순차적으로 카운터를 증가시킴
 				synchronized (SynchronizedEX.class) {
 					숫자++;
