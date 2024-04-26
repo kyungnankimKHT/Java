@@ -13,6 +13,7 @@ public class ScoreDAO {
 	public void saveScore(String name, int kor, int eng, int math, int sum, double avg) {
 		
 		//try로 시작하기 전에 정의를 내리고 들어가겠다
+		
 		try (DataOutputStream dos = new DataOutputStream(new FileOutputStream(FILE_PATH,true)))  {
 			
 			dos.writeUTF(name);
