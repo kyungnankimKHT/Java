@@ -13,7 +13,6 @@ public class ClientEx {
 		String serverHostname = "127.0.0.1";
 		isRunning = true;
 		Thread serverThread = new Thread(() -> {
-			// 서로 다른 쓰레드에서 동작한다
 			ServerToClientThread serverToClientThread = null;
 			ClientToServerThread clientToServerThread = null;
 
