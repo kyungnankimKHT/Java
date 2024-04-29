@@ -38,6 +38,21 @@ public class ClientEx {
 			// 주최자로부터 받은 메세지 수신 및 출력
 			String m = in.readLine();
 			System.out.println("send success : " + m);
+			
+			
+			//for문 while 사용해서 출력을 확인
+			//클라이언트는 서버가 읽을 때 까지 여러번 메세지를 다시 보내서 출력해볼수있음
+			for(int i = 0; i < 3; i++) {
+				out.print(i);
+				String t = in.readLine();
+				System.out.println("send success : " + t);
+				
+			}
+			
+			
+			
+			
+			
 			/*
 			while( (  m = in.readLine() )    != null) {
 				System.out.println("send success : " + m);

@@ -1,4 +1,4 @@
-package com.kh.StackEx;
+package com.kh.QuequeEx;
 
 import java.util.LinkedList;
 import java.util.Queue;
