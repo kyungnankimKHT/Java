@@ -16,7 +16,7 @@ public class ClientEx {
 			//				localhost = 127.0.01 은 내컴퓨터주소라는 의미
 			
 			//						  접속 하고자하는 컴퓨터 주소   서버의포트번호
-			Socket c = new Socket("localhost"           ,  12349       );
+			Socket c = new Socket("localhost"           ,  12350      );
 			
 			//주최자와 대화를 하기 위한 입출력 스트림 생성						
 			//1. 	참가자.getInputStream() : 참가자가 작성한 데이터를 읽어오기 위한 입력 스트림을 가져옴(숫자값으로 대화를 가져옴)
@@ -37,6 +37,7 @@ public class ClientEx {
 			
 			// 주최자로부터 받은 메세지 수신 및 출력
 			String m = in.readLine();
+			System.out.println("send success : " + m);
 			/*
 			while( (  m = in.readLine() )    != null) {
 				System.out.println("send success : " + m);

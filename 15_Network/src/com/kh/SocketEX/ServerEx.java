@@ -29,7 +29,7 @@ public class ServerEx {
 		
 		//서버 측의 포트 번호를 지정해서 ServerSocket 생성
 		try {
-			ServerSocket s = new ServerSocket(12349);
+			ServerSocket s = new ServerSocket(12350);
 			
 //			System.out.println("주최자 측 번호가 열렸습니다.");
 			System.out.println("party chat open");
@@ -52,6 +52,7 @@ public class ServerEx {
 				System.out.println("send success : " + m);
 				
 				out.println("cccccc hhhhhh eeeee cccc kkk");
+				//out.println("hihihihihi");
 				
 			}
 			
