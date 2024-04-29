@@ -14,5 +14,26 @@ public class AddressPre {
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
 		}
+		
+		// 나의 컴퓨터 이름과 자리번호 확인하기
+		//get localhost
+		try {
+			InetAddress 로컬호스트 = InetAddress.getLocalHost();
+			System.out.println("내집주소" + 로컬호스트);
+		} catch (UnknownHostException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		// www.facebook.com 페이스북 호스트이름 호스트주소
+		
+		// www.instagram.com 인스타그램 호스트이름 호스트주소 검색
+		
+		
+		
+		
+		
+		
 	}
 }
