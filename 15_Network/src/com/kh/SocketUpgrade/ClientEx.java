@@ -7,13 +7,18 @@ import java.io.*;
 public class ClientEx {
 	private static boolean isRunning;
 	private static Socket clientSocket = null;
-	private static final int SERVER_PORT = 12345;
+	private static final int SERVER_PORT = 12800; // 서버가 열어놓은 포트번호 서버 = 클라이언트 포트 같아야함
 
 	public static void main(String[] args) {
-		String serverHostname = "127.0.0.1";
+		String serverHostname = "127.0.0.1";// 우리집주소 = localhost = 127.0.0.1
 		isRunning = true;
+		// 서버와 연결이 된다면 연결하고, 서버에 연결되어있는 방문자는 한 번 연결하면 끝이긴 하지만
+		// 서버에서 강제로 종료하고 다시 접속하려면 다시 여기를 타고 null 값을 보여줌
 		Thread serverThread = new Thread(() -> {
+			// 서버에서 방문자한테 메세지를 보내는 값으로 처음에는 아무 대화도 없기 때문에 null을 줌
 			ServerToClientThread serverToClientThread = null;
+			
+			// 방문자가 서버한테 메세지를 보내는 값으로 처음에는 아무 대화도 없기 때문에 null을 줌
 			ClientToServerThread clientToServerThread = null;
 
 			while (isRunning) {
@@ -23,6 +28,7 @@ public class ClientEx {
 						clientSocket = new Socket(serverHostname, SERVER_PORT);
 						if (clientSocket.isConnected()) {
 							System.out.println("Connected to server.");
+							//서버와 접속하면 대화를 시작하기 위한 그릇을 생성
 							serverToClientThread = new ServerToClientThread();
 							serverToClientThread.start();
 							clientToServerThread = new ClientToServerThread();
@@ -39,6 +45,7 @@ public class ClientEx {
 					}
 				}
 				try {
+					//만약에 서버랑 클라이언트 연결이 끊어졌다면 1초마다 다시 재접속 시도
 					Thread.sleep(1000);
 				} catch (InterruptedException ignored) {
 				}
@@ -64,6 +71,7 @@ public class ClientEx {
 			while (flag) {
 				try {
 					String input = br.readLine();
+					// 서버에서 종료하고 싶다면 exit를 입력 후 종료
 					if (input.equals("exit")) {
 						System.out.println("Client Off... Goodbye!");
 						clientSocket = null;

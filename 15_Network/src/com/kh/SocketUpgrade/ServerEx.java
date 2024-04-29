@@ -6,8 +6,8 @@ import java.io.*;
 
 public class ServerEx {
 
-	private static final int SERVER_PORT = 12345;
-	private static final int SERVER_SPACE = 50;
+	private static final int SERVER_PORT = 12800; //포트 
+	private static final int SERVER_SPACE = 50;   //12800에 입장할 수 있는 인원 수
 	private static final Socket[] clientSockets = new Socket[SERVER_SPACE];
 	private static ServerSocket serverSocket;
 
@@ -20,15 +20,21 @@ public class ServerEx {
 			int i = 0;
 			while (true) {
 				try {
+					//초대한 사람들이 들어오고 있는지 대기중
 					System.out.println("Waiting for clients...");
+					
 					clientSockets[i] = serverSocket.accept();
+					//한명이라도 접속을 하면 접속했다라는 문구를 보여줌
 					System.out.println("Client connected: " + clientSockets[i].getInetAddress().getHostAddress());
-
+					
+					
+					// 방문자가 주최자한테 메세지를 받을 수 있는 그릇을 생성
 					if (clientSockets[i] != null && clientSockets[i].isConnected()) {
 						ClientToServerThread clientHandler = new ClientToServerThread(i);
 						clientHandler.start();
 					}
-
+					
+					//메모리관리 사람들이 순차적으로 접속할 수 있도록 해줌
 					i = (i + 1) % clientSockets.length;
 				} catch (IOException e) {
 					serverSocket = null;
@@ -38,7 +44,8 @@ public class ServerEx {
 
 		});
 		serverAcceptThread.start();
-
+		
+		//주최자가 방문자한테 메세지를 보낼 수 있도록 메세지가 담겨져서 갈 수 있는 그릇 생성
 		ServerToClientThread serverToClientThread = new ServerToClientThread();
 		serverToClientThread.start();
 	}
@@ -51,6 +58,7 @@ public class ServerEx {
 				while (true) {
 					BufferedReader br = new BufferedReader(new InputStreamReader(System.in, StandardCharsets.UTF_8));
 					String input = br.readLine();
+					// exit 라는 글자가 들어오면 주최자가 열어놓은 파티 종료
 					if (input.equals("exit")) {
 						System.out.println("Server off... Goodbye!");
 						for (Socket socket : clientSockets) {
@@ -61,6 +69,7 @@ public class ServerEx {
 						serverSocket.close();
 						break;
 					}
+					//주최한 공간에 참석한 참석자를 차례대로 찾아서 전송
 					for (Socket clientSocket : clientSockets) {
 						if (clientSocket != null && clientSocket.isConnected()) {
 							OutputStream out = clientSocket.getOutputStream();
@@ -92,6 +101,7 @@ public class ServerEx {
 			super.run();
 			while (true) {
 				try {
+					// 방문자로부터 받은 메세지를 전달받아 글자로 확인
 					String message = reader.readLine();
 					System.out.println("Message from client: " + message);
 				} catch (IOException e) {
