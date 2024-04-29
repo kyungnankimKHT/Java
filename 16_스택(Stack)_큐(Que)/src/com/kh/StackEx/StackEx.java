@@ -41,6 +41,26 @@ public class StackEx {
 		// isEmpty() : 스택이 비어있는지 확인
 		boolean isEmpty = 스택.isEmpty();
 		System.out.println(isEmpty);
+		
+		
+		System.out.println("======= 스택 2 =======");
+		
+		Stack<Integer> 스택2 = new Stack<>();
+		스택2.push(1);
+		스택2.push(2);
+		스택2.push(3);
+		스택2.push(4);
+		int 사라진값 = 스택2.pop();
+		System.out.println("가장 마지막에 보여주고 사라진 스택 2 의 값 : " + 사라진값);
+		
+		int 맨위값 = 스택2.peek();
+		System.out.println("스택 2 의 맨 위 값은 : " + 맨위값);
+		
+		boolean 값존재유무 = 스택2.isEmpty();
+		System.out.println("스택 2 가 비어있나요 ? " + 값존재유무);
+		
+		int 사이즈 = 스택2.size();
+		System.out.println("스택 2 의 사이즈는 ? " + 사이즈);
 	}
 }
 
