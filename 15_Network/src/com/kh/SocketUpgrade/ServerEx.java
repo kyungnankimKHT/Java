@@ -5,7 +5,7 @@ import java.nio.charset.StandardCharsets;
 import java.io.*;
 
 public class ServerEx {
-
+	
 	private static final int SERVER_PORT = 12800; //포트 
 	private static final int SERVER_SPACE = 50;   //12800에 입장할 수 있는 인원 수
 	private static final Socket[] clientSockets = new Socket[SERVER_SPACE];
