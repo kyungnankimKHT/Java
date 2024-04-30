@@ -36,14 +36,22 @@ package com.kh.MethodEx;
 		void   : 어떤 행동을 수행하기 위해 작성하고, 수행한다음 특별히 전달할 내용이 없을 때 사용
 				 void vocare 라틴어 보이다 비어있다
 				 특정 행동을 하고 난 다음에 행동을 끝내는 것이지 값을 전달하거나 추가로 어떤 행동을 하지 않음
-
+			예제
+				public void 특정행동이름 () {	
+					//행동하거나 보여주고싶은 내용 작성
+				}
+				
+				public void 특정행동이름 (매개변수) { 
+					//행동하거나 보여주고싶은 내용 작성
+				}
+				
 		return : 어떤 행동을 실행하고 행동을 한 다음에 행동에 대한 결과를 필요한 곳에 전달
 			
 			메서드를 작성해줄 때 컴퓨터가 어떤 자료형인지(공간을 얼마나 줘야하는지)를 전달해주고
 				처음에 작성한 자료형과 마지막에 전달할 자료형이 동일해야함
 			
 			예제
-				public 자료형 특정행동이름 () {
+				public 자료형 특정행동이름 () {	
 					return 자료형;
 				}
 				
@@ -62,7 +70,11 @@ package com.kh.MethodEx;
 			 	return 1; 			// public 옆에 int 를 작성했으니 return 다음에 숫자값을 작성
 			 }
 			
-		
+	main : 최종으로 실행하거나 최종으로 실행하고 싶은 내용만 작성하는 메서드
+	
+	public static void main(String[] args) {
+		// 정말로 출력하거나 실행하고싶은 내용만 작성
+	}
 */
 
 
@@ -73,6 +85,6 @@ package com.kh.MethodEx;
 
 
 
-public class MethodEx {
+public class 기본메서드 {
 
 }
