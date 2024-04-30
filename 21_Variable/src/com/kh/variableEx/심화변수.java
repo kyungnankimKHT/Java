@@ -1,6 +1,6 @@
 package com.kh.variableEx;
 /*
- 매개변수
+ 매개변수 = 파라미터 = parameter
 	중간에 개입해서 변경하는 수
 	주로 메서드에서 메서드이름 옆에 만들어지는 (       ) 안에 작성
 	

@@ -1,12 +1,14 @@
 package com.kh.variableEx;
 /*
+ 자료형	변수명 = 변수값;
+ type   name = literal;  literal = 리터럴
  변수
-  자료형(기본)
+  자료형(기본) = primitive = 프리미티브
   	숫  자 : byte short int long   // int    기본값
   	문  자 : char			 	  // '' 사용  한글자만 들어갈 수 있음
   	실  수 : float double		  // double 기본값
   	참거짓 :  boolean				  // false  기본값
-  자료형(참조)
+  자료형(참조) = Reference = 레퍼런스
   	문자열 : String				  // "" 사용 문자를 모두 나열하는 문자열 "" 특수문자 등 모든 것 사용 가능
   상수형
   	final 자료형  상수명 = 값;
