@@ -42,42 +42,29 @@ public class PropertiesEx {
 				진짜파일만들기.createNewFile();
 			}
 			
-			
-			
 			// 설정파일 만들기 만약에 만들어진 설정.properties 이 없다면 새로운 파일이 생성될 것
 			FileInputStream 파일불러오기 = new FileInputStream("설정.properties");
 			설정.load(파일불러오기); // 파일만들기 대기
 			파일불러오기.close(); // 파일만들기 끝
-
 			// 관리자이름 비밀번호를 가져올 것
 			// 만약 관리자이름과 관리자 비번이 없다면 null값으로 설정되어 나올 것
 			String 관리자이름 = 설정.getProperty("관리자이름");
 			String 관리자비번 = 설정.getProperty("관리자비번");
-
 			System.out.println("관리자이름 : " + 관리자이름);
 			System.out.println("관리자비번 : " + 관리자비번);
-
 			// 만약 null 값으로 아무런 값도 없는 것이 싫다면 설정값을 변경해줄 수 있음
-			설정.setProperty("관리자이름", "매니저");
-			설정.setProperty("관리자비번", "1234");
-
+			설정.setProperty("name", "매니저");
+			설정.setProperty("psssword", "1234");
 			// 변경된 설정을 파일에 저장
-
 			FileOutputStream 파일저장 = new FileOutputStream("설정.properties");
 			// 새로운 내용 저장과 저장할 때 어떤 내용을 수정하거나 삭제하거나 추가했는지 작성)
 			설정.store(파일저장, "새로 이름과 비번 저장");
-
 			// 파일 저장 종료
 			파일저장.close();
-
 			System.out.println("관리자가 성공적으로 변경되었습니다.");
-
 		} catch (FileNotFoundException e) {
-			
 			System.out.println("파일이 존재하지 않습니다.");
-
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
